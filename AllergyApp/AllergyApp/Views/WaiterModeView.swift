@@ -53,56 +53,15 @@ struct WaiterModeView: View {
         .onDisappear { FullBrightness.off() }
     }
 
-    /// Three text sizes only, so the eye knows where to go:
-    /// allergens largest and bold, the heading and severity next, everything else body.
-    @ViewBuilder
+    /// One text size throughout so the card reads evenly; only the allergens
+    /// are bold, so they stand out without shouting.
     private func sectionView(_ section: CardBuilder.Section) -> some View {
-        switch section.id {
-        case "allergic_to":
-            // Heading for the allergen list right below it.
+        VStack(alignment: .leading, spacing: 16) {
             ForEach(section.lines) { line in
-                PhraseLineView(line: line, localFont: .title2, localWeight: .bold)
+                PhraseLineView(line: line, localFont: .title2,
+                               localWeight: section.id == "allergens" ? .bold : .regular)
             }
-        case "allergens":
-            VStack(alignment: .leading, spacing: 18) {
-                ForEach(section.lines) { line in
-                    HStack(alignment: .firstTextBaseline, spacing: 12) {
-                        Image(systemName: "xmark.circle.fill")
-                            .font(.title2)
-                            .foregroundStyle(.red)
-                            .accessibilityHidden(true)
-                        PhraseLineView(line: line, localFont: .largeTitle, localWeight: .bold)
-                    }
-                }
-            }
-            .padding()
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(Color.red.opacity(0.08), in: RoundedRectangle(cornerRadius: 16))
-            .overlay(RoundedRectangle(cornerRadius: 16).strokeBorder(Color.red.opacity(0.35), lineWidth: 2))
-        case "ask":
-            VStack(alignment: .leading, spacing: 16) {
-                ForEach(section.lines) { line in
-                    if card.severity.introPhraseIDs.contains(line.id) {
-                        // How serious it is: the line a waiter must not skim past.
-                        Label {
-                            PhraseLineView(line: line, localFont: .title2, localWeight: .bold)
-                        } icon: {
-                            Image(systemName: "exclamationmark.triangle.fill")
-                                .foregroundStyle(.orange)
-                                .font(.title2)
-                        }
-                    } else {
-                        PhraseLineView(line: line, localFont: .title3, localWeight: .regular)
-                    }
-                }
-            }
-        default:
-            VStack(alignment: .leading, spacing: 16) {
-                ForEach(section.lines) { line in
-                    PhraseLineView(line: line, localFont: .title3, localWeight: .regular)
-                }
-                Divider()
-            }
+            if section.id != "allergic_to" { Divider() }
         }
     }
 }
