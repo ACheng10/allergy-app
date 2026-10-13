@@ -43,7 +43,7 @@ class BuildTests(unittest.TestCase):
             bp.build(self.data)
 
     def test_rejects_file_for_unknown_locale(self):
-        self.write_translation("pt", "intro.hello,Olá.,,ai_draft,")
+        self.write_translation("xx", "intro.hello,Hello.,,ai_draft,")
         with self.assertRaisesRegex(bp.DataError, "no such locale"):
             bp.build(self.data)
 

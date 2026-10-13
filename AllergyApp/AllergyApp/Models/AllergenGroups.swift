@@ -28,11 +28,63 @@ struct AllergenGroup: Identifiable {
         ]),
         AllergenGroup(id: "seeds_veg", title: "Seeds and vegetables", symbol: "carrot", allergenIDs: [
             "allergen.sesame", "allergen.mustard", "allergen.celery",
+            "allergen.tomato", "allergen.garlic", "allergen.onion",
+        ]),
+        AllergenGroup(id: "fruit", title: "Fruit", symbol: "tree", allergenIDs: [
+            "allergen.peach", "allergen.apple", "allergen.banana", "allergen.mango", "allergen.kiwi",
+        ]),
+        AllergenGroup(id: "meat", title: "Meat", symbol: "fork.knife", allergenIDs: [
+            "allergen.chicken", "allergen.pork", "allergen.red_meat", "allergen.gelatin",
         ]),
         AllergenGroup(id: "other", title: "Other", symbol: "ellipsis.circle", allergenIDs: [
-            "allergen.sulphites", "allergen.kiwi", "allergen.red_meat",
+            "allergen.sulphites", "allergen.msg",
         ]),
     ]
+
+    /// Extra words people search for that the English label does not contain,
+    /// e.g. "prawn" finds shellfish, "dairy" finds milk.
+    static let searchTerms: [String: [String]] = [
+        "allergen.peanut": ["groundnut", "monkey nut", "arachis"],
+        "allergen.tree_nuts": ["tree nut"],
+        "allergen.pine_nut": ["pignoli", "pinenut"],
+        "allergen.milk": ["dairy", "cheese", "butter", "cream", "yoghurt", "yogurt", "lactose", "casein", "whey"],
+        "allergen.egg": ["albumin", "mayonnaise"],
+        "allergen.fish": ["salmon", "tuna", "cod", "anchovy", "fish sauce"],
+        "allergen.crustaceans": ["crayfish", "langoustine", "scampi", "crustacean"],
+        "allergen.molluscs": ["shellfish", "scallop", "snail", "calamari", "mollusk", "cuttlefish", "oyster sauce"],
+        "allergen.soy": ["soybean", "tofu", "edamame", "miso", "soy sauce"],
+        "allergen.gluten": ["coeliac", "celiac", "barley", "rye", "oats"],
+        "allergen.wheat": ["flour", "bread", "pasta", "noodles"],
+        "allergen.sesame": ["tahini"],
+        "allergen.legumes": ["beans", "lentil", "chickpea", "pea"],
+        "allergen.lupin": ["lupine"],
+        "allergen.corn": ["maize", "polenta"],
+        "allergen.celery": ["celeriac"],
+        "allergen.buckwheat": ["soba"],
+        "allergen.sulphites": ["sulfur", "sulphur", "wine"],
+        "allergen.kiwi": ["kiwifruit"],
+        "allergen.red_meat": ["beef", "pork", "lamb", "alpha-gal", "gelatine", "mammal"],
+        "allergen.peach": ["nectarine", "plum", "apricot", "cherry", "stone fruit"],
+        "allergen.onion": ["spring onion", "scallion", "shallot", "leek", "chive"],
+        "allergen.chicken": ["poultry"],
+        "allergen.pork": ["ham", "bacon", "lard"],
+        "allergen.gelatin": ["gelatine", "jelly"],
+        "allergen.msg": ["glutamate", "monosodium", "seasoning powder"],
+        "allergen.tomato": ["ketchup"],
+    ]
+
+    /// Allergens whose label, group or search terms contain the query.
+    /// Case and accents are ignored.
+    static func search(_ query: String, in book: PhraseBook) -> [PhraseBook.Phrase] {
+        let query = query.trimmingCharacters(in: .whitespaces)
+        guard !query.isEmpty else { return [] }
+        return resolved(in: book).flatMap { entry in
+            entry.phrases.filter { phrase in
+                ([phrase.english, entry.group.title] + (searchTerms[phrase.id] ?? []))
+                    .contains { $0.localizedStandardContains(query) }
+            }
+        }
+    }
 
     /// Groups resolved against the phrase book, with leftovers added to "Other".
     static func resolved(in book: PhraseBook) -> [(group: AllergenGroup, phrases: [PhraseBook.Phrase])] {
