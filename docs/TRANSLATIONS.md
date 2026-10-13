@@ -21,3 +21,15 @@ Rules the app enforces:
 The build script rejects unknown phrase ids, unknown statuses, empty text and duplicate rows, so a typo fails loudly instead of shipping.
 
 The AI drafting pipeline from the plan (glossary, translate, blind back-translate, flag mismatches) is not built yet. It belongs in `tools/` as a Python script that writes these CSVs. It must never run inside the app.
+
+## Importing a reviewer's sheet
+
+Download the filled-in Google Sheet as CSV, then:
+
+```
+python3 tools/import_review.py --locale fr --reviewer "Full Name" ~/Downloads/review-fr.csv          # dry run
+python3 tools/import_review.py --locale fr --reviewer "Full Name" ~/Downloads/review-fr.csv --write
+python3 tools/build_phrasebook.py
+```
+
+Rows are matched by `phrase_id`. A row whose draft column no longer matches the CSV is refused and listed, never merged. `emergency.*` and `allergen.red_meat` are never marked reviewed by this tool, because they also need a medical reviewer. A "Fix" clears the back-translation, so run the blind check on those rows again.
