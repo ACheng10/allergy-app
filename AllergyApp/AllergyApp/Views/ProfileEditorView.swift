@@ -22,16 +22,19 @@ struct ProfileEditorView: View {
                     Button {
                         toggle(allergen.id)
                     } label: {
+                        let selected = profile.allergenIDs.contains(allergen.id)
                         HStack {
-                            Text(allergen.english).foregroundStyle(.primary)
+                            Text(allergen.english)
                             Spacer()
-                            if profile.allergenIDs.contains(allergen.id) {
-                                Image(systemName: "checkmark.circle.fill")
-                                    .foregroundStyle(.tint)
-                                    .accessibilityLabel("Selected")
-                            }
+                            Image(systemName: selected ? "checkmark.circle.fill" : "circle")
+                                .foregroundStyle(selected ? Color.accentColor : Color.secondary)
+                                .font(.title3)
                         }
+                        .contentShape(Rectangle())
+                        .accessibilityAddTraits(selected ? .isSelected : [])
                     }
+                    // Plain style keeps the text black instead of tinted like a link.
+                    .buttonStyle(.plain)
                 }
             } header: {
                 Text("What are you allergic to?")
