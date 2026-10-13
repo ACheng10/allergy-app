@@ -11,13 +11,13 @@ Across every language, a medical reviewer should check the emergency lines and `
 - cross_contact.grill: "plancha" vs "plaque de cuisson"
 - shopping.dairy_free: "laits végétaux (boissons végétales)"
 ## de
-- allergen.crustaceans: "Krabben" can mean small shrimp in N. Germany; crab must be explicit -> FIX (add Taschenkrebse)
+- allergen.crustaceans: "Krabben" can mean small shrimp in N. Germany; crab must be explicit fixed: Taschenkrebse added
 - allergen.red_meat: "Rotes Fleisch" not standard medical category
 - hidden.nut_sauces: praliné rendered as Praliné-Masse (Krokant)
 - allergen.msg: dropped "MSG", added E 621
 - emergency lines: Krankenwagen (CH Ambulanz, AT Rettung); check vs German anaphylaxis action plan
 ## it
-- generic "nuts" lines use "frutta a guscio" (excludes peanuts) -> FIX: add "o arachidi" (cross_contact.bakery, question.dessert, question.bread, shopping.dairy_free, travel.airline_announce)
+- generic "nuts" lines use "frutta a guscio" (excludes peanuts) fixed: added "arachidi" to cross_contact.bakery, question.dessert, question.bread, shopping.dairy_free (travel.airline_announce already had it)
 - allergen.gelatin added "colla di pesce"
 - sulphites/msg follow Italian label wording, E621
 - red_meat alfa-gal wording: medical review
@@ -28,7 +28,7 @@ Across every language, a medical reviewer should check the emergency lines and `
 - almond 杏仁（巴旦木） (apricot kernel ambiguity); mustard 芥末（芥菜籽制成的黄芥末） (wasabi ambiguity)
 - hidden.all_forms butter -> 黄油或抹酱
 - egg 蛋类（包括鸡蛋） to cover duck/quail eggs
-- onion 葱（小葱）/红葱头; crustaceans vs molluscs naming (贝类 = molluscs) -> CHECK ids
+- onion 葱（小葱）/红葱头; crustaceans vs molluscs naming (贝类 = molluscs) checked: ids match (crustaceans = 甲壳类, molluscs = 贝类及软体类)
 ## zh-Hant-TW
 - almond 杏仁果（美國杏仁） (杏仁 = apricot kernel); mustard 黃芥末（芥末籽） (芥末 = wasabi)
 - say_anaphylaxis 全身性過敏反應（過敏性休克）; medical review
@@ -40,7 +40,7 @@ Across every language, a medical reviewer should check the emergency lines and `
 - red_meat alfa-gal term; medical review
 - "Mariscos crustáceos"; bogavante/jaiba may need country overrides
 - miso/hoisin as frijol/judías/porotos may read as ordinary beans -> "soja fermentada"?
-- generic "nuts" = "frutos secos" (dried fruit ambiguity, peanuts unclear) -> FIX: add "o cacahuetes (maní)" like it
+- generic "nuts" = "frutos secos" (dried fruit ambiguity, peanuts unclear) fixed: added "cacahuetes (cacahuates, maní)" to the same four lines as it
 - emergency lines: check vs Spanish anaphylaxis action plan
 ## pl
 - allergen lines in accusative to follow "Mam alergię na:"; read oddly standalone

@@ -1959,7 +1959,7 @@
       },
       "cross_contact.bakery": {
         "status": "ai_draft",
-        "text": "Las panaderías a menudo no son seguras para mí, por la harina y los frutos secos presentes en el aire y en las superficies."
+        "text": "Las panaderías a menudo no son seguras para mí, por la harina, los frutos secos y los cacahuetes (cacahuates, maní) presentes en el aire y en las superficies."
       },
       "cross_contact.board_knife": {
         "status": "ai_draft",
@@ -2219,7 +2219,7 @@
       },
       "question.bread": {
         "status": "ai_draft",
-        "text": "¿El pan contiene leche, huevo, frutos secos o semillas?"
+        "text": "¿El pan contiene leche, huevo, frutos secos, cacahuetes (cacahuates, maní) o semillas?"
       },
       "question.chef_confident": {
         "status": "ai_draft",
@@ -2231,7 +2231,7 @@
       },
       "question.dessert": {
         "status": "ai_draft",
-        "text": "¿Los postres contienen frutos secos, leche o huevo?"
+        "text": "¿Los postres contienen frutos secos, cacahuetes (cacahuates, maní), leche o huevo?"
       },
       "question.dressing": {
         "status": "ai_draft",
@@ -2291,7 +2291,7 @@
       },
       "shopping.dairy_free": {
         "status": "ai_draft",
-        "text": "¿Venden leche vegetal sin frutos secos ni soja (soya)?"
+        "text": "¿Venden leche vegetal sin frutos secos, cacahuetes (cacahuates, maní) ni soja (soya)?"
       },
       "shopping.free_from": {
         "status": "ai_draft",
@@ -3150,7 +3150,7 @@
       },
       "cross_contact.bakery": {
         "status": "ai_draft",
-        "text": "I panifici spesso non sono sicuri per me, a causa della farina e della frutta a guscio presenti nell'aria e sulle superfici."
+        "text": "I panifici spesso non sono sicuri per me, a causa della farina, della frutta a guscio e delle arachidi presenti nell'aria e sulle superfici."
       },
       "cross_contact.board_knife": {
         "status": "ai_draft",
@@ -3410,7 +3410,7 @@
       },
       "question.bread": {
         "status": "ai_draft",
-        "text": "Il pane contiene latte, uova, frutta a guscio o semi?"
+        "text": "Il pane contiene latte, uova, frutta a guscio, arachidi o semi?"
       },
       "question.chef_confident": {
         "status": "ai_draft",
@@ -3422,7 +3422,7 @@
       },
       "question.dessert": {
         "status": "ai_draft",
-        "text": "I dolci contengono frutta a guscio, latte o uova?"
+        "text": "I dolci contengono frutta a guscio, arachidi, latte o uova?"
       },
       "question.dressing": {
         "status": "ai_draft",
@@ -3482,7 +3482,7 @@
       },
       "shopping.dairy_free": {
         "status": "ai_draft",
-        "text": "Vendete latte vegetale senza frutta a guscio né soia?"
+        "text": "Vendete latte vegetale senza frutta a guscio, arachidi né soia?"
       },
       "shopping.free_from": {
         "status": "ai_draft",
