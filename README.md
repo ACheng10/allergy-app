@@ -13,6 +13,7 @@ Plan and decisions: [product plan](https://claude.ai/code/artifact/4cb3717d-bdcb
 | Waiter Mode | Full brightness, local language large, English small underneath. Hidden-ingredient and kitchen lines picked from your allergens. |
 | Ask | Fixed questions; staff tap a fixed answer in their language and you see it in English. |
 | Emergency | Call buttons for the local number, your emergency contact, and phrases to show bystanders. Always free. |
+| Report a problem | Profile > Report a problem. Becomes a GitHub issue that Claude diagnoses; see [docs/REPORTS_SETUP.md](docs/REPORTS_SETUP.md). |
 
 Safety rules baked into the code:
 
@@ -20,7 +21,7 @@ Safety rules baked into the code:
 - **Anything not signed off by a native speaker is beta.** A line counts as reviewed only when its status is `human_reviewed`. Missing translations fall back to English and are flagged.
 - **Beta warnings are shown to the user, never inside Waiter Mode.**
 
-Right now there are **no translations at all**, so every language shows English and is marked beta. That is expected.
+Right now only Cantonese has translations, and they are AI drafts waiting for a native speaker, so Cantonese is still marked beta. Every other language shows English and is marked beta. That is expected.
 
 ## Run it
 
@@ -38,6 +39,7 @@ data/                       the "database": one CSV per table (see the plan's SQ
   translations/<locale>.csv one file per language: text, back_translation, status, reviewer
 tools/build_phrasebook.py   checks the CSVs and writes the JSON the app reads
 AllergyApp/                 the Xcode project (SwiftUI + SwiftData)
+reports-worker/             free Cloudflare Worker that turns in-app reports into GitHub issues
 docs/                       how-tos
 ```
 

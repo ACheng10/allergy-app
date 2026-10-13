@@ -2,7 +2,7 @@ import SwiftUI
 
 /// Free forever, works offline, one tap from every screen (it is a tab).
 struct EmergencyView: View {
-    let profile: AllergyProfile
+    @Bindable var profile: AllergyProfile
     @Environment(\.phraseBook) private var book
 
     var body: some View {
@@ -14,6 +14,7 @@ struct EmergencyView: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
+                    DestinationButton(profile: profile)
                     if let country {
                         callButtons(for: country)
                     }
