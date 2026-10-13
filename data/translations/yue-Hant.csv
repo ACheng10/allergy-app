@@ -8,7 +8,7 @@ intro.intolerance,我對某啲食物不耐受。唔會危及生命，但會令�
 intro.not_preference,呢個係醫療問題，唔係個人喜好。,,ai_draft,
 intro.thank_you_care,多謝你小心處理我嘅食物。,,ai_draft,
 allergen.peanut,花生,,ai_draft,
-allergen.tree_nuts,樹果仁（所有喺樹上生長嘅果仁）,,ai_draft,
+allergen.tree_nuts,所有果仁，例如杏仁、合桃、腰果同榛子,,ai_draft,
 allergen.almond,杏仁（扁桃仁）,,ai_draft,
 allergen.hazelnut,榛子,,ai_draft,
 allergen.walnut,合桃（核桃）,,ai_draft,

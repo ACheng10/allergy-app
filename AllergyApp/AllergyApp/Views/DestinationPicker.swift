@@ -1,41 +1,38 @@
 import SwiftUI
 
-/// One-tap destination switcher: every country with its languages as buttons.
-/// Tapping "Switzerland > French" sets both and closes the sheet.
+/// Country list, then language list (only when a country has more than one).
+/// Countries with one language are a single tap.
 struct DestinationPicker: View {
     @Bindable var profile: AllergyProfile
     @Environment(\.phraseBook) private var book
     @Environment(\.dismiss) private var dismiss
     @State private var search = ""
 
-    /// Current country first, then alphabetical; filtered by the search box.
-    private var countries: [PhraseBook.Country] {
+    private var results: [PhraseBook.Country] {
         let sorted = book.countries.sorted { $0.name < $1.name }
-        let matches = search.isEmpty ? sorted : sorted.filter {
-            $0.name.localizedCaseInsensitiveContains(search)
+        guard !search.isEmpty else { return sorted }
+        return sorted.filter { country in
+            country.name.localizedCaseInsensitiveContains(search)
+                || country.locales.contains { book.languageName($0).localizedCaseInsensitiveContains(search) }
         }
-        let current = matches.filter { $0.code == profile.countryCode }
-        return current + matches.filter { $0.code != profile.countryCode }
     }
 
     var body: some View {
         NavigationStack {
-            List(countries) { country in
-                VStack(alignment: .leading, spacing: 8) {
-                    Text(country.name).font(.headline)
-                    FlowingButtons(codes: country.locales) { code in
-                        choose(country: country.code, locale: code)
-                    } label: { code in
-                        let selected = profile.countryCode == country.code && profile.localeCode == code
-                        Label(book.displayName(forLocale: code),
-                              systemImage: selected ? "checkmark.circle.fill" : "circle")
-                    }
+            List {
+                if search.isEmpty, let current = book.country(profile.countryCode) {
+                    Section("Current") { row(for: current) }
                 }
-                .padding(.vertical, 4)
+                Section(search.isEmpty ? "All countries" : "Results") {
+                    ForEach(results) { row(for: $0) }
+                }
             }
-            .searchable(text: $search, prompt: "Search countries")
+            .searchable(text: $search, prompt: "Country or language")
             .navigationTitle("Where are you?")
             .navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(for: PhraseBook.Country.self) { country in
+                LanguageList(profile: profile, country: country) { dismiss() }
+            }
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Close") { dismiss() }
@@ -44,37 +41,83 @@ struct DestinationPicker: View {
         }
     }
 
-    private func choose(country: String, locale: String) {
-        profile.countryCode = country
-        profile.localeCode = locale
-        dismiss()
+    @ViewBuilder
+    private func row(for country: PhraseBook.Country) -> some View {
+        let label = CountryRow(country: country, isCurrent: country.code == profile.countryCode)
+        if country.locales.count == 1, let only = country.locales.first {
+            Button {
+                profile.countryCode = country.code
+                profile.localeCode = only
+                dismiss()
+            } label: { label }
+            .tint(.primary)
+        } else {
+            NavigationLink(value: country) { label }
+        }
     }
 }
 
-/// Language buttons that wrap onto new lines when they don't fit.
-private struct FlowingButtons<Label: View>: View {
-    let codes: [String]
-    let action: (String) -> Void
-    @ViewBuilder let label: (String) -> Label
+private struct CountryRow: View {
+    let country: PhraseBook.Country
+    let isCurrent: Bool
+    @Environment(\.phraseBook) private var book
 
     var body: some View {
-        ViewThatFits(in: .horizontal) {
-            HStack { buttons }
-            VStack(alignment: .leading) { buttons }
-        }
-    }
-
-    private var buttons: some View {
-        ForEach(codes, id: \.self) { code in
-            Button { action(code) } label: { label(code) }
-                .buttonStyle(.bordered)
+        HStack(spacing: 12) {
+            Text(country.flag).font(.title2)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(country.name)
+                Text(country.locales.map(book.languageName).joined(separator: ", "))
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            }
+            Spacer()
+            if isCurrent {
+                Image(systemName: "checkmark").foregroundStyle(.tint)
+            }
         }
     }
 }
 
-/// The tappable "Switzerland · French" chip shown at the top of screens.
+private struct LanguageList: View {
+    @Bindable var profile: AllergyProfile
+    let country: PhraseBook.Country
+    let onDone: () -> Void
+    @Environment(\.phraseBook) private var book
+
+    var body: some View {
+        List(country.locales, id: \.self) { code in
+            Button {
+                profile.countryCode = country.code
+                profile.localeCode = code
+                onDone()
+            } label: {
+                HStack {
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(book.languageName(code))
+                        if let native = book.locale(code)?.nativeName, native != book.languageName(code) {
+                            Text(native).font(.subheadline).foregroundStyle(.secondary)
+                        }
+                    }
+                    Spacer()
+                    if book.isBeta(code) { BetaBadge() }
+                    if profile.countryCode == country.code && profile.localeCode == code {
+                        Image(systemName: "checkmark").foregroundStyle(.tint)
+                    }
+                }
+            }
+            .tint(.primary)
+        }
+        .navigationTitle("\(country.flag) \(country.name)")
+    }
+}
+
+/// The current destination, tappable to change it.
 struct DestinationButton: View {
     @Bindable var profile: AllergyProfile
+    /// Plain row for use inside a Form; otherwise a rounded card.
+    var inForm = false
+    var openOnAppear = false
     @Environment(\.phraseBook) private var book
     @State private var showingPicker = false
 
@@ -82,25 +125,38 @@ struct DestinationButton: View {
         Button {
             showingPicker = true
         } label: {
-            HStack {
-                Image(systemName: "globe")
+            HStack(spacing: 12) {
+                Text(book.country(profile.countryCode)?.flag ?? "🌍").font(.title)
                 VStack(alignment: .leading, spacing: 2) {
                     Text(book.country(profile.countryCode)?.name ?? "Choose a country")
                         .font(.headline)
-                    Text(book.displayName(forLocale: profile.localeCode))
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(.primary)
+                    if !profile.localeCode.isEmpty {
+                        HStack(spacing: 6) {
+                            Text(book.languageName(profile.localeCode))
+                                .font(.subheadline)
+                                .foregroundStyle(.secondary)
+                            if book.isBeta(profile.localeCode) { BetaBadge() }
+                        }
+                    }
                 }
                 Spacer()
-                Text("Change").font(.subheadline.weight(.semibold))
+                Text("Change")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(.tint)
             }
-            .padding()
-            .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 12))
+            .padding(inForm ? 0 : 14)
+            .background {
+                if !inForm {
+                    RoundedRectangle(cornerRadius: 14).fill(Color(.secondarySystemGroupedBackground))
+                }
+            }
         }
         .buttonStyle(.plain)
         .accessibilityHint("Change the country and language")
         .sheet(isPresented: $showingPicker) {
             DestinationPicker(profile: profile)
         }
+        .onAppear { if openOnAppear { showingPicker = true } }
     }
 }

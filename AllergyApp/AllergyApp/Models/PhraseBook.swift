@@ -35,6 +35,14 @@ struct PhraseBook: Decodable, Sendable {
         let numbersVerified: Bool
         let locales: [String]
         var id: String { code }
+
+        /// Flag emoji built from the two-letter country code.
+        var flag: String {
+            code.unicodeScalars
+                .compactMap { Unicode.Scalar(127397 + $0.value) }
+                .map(String.init)
+                .joined()
+        }
     }
 
     struct Translation: Decodable, Hashable, Sendable {
@@ -92,11 +100,9 @@ struct PhraseBook: Decodable, Sendable {
         phrases.contains { line($0.id, in: localeCode).isBeta }
     }
 
-    /// "French (Français)", plus "beta" when not fully reviewed.
-    func displayName(forLocale code: String) -> String {
-        guard let l = locale(code) else { return code }
-        let name = l.name == l.nativeName ? l.name : "\(l.name) (\(l.nativeName))"
-        return isBeta(code) ? "\(name) · beta" : name
+    /// "French", "Cantonese (Traditional)". Beta is shown separately with BetaBadge.
+    func languageName(_ code: String) -> String {
+        locale(code)?.name ?? code
     }
 }
 

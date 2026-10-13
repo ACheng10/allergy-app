@@ -9,33 +9,10 @@ struct ProfileEditorView: View {
     let isOnboarding: Bool
     @Environment(\.phraseBook) private var book
 
-    private var sortedCountries: [PhraseBook.Country] {
-        book.countries.sorted { $0.name < $1.name }
-    }
-
     var body: some View {
         Form {
             Section {
-                Picker("Country", selection: $profile.countryCode) {
-                    Text("Choose a country").tag("")
-                    ForEach(sortedCountries) { country in
-                        Text(country.name).tag(country.code)
-                    }
-                }
-                .pickerStyle(.navigationLink)
-                .onChange(of: profile.countryCode) { _, newCode in
-                    // Most common language first, as in data/country_locales.csv.
-                    profile.localeCode = book.country(newCode)?.locales.first ?? ""
-                }
-
-                if let country = book.country(profile.countryCode) {
-                    Picker("Language", selection: $profile.localeCode) {
-                        ForEach(country.locales, id: \.self) { code in
-                            Text(book.displayName(forLocale: code)).tag(code)
-                        }
-                    }
-                    .pickerStyle(.navigationLink)
-                }
+                DestinationButton(profile: profile, inForm: true)
             } header: {
                 Text("Where are you going?")
             }
