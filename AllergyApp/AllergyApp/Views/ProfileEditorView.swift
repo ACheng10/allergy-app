@@ -8,6 +8,7 @@ struct ProfileEditorView: View {
     @Bindable var profile: AllergyProfile
     let isOnboarding: Bool
     @Environment(\.phraseBook) private var book
+    @State private var search = ""
 
     var body: some View {
         Form {
@@ -18,13 +19,42 @@ struct ProfileEditorView: View {
             }
 
             Section {
-                ForEach(AllergenGroup.resolved(in: book), id: \.group.id) { entry in
-                    AllergenGroupRow(group: entry.group, phrases: entry.phrases, profile: profile)
+                HStack {
+                    Image(systemName: "magnifyingglass")
+                        .foregroundStyle(.secondary)
+                    TextField("Search, e.g. prawn or dairy", text: $search)
+                        .autocorrectionDisabled()
+                        .textInputAutocapitalization(.never)
+                    if !search.isEmpty {
+                        Button {
+                            search = ""
+                        } label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundStyle(.secondary)
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("Clear search")
+                    }
+                }
+
+                if search.trimmingCharacters(in: .whitespaces).isEmpty {
+                    ForEach(AllergenGroup.resolved(in: book), id: \.group.id) { entry in
+                        AllergenGroupRow(group: entry.group, phrases: entry.phrases, profile: profile)
+                    }
+                } else {
+                    let results = AllergenGroup.search(search, in: book)
+                    if results.isEmpty {
+                        Text("No match. Try another word, or look in Other.")
+                            .foregroundStyle(.secondary)
+                    }
+                    ForEach(results) { allergen in
+                        AllergenCheckRow(allergen: allergen, profile: profile)
+                    }
                 }
             } header: {
                 Text("What are you allergic to?")
             } footer: {
-                Text("Open a group to pick the specific foods.")
+                Text("Search, or open a group to pick the specific foods.")
             }
 
             Section {
@@ -75,7 +105,6 @@ struct ProfileEditorView: View {
             }
         }
     }
-
 }
 
 /// One collapsible group, e.g. "Nuts · 2 selected", with its foods inside.
@@ -92,22 +121,7 @@ private struct AllergenGroupRow: View {
     var body: some View {
         DisclosureGroup(isExpanded: $expanded) {
             ForEach(phrases) { allergen in
-                let selected = profile.allergenIDs.contains(allergen.id)
-                Button {
-                    toggle(allergen.id)
-                } label: {
-                    HStack {
-                        Text(allergen.english)
-                        Spacer()
-                        Image(systemName: selected ? "checkmark.circle.fill" : "circle")
-                            .foregroundStyle(selected ? Color.accentColor : Color.secondary)
-                            .font(.title3)
-                    }
-                    .contentShape(Rectangle())
-                    .accessibilityAddTraits(selected ? .isSelected : [])
-                }
-                // Plain style keeps the text black instead of tinted like a link.
-                .buttonStyle(.plain)
+                AllergenCheckRow(allergen: allergen, profile: profile)
             }
         } label: {
             HStack {
@@ -122,12 +136,34 @@ private struct AllergenGroupRow: View {
         }
         .onAppear { if selectedCount > 0 { expanded = true } }
     }
+}
 
-    private func toggle(_ id: String) {
-        if let index = profile.allergenIDs.firstIndex(of: id) {
-            profile.allergenIDs.remove(at: index)
-        } else {
-            profile.allergenIDs.append(id)
+/// One food with a tick circle. Tapping adds or removes it from the profile.
+private struct AllergenCheckRow: View {
+    let allergen: PhraseBook.Phrase
+    @Bindable var profile: AllergyProfile
+
+    private var selected: Bool { profile.allergenIDs.contains(allergen.id) }
+
+    var body: some View {
+        Button {
+            if let index = profile.allergenIDs.firstIndex(of: allergen.id) {
+                profile.allergenIDs.remove(at: index)
+            } else {
+                profile.allergenIDs.append(allergen.id)
+            }
+        } label: {
+            HStack {
+                Text(allergen.english)
+                Spacer()
+                Image(systemName: selected ? "checkmark.circle.fill" : "circle")
+                    .foregroundStyle(selected ? Color.accentColor : Color.secondary)
+                    .font(.title3)
+            }
+            .contentShape(Rectangle())
+            .accessibilityAddTraits(selected ? .isSelected : [])
         }
+        // Plain style keeps the text black instead of tinted like a link.
+        .buttonStyle(.plain)
     }
 }
