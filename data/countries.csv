@@ -21,3 +21,6 @@ MO,Macau,999,999,no,
 CN,Mainland China,120,120,no,120 is the ambulance; 110 is police
 TW,Taiwan,119,119,no,119 is ambulance and fire
 SG,Singapore,995,995,no,995 is the ambulance
+PL,Poland,112,999,no,999 is the ambulance
+PT,Portugal,112,112,no,
+BR,Brazil,192,192,no,192 is the ambulance (SAMU); 190 is police; 193 is fire

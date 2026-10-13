@@ -11,3 +11,6 @@ es-AR,es,Spanish (Argentina),Español (Argentina),beta until an Argentine review
 yue-Hant,,Cantonese (Traditional),廣東話,written Cantonese differs from written Mandarin
 zh-Hans,,Mandarin (Simplified),普通话,
 zh-Hant-TW,,Mandarin (Traditional),國語,same spoken language as zh-Hans; different script and some words
+pl,,Polish,Polski,
+pt,,Portuguese (Portugal),Português,European Portuguese base; Brazil file only holds words that differ
+pt-BR,pt,Portuguese (Brazil),Português (Brasil),beta until a Brazilian reviewer checks it

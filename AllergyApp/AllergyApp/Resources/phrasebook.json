@@ -248,6 +248,39 @@
       ],
       "name": "Singapore",
       "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "999",
+      "code": "PL",
+      "emergencyNote": "999 is the ambulance",
+      "emergencyNumber": "112",
+      "locales": [
+        "pl"
+      ],
+      "name": "Poland",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "112",
+      "code": "PT",
+      "emergencyNote": "",
+      "emergencyNumber": "112",
+      "locales": [
+        "pt"
+      ],
+      "name": "Portugal",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "192",
+      "code": "BR",
+      "emergencyNote": "192 is the ambulance (SAMU); 190 is police; 193 is fire",
+      "emergencyNumber": "192",
+      "locales": [
+        "pt-BR"
+      ],
+      "name": "Brazil",
+      "numbersVerified": false
     }
   ],
   "hiddenByAllergen": {
@@ -401,6 +434,24 @@
       "name": "Mandarin (Traditional)",
       "nativeName": "國語",
       "parent": null
+    },
+    {
+      "code": "pl",
+      "name": "Polish",
+      "nativeName": "Polski",
+      "parent": null
+    },
+    {
+      "code": "pt",
+      "name": "Portuguese (Portugal)",
+      "nativeName": "Português",
+      "parent": null
+    },
+    {
+      "code": "pt-BR",
+      "name": "Portuguese (Brazil)",
+      "nativeName": "Português (Brasil)",
+      "parent": "pt"
     }
   ],
   "phrases": [
@@ -1131,7 +1182,7 @@
     },
     {
       "category": "travel",
-      "english": "Could you ask nearby passengers not to eat nuts?",
+      "english": "Could you ask nearby passengers not to eat nuts or peanuts?",
       "id": "travel.airline_announce"
     },
     {
@@ -1147,14 +1198,3824 @@
   ],
   "sourceLocale": "en",
   "translations": {
-    "de": {},
-    "es": {},
+    "de": {
+      "allergen.almond": {
+        "status": "ai_draft",
+        "text": "Mandeln"
+      },
+      "allergen.apple": {
+        "status": "ai_draft",
+        "text": "Äpfel"
+      },
+      "allergen.banana": {
+        "status": "ai_draft",
+        "text": "Bananen"
+      },
+      "allergen.brazil_nut": {
+        "status": "ai_draft",
+        "text": "Paranüsse"
+      },
+      "allergen.buckwheat": {
+        "status": "ai_draft",
+        "text": "Buchweizen"
+      },
+      "allergen.cashew": {
+        "status": "ai_draft",
+        "text": "Cashewnüsse"
+      },
+      "allergen.celery": {
+        "status": "ai_draft",
+        "text": "Sellerie (einschließlich Knollensellerie und Selleriesalz)"
+      },
+      "allergen.chicken": {
+        "status": "ai_draft",
+        "text": "Huhn (Hähnchen, Poulet), einschließlich Hühnerbrühe und Brühpulver"
+      },
+      "allergen.coconut": {
+        "status": "ai_draft",
+        "text": "Kokosnuss"
+      },
+      "allergen.corn": {
+        "status": "ai_draft",
+        "text": "Mais"
+      },
+      "allergen.crustaceans": {
+        "status": "ai_draft",
+        "text": "Krebstiere wie Garnelen, Shrimps (Crevetten), Krabben, Taschenkrebse und Hummer"
+      },
+      "allergen.egg": {
+        "status": "ai_draft",
+        "text": "Eier"
+      },
+      "allergen.fish": {
+        "status": "ai_draft",
+        "text": "Fisch"
+      },
+      "allergen.garlic": {
+        "status": "ai_draft",
+        "text": "Knoblauch"
+      },
+      "allergen.gelatin": {
+        "status": "ai_draft",
+        "text": "Gelatine"
+      },
+      "allergen.gluten": {
+        "status": "ai_draft",
+        "text": "Gluten (Weizen, Gerste, Roggen sowie Hafer, sofern er nicht als glutenfrei zertifiziert ist)"
+      },
+      "allergen.hazelnut": {
+        "status": "ai_draft",
+        "text": "Haselnüsse"
+      },
+      "allergen.kiwi": {
+        "status": "ai_draft",
+        "text": "Kiwis"
+      },
+      "allergen.legumes": {
+        "status": "ai_draft",
+        "text": "Hülsenfrüchte wie Linsen, Kichererbsen und Erbsen"
+      },
+      "allergen.lupin": {
+        "status": "ai_draft",
+        "text": "Lupinenmehl und Lupinensamen"
+      },
+      "allergen.macadamia": {
+        "status": "ai_draft",
+        "text": "Macadamianüsse"
+      },
+      "allergen.mango": {
+        "status": "ai_draft",
+        "text": "Mangos"
+      },
+      "allergen.milk": {
+        "status": "ai_draft",
+        "text": "Milch und alle Milchprodukte"
+      },
+      "allergen.molluscs": {
+        "status": "ai_draft",
+        "text": "Weichtiere wie Miesmuscheln, Venusmuscheln, Austern, Tintenfisch (Kalmar) und Krake (Oktopus)"
+      },
+      "allergen.msg": {
+        "status": "ai_draft",
+        "text": "Glutamat (Mononatriumglutamat, E 621)"
+      },
+      "allergen.mustard": {
+        "status": "ai_draft",
+        "text": "Senf"
+      },
+      "allergen.onion": {
+        "status": "ai_draft",
+        "text": "Zwiebeln, einschließlich Frühlingszwiebeln und Schalotten"
+      },
+      "allergen.peach": {
+        "status": "ai_draft",
+        "text": "Pfirsiche und anderes Steinobst wie Pflaumen (Zwetschgen), Aprikosen (Marillen) und Kirschen"
+      },
+      "allergen.peanut": {
+        "status": "ai_draft",
+        "text": "Erdnüsse"
+      },
+      "allergen.pecan": {
+        "status": "ai_draft",
+        "text": "Pekannüsse"
+      },
+      "allergen.pine_nut": {
+        "status": "ai_draft",
+        "text": "Pinienkerne"
+      },
+      "allergen.pistachio": {
+        "status": "ai_draft",
+        "text": "Pistazien"
+      },
+      "allergen.pork": {
+        "status": "ai_draft",
+        "text": "Schweinefleisch, einschließlich Schweineschmalz und Schweinebrühe"
+      },
+      "allergen.red_meat": {
+        "status": "ai_draft",
+        "text": "Rotes Fleisch und Gelatine von Säugetieren (Alpha-Gal-Allergie)"
+      },
+      "allergen.sesame": {
+        "status": "ai_draft",
+        "text": "Sesam"
+      },
+      "allergen.soy": {
+        "status": "ai_draft",
+        "text": "Soja"
+      },
+      "allergen.sulphites": {
+        "status": "ai_draft",
+        "text": "Sulfite"
+      },
+      "allergen.tomato": {
+        "status": "ai_draft",
+        "text": "Tomaten"
+      },
+      "allergen.tree_nuts": {
+        "status": "ai_draft",
+        "text": "Alle Nüsse, zum Beispiel Mandeln, Walnüsse (Baumnüsse), Cashewnüsse und Haselnüsse"
+      },
+      "allergen.walnut": {
+        "status": "ai_draft",
+        "text": "Walnüsse (Baumnüsse)"
+      },
+      "allergen.wheat": {
+        "status": "ai_draft",
+        "text": "Weizen"
+      },
+      "cross_contact.bakery": {
+        "status": "ai_draft",
+        "text": "Bäckereien sind für mich oft nicht sicher, weil Mehl und Nüsse in der Luft und auf den Oberflächen sind."
+      },
+      "cross_contact.board_knife": {
+        "status": "ai_draft",
+        "text": "Bitte verwenden Sie ein sauberes Schneidebrett und ein sauberes Messer."
+      },
+      "cross_contact.buffet": {
+        "status": "ai_draft",
+        "text": "Ich kann wegen der gemeinsam benutzten Vorlegebestecke nicht vom Buffet essen."
+      },
+      "cross_contact.fryer": {
+        "status": "ai_draft",
+        "text": "Bitte verwenden Sie kein Öl und keine Fritteuse, in denen etwas mit meinem Allergen zubereitet wurde."
+      },
+      "cross_contact.garnish": {
+        "status": "ai_draft",
+        "text": "Bitte fügen Sie keine Garnitur, kein Topping und keine Sauce hinzu, die ich nicht geprüft habe."
+      },
+      "cross_contact.grill": {
+        "status": "ai_draft",
+        "text": "Bitte bereiten Sie mein Essen nicht auf einem gemeinsam benutzten Grill oder einer gemeinsam benutzten Grillplatte zu."
+      },
+      "cross_contact.hands": {
+        "status": "ai_draft",
+        "text": "Bitte waschen Sie sich die Hände und wechseln Sie die Handschuhe, bevor Sie mein Essen zubereiten."
+      },
+      "cross_contact.intro": {
+        "status": "ai_draft",
+        "text": "Schon kleinste Spuren von gemeinsam benutzten Küchengeräten können eine Reaktion auslösen."
+      },
+      "cross_contact.pan": {
+        "status": "ai_draft",
+        "text": "Bitte verwenden Sie eine saubere Pfanne, einen sauberen Wok und saubere Küchenutensilien."
+      },
+      "cross_contact.remove_not_ok": {
+        "status": "ai_draft",
+        "text": "Das Allergen aus einem fertigen Gericht zu entfernen, ist nicht sicher. Bitte bereiten Sie es frisch zu."
+      },
+      "cross_contact.separate": {
+        "status": "ai_draft",
+        "text": "Bitte bereiten Sie mein Gericht getrennt zu und servieren Sie es separat."
+      },
+      "emergency.antihistamine": {
+        "status": "ai_draft",
+        "text": "Haben Sie Antihistaminika-Tabletten?"
+      },
+      "emergency.autoinjector": {
+        "status": "ai_draft",
+        "text": "Ich habe einen Adrenalin-Autoinjektor (Adrenalin-Pen) in meiner Tasche."
+      },
+      "emergency.call_ambulance": {
+        "status": "ai_draft",
+        "text": "Bitte rufen Sie sofort einen Krankenwagen."
+      },
+      "emergency.contact": {
+        "status": "ai_draft",
+        "text": "Bitte rufen Sie meinen Notfallkontakt an."
+      },
+      "emergency.help_inject": {
+        "status": "ai_draft",
+        "text": "Bitte helfen Sie mir, ihn anzuwenden."
+      },
+      "emergency.hospital": {
+        "status": "ai_draft",
+        "text": "Wo ist das nächste Krankenhaus mit Notaufnahme?"
+      },
+      "emergency.lie_down": {
+        "status": "ai_draft",
+        "text": "Bitte helfen Sie mir, mich hinzulegen. Lassen Sie mich nicht aufstehen oder gehen."
+      },
+      "emergency.pharmacy": {
+        "status": "ai_draft",
+        "text": "Wo ist die nächste Apotheke?"
+      },
+      "emergency.reaction": {
+        "status": "ai_draft",
+        "text": "Ich habe eine allergische Reaktion."
+      },
+      "emergency.say_anaphylaxis": {
+        "status": "ai_draft",
+        "text": "Sagen Sie: Anaphylaxie, eine schwere allergische Reaktion."
+      },
+      "emergency.second_dose": {
+        "status": "ai_draft",
+        "text": "Wenn nach 5 Minuten keine Besserung eintritt, kann ein zweiter Autoinjektor verwendet werden."
+      },
+      "emergency.sit_if_breathing": {
+        "status": "ai_draft",
+        "text": "Wenn ich Atemnot habe, helfen Sie mir, mich aufzusetzen."
+      },
+      "emergency.stay": {
+        "status": "ai_draft",
+        "text": "Bitte bleiben Sie bei mir, bis Hilfe eintrifft."
+      },
+      "emergency.thigh": {
+        "status": "ai_draft",
+        "text": "Er wird in die Außenseite des Oberschenkels gespritzt. Das geht auch durch die Kleidung."
+      },
+      "hidden.all_forms": {
+        "status": "ai_draft",
+        "text": "Dazu gehören auch Öl, Sauce, Paste, Mehl, Pulver, Butter oder Garnitur, die daraus hergestellt sind."
+      },
+      "hidden.butter_ghee": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie, ob beim Kochen Butter, Ghee, Sahne (Rahm) oder Käse verwendet wird."
+      },
+      "hidden.dashi": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie, ob Fischbrühe enthalten ist (zum Beispiel Dashi oder Bonitoflocken)."
+      },
+      "hidden.egg_wash": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie, ob Brot oder Gebäck mit Ei bestrichen ist und ob Ei im Backteig ist."
+      },
+      "hidden.fish_sauce": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie, ob Fischsauce oder Sardellen (Anchovis) enthalten sind, auch in Dressings."
+      },
+      "hidden.flour_thickener": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie, ob Mehl zum Binden von Saucen oder zum Panieren bzw. Bemehlen verwendet wird."
+      },
+      "hidden.hoisin": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie, ob Hoisin-Sauce, Schwarze-Bohnen-Sauce oder andere Bohnensaucen enthalten sind."
+      },
+      "hidden.marzipan": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie Desserts mit Marzipan, Nougat oder Mandelmehl."
+      },
+      "hidden.mayonnaise": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie, ob Mayonnaise oder Aioli enthalten ist."
+      },
+      "hidden.miso": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie, ob Miso, Tofu oder Bohnenpaste enthalten ist."
+      },
+      "hidden.nut_sauces": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie Saucen wie Satay-Sauce, Pesto, Mole und Praliné-Masse (Krokant)."
+      },
+      "hidden.oyster_sauce": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie, ob Austernsauce oder XO-Sauce enthalten ist."
+      },
+      "hidden.peanut_oil": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie, ob Erdnussöl verwendet wird, auch zum Frittieren."
+      },
+      "hidden.sesame_oil": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie, ob Sesamöl, Tahini (Sesampaste) oder Sesamkörner als Topping verwendet werden."
+      },
+      "hidden.shrimp_paste": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie, ob Garnelenpaste oder getrocknete Garnelen (Crevetten) enthalten sind."
+      },
+      "hidden.soy_sauce": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie, ob Sojasauce enthalten ist – sie enthält auch Weizen."
+      },
+      "hidden.stock_cubes": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie Brühen, Suppengrundlagen und Würzpulver."
+      },
+      "hidden.whey_casein": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie, ob Milchpulver, Molke oder Kasein enthalten ist."
+      },
+      "hidden.wine_sulphites": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie, ob Wein, Essig oder Trockenobst (Sulfite) enthalten ist."
+      },
+      "hidden.worcestershire": {
+        "status": "ai_draft",
+        "text": "Bitte prüfen Sie, ob Worcestershiresauce enthalten ist – sie enthält Sardellen."
+      },
+      "intro.allergic_to": {
+        "status": "ai_draft",
+        "text": "Ich bin allergisch gegen:"
+      },
+      "intro.hello": {
+        "status": "ai_draft",
+        "text": "Guten Tag. Ich habe eine schwere Lebensmittelallergie."
+      },
+      "intro.intolerance": {
+        "status": "ai_draft",
+        "text": "Ich habe eine Lebensmittelunverträglichkeit. Sie ist nicht lebensbedrohlich, aber mir wird davon sehr schlecht."
+      },
+      "intro.life_threatening": {
+        "status": "ai_draft",
+        "text": "Diese Allergie kann lebensbedrohlich sein."
+      },
+      "intro.not_preference": {
+        "status": "ai_draft",
+        "text": "Es handelt sich um eine medizinische Erkrankung, nicht um eine Vorliebe."
+      },
+      "intro.please_read": {
+        "status": "ai_draft",
+        "text": "Bitte lesen Sie diese Karte sorgfältig, bevor ich bestelle."
+      },
+      "intro.severe": {
+        "status": "ai_draft",
+        "text": "Meine Allergie ist schwer. Schon eine sehr kleine Menge kann mich ernsthaft krank machen."
+      },
+      "intro.thank_you_care": {
+        "status": "ai_draft",
+        "text": "Vielen Dank, dass Sie bei meinem Essen besonders sorgfältig sind."
+      },
+      "ordering.bring_menu": {
+        "status": "ai_draft",
+        "text": "Könnte ich die Allergeninformationen oder die Allergenkarte sehen?"
+      },
+      "ordering.confirm_served": {
+        "status": "ai_draft",
+        "text": "Bitte bestätigen Sie beim Servieren, dass es das allergiesichere Gericht ist."
+      },
+      "ordering.drink_only": {
+        "status": "ai_draft",
+        "text": "Ich nehme nur ein Getränk, danke."
+      },
+      "ordering.if_unsure": {
+        "status": "ai_draft",
+        "text": "Wenn Sie sich nicht sicher sind, sagen Sie es mir bitte. Ich bestelle lieber nichts, als ein Risiko einzugehen."
+      },
+      "ordering.no_sauce": {
+        "status": "ai_draft",
+        "text": "Bitte servieren Sie es ohne Sauce."
+      },
+      "ordering.own_food": {
+        "status": "ai_draft",
+        "text": "Ist es in Ordnung, wenn ich mitgebrachtes Essen esse?"
+      },
+      "ordering.plain": {
+        "status": "ai_draft",
+        "text": "Bitte bereiten Sie es nur mit Salz, Pfeffer und Olivenöl zu."
+      },
+      "ordering.recommend_safe": {
+        "status": "ai_draft",
+        "text": "Können Sie mir ein Gericht empfehlen, das für mich sicher ist?"
+      },
+      "ordering.same_dish": {
+        "status": "ai_draft",
+        "text": "Bitte stellen Sie sicher, dass genau dieses Gericht zu mir gebracht wird."
+      },
+      "ordering.simple": {
+        "status": "ai_draft",
+        "text": "Etwas Einfaches ist in Ordnung, zum Beispiel einfach gegrilltes Fleisch oder gegrillter Fisch mit Reis oder Gemüse."
+      },
+      "ordering.thanks": {
+        "status": "ai_draft",
+        "text": "Vielen Dank für Ihre Hilfe."
+      },
+      "ordering.write_down": {
+        "status": "ai_draft",
+        "text": "Könnten Sie mir die Zutaten bitte aufschreiben?"
+      },
+      "question.bread": {
+        "status": "ai_draft",
+        "text": "Enthält das Brot Milch, Ei, Nüsse oder Samen?"
+      },
+      "question.chef_confident": {
+        "status": "ai_draft",
+        "text": "Ist der Koch sicher, dass dieses Gericht für mich unbedenklich ist?"
+      },
+      "question.contains": {
+        "status": "ai_draft",
+        "text": "Enthält dieses Gericht eines meiner Allergene?"
+      },
+      "question.dessert": {
+        "status": "ai_draft",
+        "text": "Enthalten die Desserts Nüsse, Milch oder Ei?"
+      },
+      "question.dressing": {
+        "status": "ai_draft",
+        "text": "Was ist im Dressing?"
+      },
+      "question.fried_shared": {
+        "status": "ai_draft",
+        "text": "Werden frittierte Speisen in gemeinsam benutztem Öl zubereitet?"
+      },
+      "question.ingredients": {
+        "status": "ai_draft",
+        "text": "Können Sie die Zutaten bitte mit dem Koch überprüfen?"
+      },
+      "question.kitchen_nuts": {
+        "status": "ai_draft",
+        "text": "Werden in der Küche Nüsse oder Erdnüsse verwendet?"
+      },
+      "question.label": {
+        "status": "ai_draft",
+        "text": "Kann ich das Etikett oder die Verpackung der Zutaten sehen?"
+      },
+      "question.marinade": {
+        "status": "ai_draft",
+        "text": "Ist das Fleisch oder der Fisch mariniert? Was ist in der Marinade?"
+      },
+      "question.may_contain": {
+        "status": "ai_draft",
+        "text": "Steht bei einer der Zutaten „Kann Spuren von … enthalten“ für mein Allergen?"
+      },
+      "question.modify": {
+        "status": "ai_draft",
+        "text": "Kann dieses Gericht frisch und ohne mein Allergen zubereitet werden?"
+      },
+      "question.premade": {
+        "status": "ai_draft",
+        "text": "Wird das in der Küche selbst zubereitet oder fertig gekauft?"
+      },
+      "question.safe_dish": {
+        "status": "ai_draft",
+        "text": "Welche Gerichte können Sie für mich sicher zubereiten?"
+      },
+      "question.same_oil": {
+        "status": "ai_draft",
+        "text": "Wird das im selben Öl wie andere Speisen zubereitet?"
+      },
+      "question.same_pan": {
+        "status": "ai_draft",
+        "text": "Wird das in derselben Pfanne oder demselben Wok wie andere Speisen zubereitet?"
+      },
+      "question.sauce": {
+        "status": "ai_draft",
+        "text": "Was ist in der Sauce?"
+      },
+      "question.stock": {
+        "status": "ai_draft",
+        "text": "Welche Brühe wird für die Suppe verwendet?"
+      },
+      "shopping.dairy_free": {
+        "status": "ai_draft",
+        "text": "Verkaufen Sie pflanzliche Milch ohne Nüsse oder Soja?"
+      },
+      "shopping.free_from": {
+        "status": "ai_draft",
+        "text": "Verkaufen Sie allergenfreie Produkte (Free-From-Produkte)?"
+      },
+      "shopping.gluten_free": {
+        "status": "ai_draft",
+        "text": "Verkaufen Sie glutenfreies Brot oder glutenfreie Nudeln?"
+      },
+      "shopping.product_contains": {
+        "status": "ai_draft",
+        "text": "Enthält dieses Produkt eines meiner Allergene?"
+      },
+      "shopping.read_label": {
+        "status": "ai_draft",
+        "text": "Können Sie mir dieses Etikett vorlesen?"
+      },
+      "shopping.safe_brand": {
+        "status": "ai_draft",
+        "text": "Gibt es eine Marke ohne mein Allergen?"
+      },
+      "shopping.traces": {
+        "status": "ai_draft",
+        "text": "Steht auf dem Etikett, dass es Spuren enthalten kann?"
+      },
+      "staff_answer.ask_chef": {
+        "status": "ai_draft",
+        "text": "Ich frage den Koch"
+      },
+      "staff_answer.contains_allergen": {
+        "status": "ai_draft",
+        "text": "Es enthält Ihr Allergen"
+      },
+      "staff_answer.may_contain": {
+        "status": "ai_draft",
+        "text": "Es kann Spuren enthalten"
+      },
+      "staff_answer.no": {
+        "status": "ai_draft",
+        "text": "Nein"
+      },
+      "staff_answer.not_safe": {
+        "status": "ai_draft",
+        "text": "Nein, wir können es nicht sicher zubereiten"
+      },
+      "staff_answer.not_sure": {
+        "status": "ai_draft",
+        "text": "Ich bin mir nicht sicher"
+      },
+      "staff_answer.recommend": {
+        "status": "ai_draft",
+        "text": "Ich empfehle dieses Gericht"
+      },
+      "staff_answer.safe": {
+        "status": "ai_draft",
+        "text": "Ja, wir können es sicher zubereiten"
+      },
+      "staff_answer.show_label": {
+        "status": "ai_draft",
+        "text": "Ich zeige Ihnen das Etikett"
+      },
+      "staff_answer.tap_instruction": {
+        "status": "ai_draft",
+        "text": "Bitte tippen Sie auf Ihre Antwort."
+      },
+      "staff_answer.yes": {
+        "status": "ai_draft",
+        "text": "Ja"
+      },
+      "travel.airline_announce": {
+        "status": "ai_draft",
+        "text": "Könnten Sie die Passagiere in meiner Nähe bitten, keine Nüsse oder Erdnüsse zu essen?"
+      },
+      "travel.airline_meal": {
+        "status": "ai_draft",
+        "text": "Ich habe eine schwere Allergie. Bitte servieren Sie mir keine Mahlzeit, die ich nicht geprüft habe."
+      },
+      "travel.doctor_letter": {
+        "status": "ai_draft",
+        "text": "Ich habe ein ärztliches Attest für meine Medikamente."
+      },
+      "travel.hotel_breakfast": {
+        "status": "ai_draft",
+        "text": "Bitte informieren Sie das Frühstückspersonal über meine Allergie."
+      },
+      "travel.hotel_kitchen": {
+        "status": "ai_draft",
+        "text": "Kann die Küche eine sichere Mahlzeit für mich zubereiten?"
+      },
+      "travel.medication_carry": {
+        "status": "ai_draft",
+        "text": "Ich muss meine Allergiemedikamente jederzeit bei mir haben."
+      }
+    },
+    "es": {
+      "allergen.almond": {
+        "status": "ai_draft",
+        "text": "Almendras"
+      },
+      "allergen.apple": {
+        "status": "ai_draft",
+        "text": "Manzanas"
+      },
+      "allergen.banana": {
+        "status": "ai_draft",
+        "text": "Bananas (plátanos)"
+      },
+      "allergen.brazil_nut": {
+        "status": "ai_draft",
+        "text": "Nueces de Brasil (castañas de Pará)"
+      },
+      "allergen.buckwheat": {
+        "status": "ai_draft",
+        "text": "Trigo sarraceno (alforfón)"
+      },
+      "allergen.cashew": {
+        "status": "ai_draft",
+        "text": "Anacardos (nueces de la India, castañas de cajú)"
+      },
+      "allergen.celery": {
+        "status": "ai_draft",
+        "text": "Apio (incluidos el apionabo o raíz de apio y la sal de apio)"
+      },
+      "allergen.chicken": {
+        "status": "ai_draft",
+        "text": "Pollo, incluidos el caldo de pollo y el caldo en polvo"
+      },
+      "allergen.coconut": {
+        "status": "ai_draft",
+        "text": "Coco"
+      },
+      "allergen.corn": {
+        "status": "ai_draft",
+        "text": "Maíz (elote, choclo)"
+      },
+      "allergen.crustaceans": {
+        "status": "ai_draft",
+        "text": "Mariscos crustáceos, como gambas (camarones), langostinos, cangrejos (jaibas) y langostas"
+      },
+      "allergen.egg": {
+        "status": "ai_draft",
+        "text": "Huevos"
+      },
+      "allergen.fish": {
+        "status": "ai_draft",
+        "text": "Pescado"
+      },
+      "allergen.garlic": {
+        "status": "ai_draft",
+        "text": "Ajo"
+      },
+      "allergen.gelatin": {
+        "status": "ai_draft",
+        "text": "Gelatina"
+      },
+      "allergen.gluten": {
+        "status": "ai_draft",
+        "text": "Gluten (trigo, cebada, centeno, y avena salvo que esté certificada sin gluten)"
+      },
+      "allergen.hazelnut": {
+        "status": "ai_draft",
+        "text": "Avellanas"
+      },
+      "allergen.kiwi": {
+        "status": "ai_draft",
+        "text": "Kiwi"
+      },
+      "allergen.legumes": {
+        "status": "ai_draft",
+        "text": "Legumbres, como lentejas, garbanzos y guisantes (arvejas, chícharos)"
+      },
+      "allergen.lupin": {
+        "status": "ai_draft",
+        "text": "Harina y semillas de altramuz (lupino)"
+      },
+      "allergen.macadamia": {
+        "status": "ai_draft",
+        "text": "Nueces de macadamia"
+      },
+      "allergen.mango": {
+        "status": "ai_draft",
+        "text": "Mangos"
+      },
+      "allergen.milk": {
+        "status": "ai_draft",
+        "text": "Leche y todos los productos lácteos"
+      },
+      "allergen.molluscs": {
+        "status": "ai_draft",
+        "text": "Moluscos, como mejillones, almejas, ostras (ostiones), calamares y pulpo"
+      },
+      "allergen.msg": {
+        "status": "ai_draft",
+        "text": "Glutamato monosódico (GMS)"
+      },
+      "allergen.mustard": {
+        "status": "ai_draft",
+        "text": "Mostaza"
+      },
+      "allergen.onion": {
+        "status": "ai_draft",
+        "text": "Cebollas, incluidas las cebolletas (cebollas de verdeo, cebollas cambray) y las chalotas (echalotes)"
+      },
+      "allergen.peach": {
+        "status": "ai_draft",
+        "text": "Melocotones (duraznos) y otras frutas de hueso, como ciruelas, albaricoques (damascos, chabacanos) y cerezas"
+      },
+      "allergen.peanut": {
+        "status": "ai_draft",
+        "text": "Cacahuetes (cacahuates, maní)"
+      },
+      "allergen.pecan": {
+        "status": "ai_draft",
+        "text": "Nueces pecanas (pacanas, nueces pecán)"
+      },
+      "allergen.pine_nut": {
+        "status": "ai_draft",
+        "text": "Piñones"
+      },
+      "allergen.pistachio": {
+        "status": "ai_draft",
+        "text": "Pistachos (pistaches)"
+      },
+      "allergen.pork": {
+        "status": "ai_draft",
+        "text": "Cerdo (puerco), incluidos la manteca de cerdo y el caldo de cerdo"
+      },
+      "allergen.red_meat": {
+        "status": "ai_draft",
+        "text": "Carne roja y gelatina de mamíferos (alergia a la alfa-gal)"
+      },
+      "allergen.sesame": {
+        "status": "ai_draft",
+        "text": "Sésamo (ajonjolí)"
+      },
+      "allergen.soy": {
+        "status": "ai_draft",
+        "text": "Soja (soya)"
+      },
+      "allergen.sulphites": {
+        "status": "ai_draft",
+        "text": "Sulfitos"
+      },
+      "allergen.tomato": {
+        "status": "ai_draft",
+        "text": "Tomates (jitomates)"
+      },
+      "allergen.tree_nuts": {
+        "status": "ai_draft",
+        "text": "Todos los frutos secos, como almendras, nueces, anacardos (nueces de la India, castañas de cajú) y avellanas"
+      },
+      "allergen.walnut": {
+        "status": "ai_draft",
+        "text": "Nueces de nogal (nueces de Castilla)"
+      },
+      "allergen.wheat": {
+        "status": "ai_draft",
+        "text": "Trigo"
+      },
+      "cross_contact.bakery": {
+        "status": "ai_draft",
+        "text": "Las panaderías a menudo no son seguras para mí, por la harina y los frutos secos presentes en el aire y en las superficies."
+      },
+      "cross_contact.board_knife": {
+        "status": "ai_draft",
+        "text": "Por favor, use una tabla de cortar y un cuchillo limpios."
+      },
+      "cross_contact.buffet": {
+        "status": "ai_draft",
+        "text": "No puedo comer de un bufé porque las cucharas para servir se comparten."
+      },
+      "cross_contact.fryer": {
+        "status": "ai_draft",
+        "text": "Por favor, no use aceite ni una freidora en los que se haya cocinado mi alérgeno."
+      },
+      "cross_contact.garnish": {
+        "status": "ai_draft",
+        "text": "Por favor, no agregue ninguna decoración, cobertura ni salsa que yo no haya verificado."
+      },
+      "cross_contact.grill": {
+        "status": "ai_draft",
+        "text": "Por favor, no cocine mi comida en una parrilla o plancha compartida."
+      },
+      "cross_contact.hands": {
+        "status": "ai_draft",
+        "text": "Por favor, lávese las manos y cámbiese los guantes antes de preparar mi comida."
+      },
+      "cross_contact.intro": {
+        "status": "ai_draft",
+        "text": "Incluso una mínima cantidad (trazas) procedente de equipos o utensilios compartidos puede causar una reacción."
+      },
+      "cross_contact.pan": {
+        "status": "ai_draft",
+        "text": "Por favor, use una sartén, un wok y utensilios limpios."
+      },
+      "cross_contact.remove_not_ok": {
+        "status": "ai_draft",
+        "text": "Quitar el alérgeno de un plato ya terminado no es seguro. Por favor, prepárelo de nuevo desde cero."
+      },
+      "cross_contact.separate": {
+        "status": "ai_draft",
+        "text": "Por favor, prepare y sirva mi plato por separado."
+      },
+      "emergency.antihistamine": {
+        "status": "ai_draft",
+        "text": "¿Tiene pastillas antihistamínicas?"
+      },
+      "emergency.autoinjector": {
+        "status": "ai_draft",
+        "text": "Tengo un autoinyector de adrenalina (epinefrina) en mi bolso."
+      },
+      "emergency.call_ambulance": {
+        "status": "ai_draft",
+        "text": "Por favor, llame a una ambulancia ahora mismo."
+      },
+      "emergency.contact": {
+        "status": "ai_draft",
+        "text": "Por favor, llame a mi contacto de emergencia."
+      },
+      "emergency.help_inject": {
+        "status": "ai_draft",
+        "text": "Por favor, ayúdeme a usarlo."
+      },
+      "emergency.hospital": {
+        "status": "ai_draft",
+        "text": "¿Dónde está el hospital más cercano con servicio de urgencias (emergencias)?"
+      },
+      "emergency.lie_down": {
+        "status": "ai_draft",
+        "text": "Por favor, ayúdeme a acostarme. No me haga ponerme de pie ni caminar."
+      },
+      "emergency.pharmacy": {
+        "status": "ai_draft",
+        "text": "¿Dónde está la farmacia más cercana?"
+      },
+      "emergency.reaction": {
+        "status": "ai_draft",
+        "text": "Estoy teniendo una reacción alérgica."
+      },
+      "emergency.say_anaphylaxis": {
+        "status": "ai_draft",
+        "text": "Dígales: anafilaxia, una reacción alérgica grave."
+      },
+      "emergency.second_dose": {
+        "status": "ai_draft",
+        "text": "Si no hay mejoría después de 5 minutos, se puede usar un segundo autoinyector."
+      },
+      "emergency.sit_if_breathing": {
+        "status": "ai_draft",
+        "text": "Si tengo dificultad para respirar, ayúdeme a sentarme."
+      },
+      "emergency.stay": {
+        "status": "ai_draft",
+        "text": "Por favor, quédese conmigo hasta que llegue la ayuda."
+      },
+      "emergency.thigh": {
+        "status": "ai_draft",
+        "text": "Se aplica en la parte externa del muslo. Se puede aplicar a través de la ropa."
+      },
+      "hidden.all_forms": {
+        "status": "ai_draft",
+        "text": "Esto incluye cualquier aceite, salsa, pasta, harina, polvo, mantequilla (manteca) o decoración elaborados con él."
+      },
+      "hidden.butter_ghee": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique si se usa mantequilla (manteca), ghee, nata (crema) o queso al cocinar."
+      },
+      "hidden.dashi": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique si lleva caldo de pescado (por ejemplo, dashi o copos de bonito)."
+      },
+      "hidden.egg_wash": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique si el pan o los productos de pastelería se pintan con huevo, y si el rebozado (capeado) lleva huevo."
+      },
+      "hidden.fish_sauce": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique si lleva salsa de pescado o anchoas, también en los aliños (aderezos)."
+      },
+      "hidden.flour_thickener": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique si se usa harina para espesar las salsas o para rebozar (empanizar) los alimentos."
+      },
+      "hidden.hoisin": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique si lleva salsa hoisin, salsa de frijol negro u otras salsas de frijoles (judías, porotos)."
+      },
+      "hidden.marzipan": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique los postres con mazapán, turrón o harina de almendra."
+      },
+      "hidden.mayonnaise": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique si lleva mayonesa o alioli."
+      },
+      "hidden.miso": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique si lleva miso, tofu o pasta de frijoles (judías, porotos)."
+      },
+      "hidden.nut_sauces": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique salsas como satay, pesto, mole y praliné."
+      },
+      "hidden.oyster_sauce": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique si lleva salsa de ostras (salsa de ostión) o salsa XO."
+      },
+      "hidden.peanut_oil": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique si se usa aceite de cacahuete (cacahuate, maní), también para freír."
+      },
+      "hidden.sesame_oil": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique si lleva aceite de sésamo (ajonjolí), tahini o semillas de sésamo por encima."
+      },
+      "hidden.shrimp_paste": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique si lleva pasta de gambas (pasta de camarón) o gambas secas (camarones secos)."
+      },
+      "hidden.soy_sauce": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique si lleva salsa de soja (soya), que también contiene trigo."
+      },
+      "hidden.stock_cubes": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique el caldo, las bases para sopa y los condimentos en polvo."
+      },
+      "hidden.whey_casein": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique si lleva leche en polvo, suero de leche o caseína."
+      },
+      "hidden.wine_sulphites": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique si lleva vino, vinagre o fruta deshidratada (sulfitos)."
+      },
+      "hidden.worcestershire": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique si lleva salsa Worcestershire (salsa inglesa), que contiene anchoa."
+      },
+      "intro.allergic_to": {
+        "status": "ai_draft",
+        "text": "Tengo alergia a:"
+      },
+      "intro.hello": {
+        "status": "ai_draft",
+        "text": "Hola. Tengo una alergia alimentaria grave."
+      },
+      "intro.intolerance": {
+        "status": "ai_draft",
+        "text": "Tengo una intolerancia alimentaria. No pone en peligro mi vida, pero me hace sentir muy mal."
+      },
+      "intro.life_threatening": {
+        "status": "ai_draft",
+        "text": "Esta alergia puede poner en peligro mi vida."
+      },
+      "intro.not_preference": {
+        "status": "ai_draft",
+        "text": "Se trata de un problema médico, no de una preferencia."
+      },
+      "intro.please_read": {
+        "status": "ai_draft",
+        "text": "Por favor, lea esta tarjeta con atención antes de que haga mi pedido."
+      },
+      "intro.severe": {
+        "status": "ai_draft",
+        "text": "Mi alergia es grave. Incluso una cantidad muy pequeña puede enfermarme gravemente."
+      },
+      "intro.thank_you_care": {
+        "status": "ai_draft",
+        "text": "Gracias por tener cuidado con mi comida."
+      },
+      "ordering.bring_menu": {
+        "status": "ai_draft",
+        "text": "¿Podría ver la información sobre alérgenos o el menú de alérgenos?"
+      },
+      "ordering.confirm_served": {
+        "status": "ai_draft",
+        "text": "Cuando me lo sirva, por favor confirme que es el plato seguro para mi alergia."
+      },
+      "ordering.drink_only": {
+        "status": "ai_draft",
+        "text": "Solo tomaré una bebida, gracias."
+      },
+      "ordering.if_unsure": {
+        "status": "ai_draft",
+        "text": "Si tiene alguna duda, por favor dígamelo. Prefiero no pedir nada antes que correr un riesgo."
+      },
+      "ordering.no_sauce": {
+        "status": "ai_draft",
+        "text": "Por favor, sírvalo sin salsa."
+      },
+      "ordering.own_food": {
+        "status": "ai_draft",
+        "text": "¿Está bien si como comida que traje yo?"
+      },
+      "ordering.plain": {
+        "status": "ai_draft",
+        "text": "Por favor, cocínelo solo con sal, pimienta y aceite de oliva."
+      },
+      "ordering.recommend_safe": {
+        "status": "ai_draft",
+        "text": "¿Me puede recomendar un plato que sea seguro para mí?"
+      },
+      "ordering.same_dish": {
+        "status": "ai_draft",
+        "text": "Por favor, asegúrese de que me traigan exactamente este plato."
+      },
+      "ordering.simple": {
+        "status": "ai_draft",
+        "text": "Algo sencillo está bien, como carne o pescado a la plancha sin nada más, con arroz o verduras."
+      },
+      "ordering.thanks": {
+        "status": "ai_draft",
+        "text": "Muchas gracias por su ayuda."
+      },
+      "ordering.write_down": {
+        "status": "ai_draft",
+        "text": "¿Podría escribirme los ingredientes?"
+      },
+      "question.bread": {
+        "status": "ai_draft",
+        "text": "¿El pan contiene leche, huevo, frutos secos o semillas?"
+      },
+      "question.chef_confident": {
+        "status": "ai_draft",
+        "text": "¿El chef tiene la certeza de que este plato es seguro para mí?"
+      },
+      "question.contains": {
+        "status": "ai_draft",
+        "text": "¿Este plato contiene alguno de mis alérgenos?"
+      },
+      "question.dessert": {
+        "status": "ai_draft",
+        "text": "¿Los postres contienen frutos secos, leche o huevo?"
+      },
+      "question.dressing": {
+        "status": "ai_draft",
+        "text": "¿Qué lleva el aliño (aderezo)?"
+      },
+      "question.fried_shared": {
+        "status": "ai_draft",
+        "text": "¿Los alimentos fritos se cocinan en aceite compartido?"
+      },
+      "question.ingredients": {
+        "status": "ai_draft",
+        "text": "¿Puede verificar los ingredientes con el chef?"
+      },
+      "question.kitchen_nuts": {
+        "status": "ai_draft",
+        "text": "¿En la cocina se usan frutos secos o cacahuetes (cacahuates, maní)?"
+      },
+      "question.label": {
+        "status": "ai_draft",
+        "text": "¿Puedo ver la etiqueta o el envase de los ingredientes?"
+      },
+      "question.marinade": {
+        "status": "ai_draft",
+        "text": "¿La carne o el pescado están marinados? ¿Qué lleva la marinada?"
+      },
+      "question.may_contain": {
+        "status": "ai_draft",
+        "text": "¿Algún ingrediente indica \"puede contener\" mi alérgeno?"
+      },
+      "question.modify": {
+        "status": "ai_draft",
+        "text": "¿Se puede preparar este plato sin mi alérgeno, desde cero?"
+      },
+      "question.premade": {
+        "status": "ai_draft",
+        "text": "¿Esto se prepara en la cocina o se compra ya hecho?"
+      },
+      "question.safe_dish": {
+        "status": "ai_draft",
+        "text": "¿Qué platos pueden prepararme de forma segura?"
+      },
+      "question.same_oil": {
+        "status": "ai_draft",
+        "text": "¿Esto se cocina en el mismo aceite que otros alimentos?"
+      },
+      "question.same_pan": {
+        "status": "ai_draft",
+        "text": "¿Esto se cocina en la misma sartén o wok que otros alimentos?"
+      },
+      "question.sauce": {
+        "status": "ai_draft",
+        "text": "¿Qué lleva la salsa?"
+      },
+      "question.stock": {
+        "status": "ai_draft",
+        "text": "¿Qué caldo se usa en la sopa?"
+      },
+      "shopping.dairy_free": {
+        "status": "ai_draft",
+        "text": "¿Venden leche vegetal sin frutos secos ni soja (soya)?"
+      },
+      "shopping.free_from": {
+        "status": "ai_draft",
+        "text": "¿Venden productos para alérgicos (sin alérgenos)?"
+      },
+      "shopping.gluten_free": {
+        "status": "ai_draft",
+        "text": "¿Venden pan o pasta sin gluten (sin TACC)?"
+      },
+      "shopping.product_contains": {
+        "status": "ai_draft",
+        "text": "¿Este producto contiene alguno de mis alérgenos?"
+      },
+      "shopping.read_label": {
+        "status": "ai_draft",
+        "text": "¿Me puede leer esta etiqueta?"
+      },
+      "shopping.safe_brand": {
+        "status": "ai_draft",
+        "text": "¿Hay alguna marca sin mi alérgeno?"
+      },
+      "shopping.traces": {
+        "status": "ai_draft",
+        "text": "¿La etiqueta dice que puede contener trazas?"
+      },
+      "staff_answer.ask_chef": {
+        "status": "ai_draft",
+        "text": "Le preguntaré al chef"
+      },
+      "staff_answer.contains_allergen": {
+        "status": "ai_draft",
+        "text": "Contiene su alérgeno"
+      },
+      "staff_answer.may_contain": {
+        "status": "ai_draft",
+        "text": "Puede contener trazas"
+      },
+      "staff_answer.no": {
+        "status": "ai_draft",
+        "text": "No"
+      },
+      "staff_answer.not_safe": {
+        "status": "ai_draft",
+        "text": "No, no podemos prepararlo de forma segura"
+      },
+      "staff_answer.not_sure": {
+        "status": "ai_draft",
+        "text": "No lo sé con seguridad"
+      },
+      "staff_answer.recommend": {
+        "status": "ai_draft",
+        "text": "Le recomiendo este plato"
+      },
+      "staff_answer.safe": {
+        "status": "ai_draft",
+        "text": "Sí, podemos prepararlo de forma segura"
+      },
+      "staff_answer.show_label": {
+        "status": "ai_draft",
+        "text": "Le mostraré la etiqueta"
+      },
+      "staff_answer.tap_instruction": {
+        "status": "ai_draft",
+        "text": "Por favor, toque su respuesta."
+      },
+      "staff_answer.yes": {
+        "status": "ai_draft",
+        "text": "Sí"
+      },
+      "travel.airline_announce": {
+        "status": "ai_draft",
+        "text": "¿Podría pedir a los pasajeros cercanos que no coman frutos secos ni cacahuetes (cacahuates, maní)?"
+      },
+      "travel.airline_meal": {
+        "status": "ai_draft",
+        "text": "Tengo una alergia grave. Por favor, no me sirva ninguna comida que yo no haya verificado."
+      },
+      "travel.doctor_letter": {
+        "status": "ai_draft",
+        "text": "Tengo una carta de mi médico sobre mis medicamentos."
+      },
+      "travel.hotel_breakfast": {
+        "status": "ai_draft",
+        "text": "Por favor, informe al personal del desayuno sobre mi alergia."
+      },
+      "travel.hotel_kitchen": {
+        "status": "ai_draft",
+        "text": "¿Puede la cocina prepararme una comida segura?"
+      },
+      "travel.medication_carry": {
+        "status": "ai_draft",
+        "text": "Debo llevar mis medicamentos para la alergia conmigo en todo momento."
+      }
+    },
     "es-AR": {},
     "es-ES": {},
     "es-MX": {},
-    "fr": {},
-    "it": {},
+    "fr": {
+      "allergen.almond": {
+        "status": "ai_draft",
+        "text": "Amandes"
+      },
+      "allergen.apple": {
+        "status": "ai_draft",
+        "text": "Pommes"
+      },
+      "allergen.banana": {
+        "status": "ai_draft",
+        "text": "Bananes"
+      },
+      "allergen.brazil_nut": {
+        "status": "ai_draft",
+        "text": "Noix du Brésil"
+      },
+      "allergen.buckwheat": {
+        "status": "ai_draft",
+        "text": "Sarrasin (blé noir)"
+      },
+      "allergen.cashew": {
+        "status": "ai_draft",
+        "text": "Noix de cajou"
+      },
+      "allergen.celery": {
+        "status": "ai_draft",
+        "text": "Céleri (y compris le céleri-rave et le sel de céleri)"
+      },
+      "allergen.chicken": {
+        "status": "ai_draft",
+        "text": "Poulet, y compris le bouillon de poulet et le bouillon en poudre"
+      },
+      "allergen.coconut": {
+        "status": "ai_draft",
+        "text": "Noix de coco"
+      },
+      "allergen.corn": {
+        "status": "ai_draft",
+        "text": "Maïs"
+      },
+      "allergen.crustaceans": {
+        "status": "ai_draft",
+        "text": "Crustacés, comme les crevettes, les gambas, le crabe et le homard"
+      },
+      "allergen.egg": {
+        "status": "ai_draft",
+        "text": "Œufs"
+      },
+      "allergen.fish": {
+        "status": "ai_draft",
+        "text": "Poisson"
+      },
+      "allergen.garlic": {
+        "status": "ai_draft",
+        "text": "Ail"
+      },
+      "allergen.gelatin": {
+        "status": "ai_draft",
+        "text": "Gélatine"
+      },
+      "allergen.gluten": {
+        "status": "ai_draft",
+        "text": "Gluten (blé, orge, seigle, et avoine sauf si elle est certifiée sans gluten)"
+      },
+      "allergen.hazelnut": {
+        "status": "ai_draft",
+        "text": "Noisettes"
+      },
+      "allergen.kiwi": {
+        "status": "ai_draft",
+        "text": "Kiwi"
+      },
+      "allergen.legumes": {
+        "status": "ai_draft",
+        "text": "Légumineuses, comme les lentilles, les pois chiches et les petits pois"
+      },
+      "allergen.lupin": {
+        "status": "ai_draft",
+        "text": "Lupin (farine et graines)"
+      },
+      "allergen.macadamia": {
+        "status": "ai_draft",
+        "text": "Noix de macadamia"
+      },
+      "allergen.mango": {
+        "status": "ai_draft",
+        "text": "Mangues"
+      },
+      "allergen.milk": {
+        "status": "ai_draft",
+        "text": "Lait et tous les produits laitiers"
+      },
+      "allergen.molluscs": {
+        "status": "ai_draft",
+        "text": "Mollusques, comme les moules, les palourdes, les huîtres, les calamars et le poulpe"
+      },
+      "allergen.msg": {
+        "status": "ai_draft",
+        "text": "Glutamate monosodique (GMS, E621)"
+      },
+      "allergen.mustard": {
+        "status": "ai_draft",
+        "text": "Moutarde"
+      },
+      "allergen.onion": {
+        "status": "ai_draft",
+        "text": "Oignons, y compris les oignons nouveaux et les échalotes"
+      },
+      "allergen.peach": {
+        "status": "ai_draft",
+        "text": "Pêches et autres fruits à noyau, comme les prunes, les abricots et les cerises"
+      },
+      "allergen.peanut": {
+        "status": "ai_draft",
+        "text": "Arachides (cacahuètes)"
+      },
+      "allergen.pecan": {
+        "status": "ai_draft",
+        "text": "Noix de pécan"
+      },
+      "allergen.pine_nut": {
+        "status": "ai_draft",
+        "text": "Pignons de pin"
+      },
+      "allergen.pistachio": {
+        "status": "ai_draft",
+        "text": "Pistaches"
+      },
+      "allergen.pork": {
+        "status": "ai_draft",
+        "text": "Porc, y compris le saindoux et le bouillon de porc"
+      },
+      "allergen.red_meat": {
+        "status": "ai_draft",
+        "text": "Viande rouge et gélatine issue de mammifères (allergie à l'alpha-gal)"
+      },
+      "allergen.sesame": {
+        "status": "ai_draft",
+        "text": "Sésame"
+      },
+      "allergen.soy": {
+        "status": "ai_draft",
+        "text": "Soja"
+      },
+      "allergen.sulphites": {
+        "status": "ai_draft",
+        "text": "Sulfites"
+      },
+      "allergen.tomato": {
+        "status": "ai_draft",
+        "text": "Tomates"
+      },
+      "allergen.tree_nuts": {
+        "status": "ai_draft",
+        "text": "Tous les fruits à coque, comme les amandes, les noix, les noix de cajou et les noisettes"
+      },
+      "allergen.walnut": {
+        "status": "ai_draft",
+        "text": "Noix"
+      },
+      "allergen.wheat": {
+        "status": "ai_draft",
+        "text": "Blé"
+      },
+      "cross_contact.bakery": {
+        "status": "ai_draft",
+        "text": "Les boulangeries sont souvent dangereuses pour moi, à cause de la farine et des fruits à coque présents dans l'air et sur les surfaces."
+      },
+      "cross_contact.board_knife": {
+        "status": "ai_draft",
+        "text": "Merci d'utiliser une planche à découper et un couteau propres."
+      },
+      "cross_contact.buffet": {
+        "status": "ai_draft",
+        "text": "Je ne peux pas manger au buffet, car les cuillères de service sont partagées."
+      },
+      "cross_contact.fryer": {
+        "status": "ai_draft",
+        "text": "Merci de ne pas utiliser d'huile ni de friteuse ayant servi à cuire l'aliment auquel je suis allergique."
+      },
+      "cross_contact.garnish": {
+        "status": "ai_draft",
+        "text": "Merci de n'ajouter aucune garniture, aucun topping ni aucune sauce que je n'ai pas vérifiés."
+      },
+      "cross_contact.grill": {
+        "status": "ai_draft",
+        "text": "Merci de ne pas cuire mon plat sur un gril ou une plancha partagés."
+      },
+      "cross_contact.hands": {
+        "status": "ai_draft",
+        "text": "Merci de vous laver les mains et de changer de gants avant de préparer mon plat."
+      },
+      "cross_contact.intro": {
+        "status": "ai_draft",
+        "text": "Même une simple trace provenant de matériel partagé peut provoquer une réaction."
+      },
+      "cross_contact.pan": {
+        "status": "ai_draft",
+        "text": "Merci d'utiliser une poêle, un wok et des ustensiles propres."
+      },
+      "cross_contact.remove_not_ok": {
+        "status": "ai_draft",
+        "text": "Retirer l'allergène d'un plat déjà préparé ne suffit pas, c'est dangereux pour moi. Merci de préparer un nouveau plat."
+      },
+      "cross_contact.separate": {
+        "status": "ai_draft",
+        "text": "Merci de préparer et de servir mon plat séparément."
+      },
+      "emergency.antihistamine": {
+        "status": "ai_draft",
+        "text": "Avez-vous des comprimés d'antihistaminique ?"
+      },
+      "emergency.autoinjector": {
+        "status": "ai_draft",
+        "text": "J'ai un stylo auto-injecteur d'adrénaline dans mon sac."
+      },
+      "emergency.call_ambulance": {
+        "status": "ai_draft",
+        "text": "Appelez une ambulance tout de suite, s'il vous plaît."
+      },
+      "emergency.contact": {
+        "status": "ai_draft",
+        "text": "Appelez la personne à contacter en cas d'urgence, s'il vous plaît."
+      },
+      "emergency.help_inject": {
+        "status": "ai_draft",
+        "text": "Aidez-moi à l'utiliser, s'il vous plaît."
+      },
+      "emergency.hospital": {
+        "status": "ai_draft",
+        "text": "Où se trouve l'hôpital le plus proche avec un service des urgences ?"
+      },
+      "emergency.lie_down": {
+        "status": "ai_draft",
+        "text": "Aidez-moi à m'allonger, s'il vous plaît. Ne me faites pas lever ni marcher."
+      },
+      "emergency.pharmacy": {
+        "status": "ai_draft",
+        "text": "Où se trouve la pharmacie la plus proche ?"
+      },
+      "emergency.reaction": {
+        "status": "ai_draft",
+        "text": "Je fais une réaction allergique."
+      },
+      "emergency.say_anaphylaxis": {
+        "status": "ai_draft",
+        "text": "Dites-leur : anaphylaxie (choc anaphylactique), une réaction allergique grave."
+      },
+      "emergency.second_dose": {
+        "status": "ai_draft",
+        "text": "S'il n'y a pas d'amélioration au bout de 5 minutes, un deuxième stylo auto-injecteur peut être utilisé."
+      },
+      "emergency.sit_if_breathing": {
+        "status": "ai_draft",
+        "text": "Si j'ai du mal à respirer, aidez-moi à m'asseoir."
+      },
+      "emergency.stay": {
+        "status": "ai_draft",
+        "text": "Restez avec moi jusqu'à l'arrivée des secours, s'il vous plaît."
+      },
+      "emergency.thigh": {
+        "status": "ai_draft",
+        "text": "Il s'injecte dans la face externe de la cuisse. On peut le faire à travers les vêtements."
+      },
+      "hidden.all_forms": {
+        "status": "ai_draft",
+        "text": "Cela comprend toute huile, sauce, pâte, farine, poudre, beurre ou garniture à base de cet aliment."
+      },
+      "hidden.butter_ghee": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier l'absence de beurre, de ghee, de crème ou de fromage dans la préparation."
+      },
+      "hidden.dashi": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier l'absence de bouillon de poisson (par exemple du dashi ou des flocons de bonite)."
+      },
+      "hidden.egg_wash": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier si le pain ou les pâtisseries sont dorés à l'œuf, et s'il y a de l'œuf dans la pâte à frire."
+      },
+      "hidden.fish_sauce": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier l'absence de sauce de poisson ou d'anchois, y compris dans les vinaigrettes et assaisonnements."
+      },
+      "hidden.flour_thickener": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier l'absence de farine utilisée pour épaissir les sauces ou pour enrober les aliments."
+      },
+      "hidden.hoisin": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier l'absence de sauce hoisin, de sauce aux haricots noirs ou d'autres sauces à base de haricots."
+      },
+      "hidden.marzipan": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier les desserts contenant de la pâte d'amande, du nougat ou de la poudre d'amande."
+      },
+      "hidden.mayonnaise": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier l'absence de mayonnaise et d'aïoli."
+      },
+      "hidden.miso": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier l'absence de miso, de tofu ou de pâte de haricots."
+      },
+      "hidden.nut_sauces": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier les sauces comme la sauce satay, le pesto, le mole et le praliné."
+      },
+      "hidden.oyster_sauce": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier l'absence de sauce d'huître ou de sauce XO."
+      },
+      "hidden.peanut_oil": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier l'absence d'huile d'arachide, y compris pour la friture."
+      },
+      "hidden.sesame_oil": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier l'absence d'huile de sésame, de tahini ou de graines de sésame parsemées sur le plat."
+      },
+      "hidden.shrimp_paste": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier l'absence de pâte de crevettes ou de crevettes séchées."
+      },
+      "hidden.soy_sauce": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier l'absence de sauce soja, qui contient aussi du blé."
+      },
+      "hidden.stock_cubes": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier les bouillons, les bases de soupe et les assaisonnements en poudre."
+      },
+      "hidden.whey_casein": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier l'absence de lait en poudre, de lactosérum ou de caséine."
+      },
+      "hidden.wine_sulphites": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier l'absence de vin, de vinaigre ou de fruits secs (sulfites)."
+      },
+      "hidden.worcestershire": {
+        "status": "ai_draft",
+        "text": "Merci de vérifier l'absence de sauce Worcestershire, qui contient des anchois."
+      },
+      "intro.allergic_to": {
+        "status": "ai_draft",
+        "text": "Je suis allergique aux aliments suivants :"
+      },
+      "intro.hello": {
+        "status": "ai_draft",
+        "text": "Bonjour. J'ai une allergie alimentaire grave."
+      },
+      "intro.intolerance": {
+        "status": "ai_draft",
+        "text": "J'ai une intolérance alimentaire. Elle ne met pas ma vie en danger, mais elle me rend très malade."
+      },
+      "intro.life_threatening": {
+        "status": "ai_draft",
+        "text": "Cette allergie peut mettre ma vie en danger."
+      },
+      "intro.not_preference": {
+        "status": "ai_draft",
+        "text": "Il s'agit d'un problème médical, pas d'une préférence."
+      },
+      "intro.please_read": {
+        "status": "ai_draft",
+        "text": "Merci de lire attentivement cette carte avant que je commande."
+      },
+      "intro.severe": {
+        "status": "ai_draft",
+        "text": "Mon allergie est grave. Même une infime quantité peut me rendre gravement malade."
+      },
+      "intro.thank_you_care": {
+        "status": "ai_draft",
+        "text": "Merci de l'attention que vous porterez à mon repas."
+      },
+      "ordering.bring_menu": {
+        "status": "ai_draft",
+        "text": "Puis-je voir les informations sur les allergènes ou la carte des allergènes ?"
+      },
+      "ordering.confirm_served": {
+        "status": "ai_draft",
+        "text": "Au moment de servir, merci de me confirmer qu'il s'agit bien du plat préparé pour mon allergie."
+      },
+      "ordering.drink_only": {
+        "status": "ai_draft",
+        "text": "Je vais seulement prendre une boisson, merci."
+      },
+      "ordering.if_unsure": {
+        "status": "ai_draft",
+        "text": "Si vous avez un doute, dites-le-moi, s'il vous plaît. Je préfère ne pas commander plutôt que de prendre un risque."
+      },
+      "ordering.no_sauce": {
+        "status": "ai_draft",
+        "text": "Merci de le servir sans sauce."
+      },
+      "ordering.own_food": {
+        "status": "ai_draft",
+        "text": "Est-ce que je peux manger de la nourriture que j'ai apportée ?"
+      },
+      "ordering.plain": {
+        "status": "ai_draft",
+        "text": "Merci de le cuisiner uniquement avec du sel, du poivre et de l'huile d'olive."
+      },
+      "ordering.recommend_safe": {
+        "status": "ai_draft",
+        "text": "Pouvez-vous me recommander un plat sans danger pour moi ?"
+      },
+      "ordering.same_dish": {
+        "status": "ai_draft",
+        "text": "Merci de vous assurer que c'est bien ce plat-là qui m'est servi."
+      },
+      "ordering.simple": {
+        "status": "ai_draft",
+        "text": "Quelque chose de simple me convient, comme de la viande ou du poisson grillé nature, avec du riz ou des légumes."
+      },
+      "ordering.thanks": {
+        "status": "ai_draft",
+        "text": "Merci beaucoup pour votre aide."
+      },
+      "ordering.write_down": {
+        "status": "ai_draft",
+        "text": "Pourriez-vous m'écrire la liste des ingrédients ?"
+      },
+      "question.bread": {
+        "status": "ai_draft",
+        "text": "Le pain contient-il du lait, des œufs, des fruits à coque ou des graines ?"
+      },
+      "question.chef_confident": {
+        "status": "ai_draft",
+        "text": "Le chef est-il sûr que ce plat est sans danger pour moi ?"
+      },
+      "question.contains": {
+        "status": "ai_draft",
+        "text": "Ce plat contient-il l'un des aliments auxquels je suis allergique ?"
+      },
+      "question.dessert": {
+        "status": "ai_draft",
+        "text": "Les desserts contiennent-ils des fruits à coque, du lait ou des œufs ?"
+      },
+      "question.dressing": {
+        "status": "ai_draft",
+        "text": "Qu'y a-t-il dans la vinaigrette ?"
+      },
+      "question.fried_shared": {
+        "status": "ai_draft",
+        "text": "Les fritures sont-elles cuites dans une huile commune à d'autres aliments ?"
+      },
+      "question.ingredients": {
+        "status": "ai_draft",
+        "text": "Pourriez-vous vérifier les ingrédients avec le chef ?"
+      },
+      "question.kitchen_nuts": {
+        "status": "ai_draft",
+        "text": "Utilisez-vous des fruits à coque ou des arachides en cuisine ?"
+      },
+      "question.label": {
+        "status": "ai_draft",
+        "text": "Puis-je voir l'étiquette ou l'emballage des ingrédients ?"
+      },
+      "question.marinade": {
+        "status": "ai_draft",
+        "text": "La viande ou le poisson est-il mariné ? Qu'y a-t-il dans la marinade ?"
+      },
+      "question.may_contain": {
+        "status": "ai_draft",
+        "text": "L'un des ingrédients porte-t-il la mention « peut contenir » l'aliment auquel je suis allergique ?"
+      },
+      "question.modify": {
+        "status": "ai_draft",
+        "text": "Ce plat peut-il être préparé à la minute sans l'aliment auquel je suis allergique ?"
+      },
+      "question.premade": {
+        "status": "ai_draft",
+        "text": "Est-ce fait maison, ou acheté tout prêt ?"
+      },
+      "question.safe_dish": {
+        "status": "ai_draft",
+        "text": "Quels plats pouvez-vous me préparer sans danger ?"
+      },
+      "question.same_oil": {
+        "status": "ai_draft",
+        "text": "Est-ce cuit dans la même huile que d'autres aliments ?"
+      },
+      "question.same_pan": {
+        "status": "ai_draft",
+        "text": "Est-ce cuit dans la même poêle ou le même wok que d'autres aliments ?"
+      },
+      "question.sauce": {
+        "status": "ai_draft",
+        "text": "Qu'y a-t-il dans la sauce ?"
+      },
+      "question.stock": {
+        "status": "ai_draft",
+        "text": "Quel bouillon est utilisé dans la soupe ?"
+      },
+      "shopping.dairy_free": {
+        "status": "ai_draft",
+        "text": "Vendez-vous des laits végétaux (boissons végétales) sans fruits à coque ni soja ?"
+      },
+      "shopping.free_from": {
+        "status": "ai_draft",
+        "text": "Vendez-vous des produits sans allergènes ?"
+      },
+      "shopping.gluten_free": {
+        "status": "ai_draft",
+        "text": "Vendez-vous du pain ou des pâtes sans gluten ?"
+      },
+      "shopping.product_contains": {
+        "status": "ai_draft",
+        "text": "Ce produit contient-il l'un des aliments auxquels je suis allergique ?"
+      },
+      "shopping.read_label": {
+        "status": "ai_draft",
+        "text": "Pourriez-vous me lire cette étiquette ?"
+      },
+      "shopping.safe_brand": {
+        "status": "ai_draft",
+        "text": "Y a-t-il une marque sans l'aliment auquel je suis allergique ?"
+      },
+      "shopping.traces": {
+        "status": "ai_draft",
+        "text": "L'étiquette indique-t-elle « peut contenir des traces » ?"
+      },
+      "staff_answer.ask_chef": {
+        "status": "ai_draft",
+        "text": "Je vais demander au chef"
+      },
+      "staff_answer.contains_allergen": {
+        "status": "ai_draft",
+        "text": "Cela contient votre allergène"
+      },
+      "staff_answer.may_contain": {
+        "status": "ai_draft",
+        "text": "Cela peut contenir des traces"
+      },
+      "staff_answer.no": {
+        "status": "ai_draft",
+        "text": "Non"
+      },
+      "staff_answer.not_safe": {
+        "status": "ai_draft",
+        "text": "Non, nous ne pouvons pas le préparer sans danger"
+      },
+      "staff_answer.not_sure": {
+        "status": "ai_draft",
+        "text": "Je ne suis pas sûr(e)"
+      },
+      "staff_answer.recommend": {
+        "status": "ai_draft",
+        "text": "Je vous recommande ce plat"
+      },
+      "staff_answer.safe": {
+        "status": "ai_draft",
+        "text": "Oui, nous pouvons le préparer sans danger"
+      },
+      "staff_answer.show_label": {
+        "status": "ai_draft",
+        "text": "Je vais vous montrer l'étiquette"
+      },
+      "staff_answer.tap_instruction": {
+        "status": "ai_draft",
+        "text": "Veuillez appuyer sur votre réponse."
+      },
+      "staff_answer.yes": {
+        "status": "ai_draft",
+        "text": "Oui"
+      },
+      "travel.airline_announce": {
+        "status": "ai_draft",
+        "text": "Pourriez-vous demander aux passagers à proximité de ne pas manger de fruits à coque ni d'arachides (cacahuètes) ?"
+      },
+      "travel.airline_meal": {
+        "status": "ai_draft",
+        "text": "J'ai une allergie grave. Merci de ne me servir aucun repas que je n'ai pas vérifié."
+      },
+      "travel.doctor_letter": {
+        "status": "ai_draft",
+        "text": "J'ai une lettre de mon médecin pour mes médicaments."
+      },
+      "travel.hotel_breakfast": {
+        "status": "ai_draft",
+        "text": "Merci d'informer le personnel du petit-déjeuner de mon allergie."
+      },
+      "travel.hotel_kitchen": {
+        "status": "ai_draft",
+        "text": "La cuisine peut-elle me préparer un repas sans danger pour moi ?"
+      },
+      "travel.medication_carry": {
+        "status": "ai_draft",
+        "text": "Je dois garder mes médicaments contre l'allergie sur moi en permanence."
+      }
+    },
+    "it": {
+      "allergen.almond": {
+        "status": "ai_draft",
+        "text": "Mandorle"
+      },
+      "allergen.apple": {
+        "status": "ai_draft",
+        "text": "Mele"
+      },
+      "allergen.banana": {
+        "status": "ai_draft",
+        "text": "Banane"
+      },
+      "allergen.brazil_nut": {
+        "status": "ai_draft",
+        "text": "Noci del Brasile"
+      },
+      "allergen.buckwheat": {
+        "status": "ai_draft",
+        "text": "Grano saraceno"
+      },
+      "allergen.cashew": {
+        "status": "ai_draft",
+        "text": "Anacardi"
+      },
+      "allergen.celery": {
+        "status": "ai_draft",
+        "text": "Sedano (compresi il sedano rapa e il sale al sedano)"
+      },
+      "allergen.chicken": {
+        "status": "ai_draft",
+        "text": "Pollo, compresi il brodo di pollo e il brodo in polvere o granulare"
+      },
+      "allergen.coconut": {
+        "status": "ai_draft",
+        "text": "Cocco"
+      },
+      "allergen.corn": {
+        "status": "ai_draft",
+        "text": "Mais (granturco)"
+      },
+      "allergen.crustaceans": {
+        "status": "ai_draft",
+        "text": "Crostacei come gamberetti, gamberi, granchi e aragoste"
+      },
+      "allergen.egg": {
+        "status": "ai_draft",
+        "text": "Uova"
+      },
+      "allergen.fish": {
+        "status": "ai_draft",
+        "text": "Pesce"
+      },
+      "allergen.garlic": {
+        "status": "ai_draft",
+        "text": "Aglio"
+      },
+      "allergen.gelatin": {
+        "status": "ai_draft",
+        "text": "Gelatina alimentare (inclusa la colla di pesce)"
+      },
+      "allergen.gluten": {
+        "status": "ai_draft",
+        "text": "Glutine (frumento, orzo, segale e avena, se non certificata senza glutine)"
+      },
+      "allergen.hazelnut": {
+        "status": "ai_draft",
+        "text": "Nocciole"
+      },
+      "allergen.kiwi": {
+        "status": "ai_draft",
+        "text": "Kiwi"
+      },
+      "allergen.legumes": {
+        "status": "ai_draft",
+        "text": "Legumi come lenticchie, ceci e piselli"
+      },
+      "allergen.lupin": {
+        "status": "ai_draft",
+        "text": "Farina e semi di lupino"
+      },
+      "allergen.macadamia": {
+        "status": "ai_draft",
+        "text": "Noci di macadamia"
+      },
+      "allergen.mango": {
+        "status": "ai_draft",
+        "text": "Mango"
+      },
+      "allergen.milk": {
+        "status": "ai_draft",
+        "text": "Latte e tutti i latticini"
+      },
+      "allergen.molluscs": {
+        "status": "ai_draft",
+        "text": "Molluschi come cozze, vongole, ostriche, calamari e polpi"
+      },
+      "allergen.msg": {
+        "status": "ai_draft",
+        "text": "Glutammato monosodico (E621)"
+      },
+      "allergen.mustard": {
+        "status": "ai_draft",
+        "text": "Senape"
+      },
+      "allergen.onion": {
+        "status": "ai_draft",
+        "text": "Cipolle, compresi cipollotti e scalogni"
+      },
+      "allergen.peach": {
+        "status": "ai_draft",
+        "text": "Pesche e altra frutta con il nocciolo, come prugne, albicocche e ciliegie"
+      },
+      "allergen.peanut": {
+        "status": "ai_draft",
+        "text": "Arachidi"
+      },
+      "allergen.pecan": {
+        "status": "ai_draft",
+        "text": "Noci pecan"
+      },
+      "allergen.pine_nut": {
+        "status": "ai_draft",
+        "text": "Pinoli"
+      },
+      "allergen.pistachio": {
+        "status": "ai_draft",
+        "text": "Pistacchi"
+      },
+      "allergen.pork": {
+        "status": "ai_draft",
+        "text": "Maiale, compresi lo strutto e il brodo di maiale"
+      },
+      "allergen.red_meat": {
+        "status": "ai_draft",
+        "text": "Carne rossa e gelatina di mammiferi (allergia all'alfa-gal)"
+      },
+      "allergen.sesame": {
+        "status": "ai_draft",
+        "text": "Sesamo"
+      },
+      "allergen.soy": {
+        "status": "ai_draft",
+        "text": "Soia"
+      },
+      "allergen.sulphites": {
+        "status": "ai_draft",
+        "text": "Solfiti (anidride solforosa)"
+      },
+      "allergen.tomato": {
+        "status": "ai_draft",
+        "text": "Pomodori"
+      },
+      "allergen.tree_nuts": {
+        "status": "ai_draft",
+        "text": "Tutta la frutta a guscio, come mandorle, noci, anacardi e nocciole"
+      },
+      "allergen.walnut": {
+        "status": "ai_draft",
+        "text": "Noci"
+      },
+      "allergen.wheat": {
+        "status": "ai_draft",
+        "text": "Frumento (grano)"
+      },
+      "cross_contact.bakery": {
+        "status": "ai_draft",
+        "text": "I panifici spesso non sono sicuri per me, a causa della farina e della frutta a guscio presenti nell'aria e sulle superfici."
+      },
+      "cross_contact.board_knife": {
+        "status": "ai_draft",
+        "text": "Per favore, usi un tagliere e un coltello puliti."
+      },
+      "cross_contact.buffet": {
+        "status": "ai_draft",
+        "text": "Non posso mangiare al buffet perché le posate di servizio sono condivise."
+      },
+      "cross_contact.fryer": {
+        "status": "ai_draft",
+        "text": "Per favore, non usi olio o friggitrici in cui sia stato cotto il mio allergene."
+      },
+      "cross_contact.garnish": {
+        "status": "ai_draft",
+        "text": "Per favore, non aggiunga decorazioni, guarnizioni o salse che non ho verificato."
+      },
+      "cross_contact.grill": {
+        "status": "ai_draft",
+        "text": "Per favore, non cucini il mio cibo su una griglia o una piastra condivisa."
+      },
+      "cross_contact.hands": {
+        "status": "ai_draft",
+        "text": "Per favore, si lavi le mani e cambi i guanti prima di preparare il mio cibo."
+      },
+      "cross_contact.intro": {
+        "status": "ai_draft",
+        "text": "Anche una minima traccia proveniente da attrezzature condivise può causare una reazione."
+      },
+      "cross_contact.pan": {
+        "status": "ai_draft",
+        "text": "Per favore, usi una padella, un wok e utensili puliti."
+      },
+      "cross_contact.remove_not_ok": {
+        "status": "ai_draft",
+        "text": "Togliere l'allergene da un piatto già pronto non è sicuro. Per favore, lo prepari di nuovo da zero."
+      },
+      "cross_contact.separate": {
+        "status": "ai_draft",
+        "text": "Per favore, prepari e serva il mio piatto separatamente."
+      },
+      "emergency.antihistamine": {
+        "status": "ai_draft",
+        "text": "Ha delle compresse di antistaminico?"
+      },
+      "emergency.autoinjector": {
+        "status": "ai_draft",
+        "text": "Ho un autoiniettore di adrenalina (epinefrina) nella borsa."
+      },
+      "emergency.call_ambulance": {
+        "status": "ai_draft",
+        "text": "Per favore, chiami subito un'ambulanza."
+      },
+      "emergency.contact": {
+        "status": "ai_draft",
+        "text": "Per favore, chiami il mio contatto di emergenza."
+      },
+      "emergency.help_inject": {
+        "status": "ai_draft",
+        "text": "Per favore, mi aiuti a usarlo."
+      },
+      "emergency.hospital": {
+        "status": "ai_draft",
+        "text": "Dov'è l'ospedale più vicino con un pronto soccorso?"
+      },
+      "emergency.lie_down": {
+        "status": "ai_draft",
+        "text": "Per favore, mi aiuti a sdraiarmi. Non mi faccia stare in piedi né camminare."
+      },
+      "emergency.pharmacy": {
+        "status": "ai_draft",
+        "text": "Dov'è la farmacia più vicina?"
+      },
+      "emergency.reaction": {
+        "status": "ai_draft",
+        "text": "Sto avendo una reazione allergica."
+      },
+      "emergency.say_anaphylaxis": {
+        "status": "ai_draft",
+        "text": "Dica loro: anafilassi, una grave reazione allergica."
+      },
+      "emergency.second_dose": {
+        "status": "ai_draft",
+        "text": "Se dopo 5 minuti non c'è miglioramento, si può usare un secondo autoiniettore."
+      },
+      "emergency.sit_if_breathing": {
+        "status": "ai_draft",
+        "text": "Se faccio fatica a respirare, mi aiuti a sedermi."
+      },
+      "emergency.stay": {
+        "status": "ai_draft",
+        "text": "Per favore, resti con me finché non arrivano i soccorsi."
+      },
+      "emergency.thigh": {
+        "status": "ai_draft",
+        "text": "Va iniettato nella parte esterna della coscia. Si può fare anche attraverso i vestiti."
+      },
+      "hidden.all_forms": {
+        "status": "ai_draft",
+        "text": "Sono compresi anche oli, salse, creme, farine, polveri, burri o guarnizioni ricavati da questo alimento."
+      },
+      "hidden.butter_ghee": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi che nella preparazione non si usino burro, ghee, panna o formaggio."
+      },
+      "hidden.dashi": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi che non ci sia brodo di pesce (per esempio dashi o fiocchi di bonito)."
+      },
+      "hidden.egg_wash": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi che pane e pasticceria non siano spennellati con l'uovo e che non ci sia uovo nella pastella."
+      },
+      "hidden.fish_sauce": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi che non ci siano salsa di pesce o acciughe, anche nei condimenti."
+      },
+      "hidden.flour_thickener": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi che non si usi farina per addensare le salse o per infarinare il cibo."
+      },
+      "hidden.hoisin": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi che non ci siano salsa hoisin, salsa di fagioli neri o altre salse di fagioli."
+      },
+      "hidden.marzipan": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi i dolci con marzapane, torrone o farina di mandorle."
+      },
+      "hidden.mayonnaise": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi che non ci siano maionese e aioli."
+      },
+      "hidden.miso": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi che non ci siano miso, tofu o pasta di fagioli."
+      },
+      "hidden.nut_sauces": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi salse come satay, pesto, mole e pralinato."
+      },
+      "hidden.oyster_sauce": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi che non ci siano salsa di ostriche o salsa XO."
+      },
+      "hidden.peanut_oil": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi che non ci sia olio di arachidi, anche per friggere."
+      },
+      "hidden.sesame_oil": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi che non ci siano olio di sesamo, tahina o semi di sesamo sopra il piatto."
+      },
+      "hidden.shrimp_paste": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi che non ci siano pasta di gamberi o gamberetti essiccati."
+      },
+      "hidden.soy_sauce": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi che non ci sia salsa di soia, che contiene anche frumento."
+      },
+      "hidden.stock_cubes": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi brodi, basi per zuppe e insaporitori in polvere."
+      },
+      "hidden.whey_casein": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi che non ci siano latte in polvere, siero di latte o caseina."
+      },
+      "hidden.wine_sulphites": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi che non ci siano vino, aceto o frutta essiccata (solfiti)."
+      },
+      "hidden.worcestershire": {
+        "status": "ai_draft",
+        "text": "Per favore, verifichi che non ci sia salsa Worcestershire, che contiene acciughe."
+      },
+      "intro.allergic_to": {
+        "status": "ai_draft",
+        "text": "Ho un'allergia a:"
+      },
+      "intro.hello": {
+        "status": "ai_draft",
+        "text": "Salve. Ho una grave allergia alimentare."
+      },
+      "intro.intolerance": {
+        "status": "ai_draft",
+        "text": "Ho un'intolleranza alimentare. Non mette in pericolo la mia vita, ma mi fa stare molto male."
+      },
+      "intro.life_threatening": {
+        "status": "ai_draft",
+        "text": "Questa allergia può mettere in pericolo la mia vita."
+      },
+      "intro.not_preference": {
+        "status": "ai_draft",
+        "text": "Si tratta di una condizione medica, non di una preferenza."
+      },
+      "intro.please_read": {
+        "status": "ai_draft",
+        "text": "La prego di leggere attentamente questa scheda prima che io ordini."
+      },
+      "intro.severe": {
+        "status": "ai_draft",
+        "text": "La mia allergia è grave. Anche una quantità minima può farmi stare gravemente male."
+      },
+      "intro.thank_you_care": {
+        "status": "ai_draft",
+        "text": "Grazie per l'attenzione con cui preparerà il mio pasto."
+      },
+      "ordering.bring_menu": {
+        "status": "ai_draft",
+        "text": "Posso vedere le informazioni sugli allergeni o il menù degli allergeni?"
+      },
+      "ordering.confirm_served": {
+        "status": "ai_draft",
+        "text": "Quando me lo serve, per favore mi confermi che è il piatto preparato per la mia allergia."
+      },
+      "ordering.drink_only": {
+        "status": "ai_draft",
+        "text": "Prendo solo qualcosa da bere, grazie."
+      },
+      "ordering.if_unsure": {
+        "status": "ai_draft",
+        "text": "Se ha dei dubbi, per favore me lo dica. Preferisco non ordinare piuttosto che correre un rischio."
+      },
+      "ordering.no_sauce": {
+        "status": "ai_draft",
+        "text": "Per favore, me lo serva senza salsa."
+      },
+      "ordering.own_food": {
+        "status": "ai_draft",
+        "text": "Va bene se mangio del cibo che ho portato io?"
+      },
+      "ordering.plain": {
+        "status": "ai_draft",
+        "text": "Per favore, lo cucini solo con sale, pepe e olio d'oliva."
+      },
+      "ordering.recommend_safe": {
+        "status": "ai_draft",
+        "text": "Può consigliarmi un piatto sicuro per me?"
+      },
+      "ordering.same_dish": {
+        "status": "ai_draft",
+        "text": "Per favore, si assicuri che mi venga portato proprio questo piatto."
+      },
+      "ordering.simple": {
+        "status": "ai_draft",
+        "text": "Va bene qualcosa di semplice, come carne o pesce semplicemente alla griglia, con riso o verdure."
+      },
+      "ordering.thanks": {
+        "status": "ai_draft",
+        "text": "Grazie mille per il Suo aiuto."
+      },
+      "ordering.write_down": {
+        "status": "ai_draft",
+        "text": "Potrebbe scrivermi gli ingredienti?"
+      },
+      "question.bread": {
+        "status": "ai_draft",
+        "text": "Il pane contiene latte, uova, frutta a guscio o semi?"
+      },
+      "question.chef_confident": {
+        "status": "ai_draft",
+        "text": "Lo chef è certo che questo piatto sia sicuro per me?"
+      },
+      "question.contains": {
+        "status": "ai_draft",
+        "text": "Questo piatto contiene qualcuno dei miei allergeni?"
+      },
+      "question.dessert": {
+        "status": "ai_draft",
+        "text": "I dolci contengono frutta a guscio, latte o uova?"
+      },
+      "question.dressing": {
+        "status": "ai_draft",
+        "text": "Che cosa c'è nel condimento?"
+      },
+      "question.fried_shared": {
+        "status": "ai_draft",
+        "text": "I cibi fritti vengono cotti nello stesso olio usato per altri cibi?"
+      },
+      "question.ingredients": {
+        "status": "ai_draft",
+        "text": "Può verificare gli ingredienti con lo chef?"
+      },
+      "question.kitchen_nuts": {
+        "status": "ai_draft",
+        "text": "In cucina usate frutta a guscio o arachidi?"
+      },
+      "question.label": {
+        "status": "ai_draft",
+        "text": "Posso vedere l'etichetta o la confezione degli ingredienti?"
+      },
+      "question.marinade": {
+        "status": "ai_draft",
+        "text": "La carne o il pesce sono marinati? Che cosa c'è nella marinatura?"
+      },
+      "question.may_contain": {
+        "status": "ai_draft",
+        "text": "Su qualche ingrediente c'è scritto «può contenere» il mio allergene?"
+      },
+      "question.modify": {
+        "status": "ai_draft",
+        "text": "Si può preparare questo piatto da zero, senza il mio allergene?"
+      },
+      "question.premade": {
+        "status": "ai_draft",
+        "text": "Questo piatto è preparato in cucina o acquistato già pronto?"
+      },
+      "question.safe_dish": {
+        "status": "ai_draft",
+        "text": "Quali piatti potete prepararmi in modo sicuro?"
+      },
+      "question.same_oil": {
+        "status": "ai_draft",
+        "text": "Questo piatto viene cotto nello stesso olio usato per altri cibi?"
+      },
+      "question.same_pan": {
+        "status": "ai_draft",
+        "text": "Questo piatto viene cotto nella stessa padella o wok usati per altri cibi?"
+      },
+      "question.sauce": {
+        "status": "ai_draft",
+        "text": "Che cosa c'è nella salsa?"
+      },
+      "question.stock": {
+        "status": "ai_draft",
+        "text": "Che brodo viene usato per la zuppa?"
+      },
+      "shopping.dairy_free": {
+        "status": "ai_draft",
+        "text": "Vendete latte vegetale senza frutta a guscio né soia?"
+      },
+      "shopping.free_from": {
+        "status": "ai_draft",
+        "text": "Vendete prodotti senza allergeni (free from)?"
+      },
+      "shopping.gluten_free": {
+        "status": "ai_draft",
+        "text": "Vendete pane o pasta senza glutine?"
+      },
+      "shopping.product_contains": {
+        "status": "ai_draft",
+        "text": "Questo prodotto contiene qualcuno dei miei allergeni?"
+      },
+      "shopping.read_label": {
+        "status": "ai_draft",
+        "text": "Può leggermi questa etichetta?"
+      },
+      "shopping.safe_brand": {
+        "status": "ai_draft",
+        "text": "C'è una marca senza il mio allergene?"
+      },
+      "shopping.traces": {
+        "status": "ai_draft",
+        "text": "Sull'etichetta c'è scritto che può contenere tracce?"
+      },
+      "staff_answer.ask_chef": {
+        "status": "ai_draft",
+        "text": "Chiedo allo chef"
+      },
+      "staff_answer.contains_allergen": {
+        "status": "ai_draft",
+        "text": "Contiene il Suo allergene"
+      },
+      "staff_answer.may_contain": {
+        "status": "ai_draft",
+        "text": "Può contenere tracce"
+      },
+      "staff_answer.no": {
+        "status": "ai_draft",
+        "text": "No"
+      },
+      "staff_answer.not_safe": {
+        "status": "ai_draft",
+        "text": "No, non possiamo prepararlo in modo sicuro"
+      },
+      "staff_answer.not_sure": {
+        "status": "ai_draft",
+        "text": "Non lo so con certezza"
+      },
+      "staff_answer.recommend": {
+        "status": "ai_draft",
+        "text": "Le consiglio questo piatto"
+      },
+      "staff_answer.safe": {
+        "status": "ai_draft",
+        "text": "Sì, possiamo prepararlo in modo sicuro"
+      },
+      "staff_answer.show_label": {
+        "status": "ai_draft",
+        "text": "Le mostro l'etichetta"
+      },
+      "staff_answer.tap_instruction": {
+        "status": "ai_draft",
+        "text": "Per favore, tocchi la Sua risposta."
+      },
+      "staff_answer.yes": {
+        "status": "ai_draft",
+        "text": "Sì"
+      },
+      "travel.airline_announce": {
+        "status": "ai_draft",
+        "text": "Potrebbe chiedere ai passeggeri vicini di non mangiare frutta a guscio o arachidi?"
+      },
+      "travel.airline_meal": {
+        "status": "ai_draft",
+        "text": "Ho un'allergia grave. Per favore, non mi serva nessun pasto che non abbia verificato io."
+      },
+      "travel.doctor_letter": {
+        "status": "ai_draft",
+        "text": "Ho un certificato medico per i miei farmaci."
+      },
+      "travel.hotel_breakfast": {
+        "status": "ai_draft",
+        "text": "Per favore, informi il personale della colazione della mia allergia."
+      },
+      "travel.hotel_kitchen": {
+        "status": "ai_draft",
+        "text": "La cucina può prepararmi un pasto sicuro?"
+      },
+      "travel.medication_carry": {
+        "status": "ai_draft",
+        "text": "Devo tenere sempre con me i miei farmaci per l'allergia."
+      }
+    },
     "nl": {},
+    "pl": {
+      "allergen.almond": {
+        "status": "ai_draft",
+        "text": "Migdały"
+      },
+      "allergen.apple": {
+        "status": "ai_draft",
+        "text": "Jabłka"
+      },
+      "allergen.banana": {
+        "status": "ai_draft",
+        "text": "Banany"
+      },
+      "allergen.brazil_nut": {
+        "status": "ai_draft",
+        "text": "Orzechy brazylijskie"
+      },
+      "allergen.buckwheat": {
+        "status": "ai_draft",
+        "text": "Grykę (w tym kaszę i mąkę gryczaną)"
+      },
+      "allergen.cashew": {
+        "status": "ai_draft",
+        "text": "Orzechy nerkowca (nerkowce)"
+      },
+      "allergen.celery": {
+        "status": "ai_draft",
+        "text": "Seler (naciowy i korzeniowy, a także sól selerową)"
+      },
+      "allergen.chicken": {
+        "status": "ai_draft",
+        "text": "Kurczaka, w tym bulion z kurczaka (rosół) i bulion drobiowy w proszku"
+      },
+      "allergen.coconut": {
+        "status": "ai_draft",
+        "text": "Kokos"
+      },
+      "allergen.corn": {
+        "status": "ai_draft",
+        "text": "Kukurydzę"
+      },
+      "allergen.crustaceans": {
+        "status": "ai_draft",
+        "text": "Skorupiaki, np. krewetki (małe i duże), kraby i homary"
+      },
+      "allergen.egg": {
+        "status": "ai_draft",
+        "text": "Jajka"
+      },
+      "allergen.fish": {
+        "status": "ai_draft",
+        "text": "Ryby"
+      },
+      "allergen.garlic": {
+        "status": "ai_draft",
+        "text": "Czosnek"
+      },
+      "allergen.gelatin": {
+        "status": "ai_draft",
+        "text": "Żelatynę"
+      },
+      "allergen.gluten": {
+        "status": "ai_draft",
+        "text": "Gluten (pszenicę, jęczmień, żyto, a także owies, jeśli nie ma certyfikatu „bezglutenowy”)"
+      },
+      "allergen.hazelnut": {
+        "status": "ai_draft",
+        "text": "Orzechy laskowe"
+      },
+      "allergen.kiwi": {
+        "status": "ai_draft",
+        "text": "Kiwi"
+      },
+      "allergen.legumes": {
+        "status": "ai_draft",
+        "text": "Rośliny strączkowe, np. soczewicę, ciecierzycę i groch (groszek)"
+      },
+      "allergen.lupin": {
+        "status": "ai_draft",
+        "text": "Łubin (mąkę i nasiona łubinu)"
+      },
+      "allergen.macadamia": {
+        "status": "ai_draft",
+        "text": "Orzechy makadamia"
+      },
+      "allergen.mango": {
+        "status": "ai_draft",
+        "text": "Mango"
+      },
+      "allergen.milk": {
+        "status": "ai_draft",
+        "text": "Mleko i wszystkie produkty mleczne"
+      },
+      "allergen.molluscs": {
+        "status": "ai_draft",
+        "text": "Mięczaki, np. omułki (mule), małże, ostrygi, kalmary i ośmiornice"
+      },
+      "allergen.msg": {
+        "status": "ai_draft",
+        "text": "Glutaminian sodu (MSG, E621)"
+      },
+      "allergen.mustard": {
+        "status": "ai_draft",
+        "text": "Gorczycę (w tym musztardę)"
+      },
+      "allergen.onion": {
+        "status": "ai_draft",
+        "text": "Cebulę, w tym cebulkę dymkę i szalotkę"
+      },
+      "allergen.peach": {
+        "status": "ai_draft",
+        "text": "Brzoskwinie i inne owoce pestkowe, np. śliwki, morele, czereśnie i wiśnie"
+      },
+      "allergen.peanut": {
+        "status": "ai_draft",
+        "text": "Orzeszki ziemne (arachidowe, fistaszki)"
+      },
+      "allergen.pecan": {
+        "status": "ai_draft",
+        "text": "Orzechy pekan"
+      },
+      "allergen.pine_nut": {
+        "status": "ai_draft",
+        "text": "Orzeszki piniowe"
+      },
+      "allergen.pistachio": {
+        "status": "ai_draft",
+        "text": "Pistacje"
+      },
+      "allergen.pork": {
+        "status": "ai_draft",
+        "text": "Wieprzowinę, w tym smalec i bulion wieprzowy"
+      },
+      "allergen.red_meat": {
+        "status": "ai_draft",
+        "text": "Czerwone mięso, czyli mięso ssaków (np. wołowinę, wieprzowinę, jagnięcinę), oraz żelatynę ze ssaków (alergia na alfa-gal)"
+      },
+      "allergen.sesame": {
+        "status": "ai_draft",
+        "text": "Sezam"
+      },
+      "allergen.soy": {
+        "status": "ai_draft",
+        "text": "Soję"
+      },
+      "allergen.sulphites": {
+        "status": "ai_draft",
+        "text": "Siarczyny (dwutlenek siarki i siarczyny)"
+      },
+      "allergen.tomato": {
+        "status": "ai_draft",
+        "text": "Pomidory"
+      },
+      "allergen.tree_nuts": {
+        "status": "ai_draft",
+        "text": "Wszystkie orzechy, np. migdały, orzechy włoskie, nerkowce i orzechy laskowe"
+      },
+      "allergen.walnut": {
+        "status": "ai_draft",
+        "text": "Orzechy włoskie"
+      },
+      "allergen.wheat": {
+        "status": "ai_draft",
+        "text": "Pszenicę"
+      },
+      "cross_contact.bakery": {
+        "status": "ai_draft",
+        "text": "Piekarnie są dla mnie często niebezpieczne z powodu mąki i orzechów w powietrzu i na powierzchniach."
+      },
+      "cross_contact.board_knife": {
+        "status": "ai_draft",
+        "text": "Proszę użyć czystej deski do krojenia i czystego noża."
+      },
+      "cross_contact.buffet": {
+        "status": "ai_draft",
+        "text": "Nie mogę jeść z bufetu, ponieważ łyżki do nakładania są wspólne."
+      },
+      "cross_contact.fryer": {
+        "status": "ai_draft",
+        "text": "Proszę nie używać oleju ani frytownicy, w których przygotowywano coś z moim alergenem."
+      },
+      "cross_contact.garnish": {
+        "status": "ai_draft",
+        "text": "Proszę nie dodawać żadnych dekoracji, posypek ani sosów niesprawdzonych przeze mnie."
+      },
+      "cross_contact.grill": {
+        "status": "ai_draft",
+        "text": "Proszę nie przygotowywać mojego jedzenia na wspólnym grillu ani wspólnej płycie grillowej."
+      },
+      "cross_contact.hands": {
+        "status": "ai_draft",
+        "text": "Proszę umyć ręce i zmienić rękawiczki przed przygotowaniem mojego jedzenia."
+      },
+      "cross_contact.intro": {
+        "status": "ai_draft",
+        "text": "Nawet śladowa ilość ze wspólnie używanego sprzętu może wywołać reakcję."
+      },
+      "cross_contact.pan": {
+        "status": "ai_draft",
+        "text": "Proszę użyć czystej patelni, czystego woka i czystych przyborów kuchennych."
+      },
+      "cross_contact.remove_not_ok": {
+        "status": "ai_draft",
+        "text": "Usunięcie alergenu z gotowego dania nie jest bezpieczne. Proszę przygotować je od nowa."
+      },
+      "cross_contact.separate": {
+        "status": "ai_draft",
+        "text": "Proszę przygotować i podać moje danie osobno."
+      },
+      "emergency.antihistamine": {
+        "status": "ai_draft",
+        "text": "Czy ma Pan/Pani tabletki przeciwhistaminowe (na alergię)?"
+      },
+      "emergency.autoinjector": {
+        "status": "ai_draft",
+        "text": "W torbie mam automatyczny wstrzykiwacz z adrenaliną."
+      },
+      "emergency.call_ambulance": {
+        "status": "ai_draft",
+        "text": "Proszę natychmiast wezwać karetkę."
+      },
+      "emergency.contact": {
+        "status": "ai_draft",
+        "text": "Proszę zadzwonić do mojej osoby kontaktowej na wypadek nagłej sytuacji."
+      },
+      "emergency.help_inject": {
+        "status": "ai_draft",
+        "text": "Proszę pomóc mi go użyć."
+      },
+      "emergency.hospital": {
+        "status": "ai_draft",
+        "text": "Gdzie jest najbliższy szpital z oddziałem ratunkowym (SOR)?"
+      },
+      "emergency.lie_down": {
+        "status": "ai_draft",
+        "text": "Proszę pomóc mi się położyć. Proszę nie kazać mi wstawać ani chodzić."
+      },
+      "emergency.pharmacy": {
+        "status": "ai_draft",
+        "text": "Gdzie jest najbliższa apteka?"
+      },
+      "emergency.reaction": {
+        "status": "ai_draft",
+        "text": "Mam reakcję alergiczną."
+      },
+      "emergency.say_anaphylaxis": {
+        "status": "ai_draft",
+        "text": "Proszę im przekazać: anafilaksja, ciężka reakcja alergiczna."
+      },
+      "emergency.second_dose": {
+        "status": "ai_draft",
+        "text": "Jeśli po 5 minutach nie będzie poprawy, można użyć drugiego wstrzykiwacza z adrenaliną."
+      },
+      "emergency.sit_if_breathing": {
+        "status": "ai_draft",
+        "text": "Jeśli będę mieć trudności z oddychaniem, proszę pomóc mi usiąść."
+      },
+      "emergency.stay": {
+        "status": "ai_draft",
+        "text": "Proszę zostać ze mną, dopóki nie przybędzie pomoc."
+      },
+      "emergency.thigh": {
+        "status": "ai_draft",
+        "text": "Wstrzykuje się go w zewnętrzną część uda. Można to zrobić przez ubranie."
+      },
+      "hidden.all_forms": {
+        "status": "ai_draft",
+        "text": "Dotyczy to również wszelkich olejów, sosów, past, mąki, proszków, masła i dekoracji zrobionych z tego składnika."
+      },
+      "hidden.butter_ghee": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić, czy przy przygotowaniu nie używa się masła, ghee (masła klarowanego), śmietany ani sera."
+      },
+      "hidden.dashi": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić, czy nie ma bulionu rybnego (np. dashi lub płatków bonito)."
+      },
+      "hidden.egg_wash": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić, czy pieczywo lub wypieki nie są smarowane jajkiem i czy w cieście do smażenia (panierce) nie ma jajka."
+      },
+      "hidden.fish_sauce": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić, czy nie ma sosu rybnego lub anchois, także w sosach do sałatek (dressingach)."
+      },
+      "hidden.flour_thickener": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić, czy do zagęszczania sosów lub panierowania nie używa się mąki."
+      },
+      "hidden.hoisin": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić, czy nie ma sosu hoisin, sosu z czarnej fasoli lub innych sosów fasolowych."
+      },
+      "hidden.marzipan": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić desery z marcepanem, nugatem lub mąką migdałową."
+      },
+      "hidden.mayonnaise": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić, czy nie ma majonezu ani aioli."
+      },
+      "hidden.miso": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić, czy nie ma miso, tofu lub pasty fasolowej."
+      },
+      "hidden.nut_sauces": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić sosy, takie jak satay, pesto, mole i pralina."
+      },
+      "hidden.oyster_sauce": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić, czy nie ma sosu ostrygowego lub sosu XO."
+      },
+      "hidden.peanut_oil": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić, czy nie używa się oleju arachidowego, również do smażenia."
+      },
+      "hidden.sesame_oil": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić, czy nie ma oleju sezamowego, tahini lub posypki z ziaren sezamu."
+      },
+      "hidden.shrimp_paste": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić, czy nie ma pasty krewetkowej lub suszonych krewetek."
+      },
+      "hidden.soy_sauce": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić, czy nie ma sosu sojowego, który zawiera również pszenicę."
+      },
+      "hidden.stock_cubes": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić bulion, bazy do zup i przyprawy w proszku."
+      },
+      "hidden.whey_casein": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić, czy nie ma mleka w proszku, serwatki lub kazeiny."
+      },
+      "hidden.wine_sulphites": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić, czy nie ma wina, octu lub suszonych owoców (siarczyny)."
+      },
+      "hidden.worcestershire": {
+        "status": "ai_draft",
+        "text": "Proszę sprawdzić, czy nie ma sosu Worcestershire, który zawiera anchois."
+      },
+      "intro.allergic_to": {
+        "status": "ai_draft",
+        "text": "Mam alergię na:"
+      },
+      "intro.hello": {
+        "status": "ai_draft",
+        "text": "Dzień dobry. Mam poważną alergię pokarmową."
+      },
+      "intro.intolerance": {
+        "status": "ai_draft",
+        "text": "Mam nietolerancję pokarmową. Nie zagraża ona życiu, ale bardzo źle się po niej czuję."
+      },
+      "intro.life_threatening": {
+        "status": "ai_draft",
+        "text": "Ta alergia może zagrażać mojemu życiu."
+      },
+      "intro.not_preference": {
+        "status": "ai_draft",
+        "text": "To jest problem medyczny, a nie kwestia upodobań."
+      },
+      "intro.please_read": {
+        "status": "ai_draft",
+        "text": "Proszę uważnie przeczytać tę kartkę, zanim złożę zamówienie."
+      },
+      "intro.severe": {
+        "status": "ai_draft",
+        "text": "Moja alergia jest poważna. Nawet bardzo mała ilość może sprawić, że ciężko zachoruję."
+      },
+      "intro.thank_you_care": {
+        "status": "ai_draft",
+        "text": "Dziękuję za ostrożność przy przygotowywaniu mojego jedzenia."
+      },
+      "ordering.bring_menu": {
+        "status": "ai_draft",
+        "text": "Czy mogę zobaczyć informację o alergenach lub kartę alergenów?"
+      },
+      "ordering.confirm_served": {
+        "status": "ai_draft",
+        "text": "Podając danie, proszę potwierdzić, że to jest danie przygotowane bezpiecznie dla mojej alergii."
+      },
+      "ordering.drink_only": {
+        "status": "ai_draft",
+        "text": "Wezmę tylko coś do picia, dziękuję."
+      },
+      "ordering.if_unsure": {
+        "status": "ai_draft",
+        "text": "Jeśli nie ma Pan/Pani pewności, proszę mi powiedzieć. Wolę nic nie zamawiać, niż ryzykować."
+      },
+      "ordering.no_sauce": {
+        "status": "ai_draft",
+        "text": "Proszę podać to bez sosu."
+      },
+      "ordering.own_food": {
+        "status": "ai_draft",
+        "text": "Czy mogę zjeść własne jedzenie, które mam ze sobą?"
+      },
+      "ordering.plain": {
+        "status": "ai_draft",
+        "text": "Proszę przyrządzić to tylko z solą, pieprzem i oliwą z oliwek."
+      },
+      "ordering.recommend_safe": {
+        "status": "ai_draft",
+        "text": "Czy może Pan/Pani polecić danie, które będzie dla mnie bezpieczne?"
+      },
+      "ordering.same_dish": {
+        "status": "ai_draft",
+        "text": "Proszę upewnić się, że dostanę dokładnie to danie."
+      },
+      "ordering.simple": {
+        "status": "ai_draft",
+        "text": "Wystarczy coś prostego, np. zwykłe grillowane mięso lub ryba z ryżem lub warzywami."
+      },
+      "ordering.thanks": {
+        "status": "ai_draft",
+        "text": "Bardzo dziękuję za pomoc."
+      },
+      "ordering.write_down": {
+        "status": "ai_draft",
+        "text": "Czy może Pan/Pani zapisać mi składniki?"
+      },
+      "question.bread": {
+        "status": "ai_draft",
+        "text": "Czy pieczywo zawiera mleko, jajka, orzechy lub ziarna?"
+      },
+      "question.chef_confident": {
+        "status": "ai_draft",
+        "text": "Czy szef kuchni ma pewność, że to danie jest dla mnie bezpieczne?"
+      },
+      "question.contains": {
+        "status": "ai_draft",
+        "text": "Czy to danie zawiera któryś z moich alergenów?"
+      },
+      "question.dessert": {
+        "status": "ai_draft",
+        "text": "Czy desery zawierają orzechy, mleko lub jajka?"
+      },
+      "question.dressing": {
+        "status": "ai_draft",
+        "text": "Co jest w sosie do sałatki (dressingu)?"
+      },
+      "question.fried_shared": {
+        "status": "ai_draft",
+        "text": "Czy potrawy smażone przygotowuje się we wspólnym oleju?"
+      },
+      "question.ingredients": {
+        "status": "ai_draft",
+        "text": "Czy może Pan/Pani sprawdzić składniki u szefa kuchni?"
+      },
+      "question.kitchen_nuts": {
+        "status": "ai_draft",
+        "text": "Czy w kuchni używa się orzechów lub orzeszków ziemnych?"
+      },
+      "question.label": {
+        "status": "ai_draft",
+        "text": "Czy mogę zobaczyć etykietę lub opakowanie składników?"
+      },
+      "question.marinade": {
+        "status": "ai_draft",
+        "text": "Czy mięso lub ryba są marynowane? Co jest w marynacie?"
+      },
+      "question.may_contain": {
+        "status": "ai_draft",
+        "text": "Czy na którymś składniku jest napis „może zawierać” mój alergen?"
+      },
+      "question.modify": {
+        "status": "ai_draft",
+        "text": "Czy to danie można przygotować od nowa, bez mojego alergenu?"
+      },
+      "question.premade": {
+        "status": "ai_draft",
+        "text": "Czy to jest robione na miejscu w kuchni, czy kupowane gotowe?"
+      },
+      "question.safe_dish": {
+        "status": "ai_draft",
+        "text": "Które dania mogą Państwo bezpiecznie dla mnie przygotować?"
+      },
+      "question.same_oil": {
+        "status": "ai_draft",
+        "text": "Czy to jest smażone w tym samym oleju, co inne potrawy?"
+      },
+      "question.same_pan": {
+        "status": "ai_draft",
+        "text": "Czy to jest przygotowywane na tej samej patelni lub w tym samym woku, co inne potrawy?"
+      },
+      "question.sauce": {
+        "status": "ai_draft",
+        "text": "Co jest w sosie?"
+      },
+      "question.stock": {
+        "status": "ai_draft",
+        "text": "Na jakim bulionie jest zrobiona zupa?"
+      },
+      "shopping.dairy_free": {
+        "status": "ai_draft",
+        "text": "Czy sprzedają Państwo mleko roślinne (napój roślinny) bez orzechów i soi?"
+      },
+      "shopping.free_from": {
+        "status": "ai_draft",
+        "text": "Czy sprzedają Państwo produkty dla alergików (bez alergenów)?"
+      },
+      "shopping.gluten_free": {
+        "status": "ai_draft",
+        "text": "Czy sprzedają Państwo bezglutenowy chleb lub makaron?"
+      },
+      "shopping.product_contains": {
+        "status": "ai_draft",
+        "text": "Czy ten produkt zawiera któryś z moich alergenów?"
+      },
+      "shopping.read_label": {
+        "status": "ai_draft",
+        "text": "Czy może mi Pan/Pani przeczytać tę etykietę?"
+      },
+      "shopping.safe_brand": {
+        "status": "ai_draft",
+        "text": "Czy jest jakaś marka bez mojego alergenu?"
+      },
+      "shopping.traces": {
+        "status": "ai_draft",
+        "text": "Czy na etykiecie jest napisane, że produkt może zawierać śladowe ilości?"
+      },
+      "staff_answer.ask_chef": {
+        "status": "ai_draft",
+        "text": "Zapytam szefa kuchni"
+      },
+      "staff_answer.contains_allergen": {
+        "status": "ai_draft",
+        "text": "To zawiera Pana/Pani alergen"
+      },
+      "staff_answer.may_contain": {
+        "status": "ai_draft",
+        "text": "To może zawierać śladowe ilości"
+      },
+      "staff_answer.no": {
+        "status": "ai_draft",
+        "text": "Nie"
+      },
+      "staff_answer.not_safe": {
+        "status": "ai_draft",
+        "text": "Nie, nie możemy tego przygotować bezpiecznie"
+      },
+      "staff_answer.not_sure": {
+        "status": "ai_draft",
+        "text": "Nie mam pewności"
+      },
+      "staff_answer.recommend": {
+        "status": "ai_draft",
+        "text": "Polecam to danie"
+      },
+      "staff_answer.safe": {
+        "status": "ai_draft",
+        "text": "Tak, możemy to przygotować bezpiecznie"
+      },
+      "staff_answer.show_label": {
+        "status": "ai_draft",
+        "text": "Pokażę etykietę"
+      },
+      "staff_answer.tap_instruction": {
+        "status": "ai_draft",
+        "text": "Proszę dotknąć wybranej odpowiedzi."
+      },
+      "staff_answer.yes": {
+        "status": "ai_draft",
+        "text": "Tak"
+      },
+      "travel.airline_announce": {
+        "status": "ai_draft",
+        "text": "Czy można poprosić pasażerów siedzących w pobliżu, aby nie jedli orzechów ani orzeszków ziemnych?"
+      },
+      "travel.airline_meal": {
+        "status": "ai_draft",
+        "text": "Mam poważną alergię. Proszę nie podawać mi żadnego posiłku, którego wcześniej nie sprawdzę."
+      },
+      "travel.doctor_letter": {
+        "status": "ai_draft",
+        "text": "Mam zaświadczenie lekarskie dotyczące moich leków."
+      },
+      "travel.hotel_breakfast": {
+        "status": "ai_draft",
+        "text": "Proszę poinformować obsługę śniadań o mojej alergii."
+      },
+      "travel.hotel_kitchen": {
+        "status": "ai_draft",
+        "text": "Czy kuchnia może przygotować dla mnie bezpieczny posiłek?"
+      },
+      "travel.medication_carry": {
+        "status": "ai_draft",
+        "text": "Muszę mieć leki na alergię zawsze przy sobie."
+      }
+    },
+    "pt": {
+      "allergen.almond": {
+        "status": "ai_draft",
+        "text": "Amêndoas"
+      },
+      "allergen.apple": {
+        "status": "ai_draft",
+        "text": "Maçãs"
+      },
+      "allergen.banana": {
+        "status": "ai_draft",
+        "text": "Bananas"
+      },
+      "allergen.brazil_nut": {
+        "status": "ai_draft",
+        "text": "Castanhas-do-pará (castanhas-do-brasil)"
+      },
+      "allergen.buckwheat": {
+        "status": "ai_draft",
+        "text": "Trigo-sarraceno"
+      },
+      "allergen.cashew": {
+        "status": "ai_draft",
+        "text": "Castanhas de caju"
+      },
+      "allergen.celery": {
+        "status": "ai_draft",
+        "text": "Aipo (incluindo aipo-rábano e sal de aipo)"
+      },
+      "allergen.chicken": {
+        "status": "ai_draft",
+        "text": "Frango, incluindo caldo de galinha e caldo de galinha em pó"
+      },
+      "allergen.coconut": {
+        "status": "ai_draft",
+        "text": "Coco"
+      },
+      "allergen.corn": {
+        "status": "ai_draft",
+        "text": "Milho"
+      },
+      "allergen.crustaceans": {
+        "status": "ai_draft",
+        "text": "Crustáceos, como camarão, gambas, caranguejo e lagosta"
+      },
+      "allergen.egg": {
+        "status": "ai_draft",
+        "text": "Ovos"
+      },
+      "allergen.fish": {
+        "status": "ai_draft",
+        "text": "Peixe"
+      },
+      "allergen.garlic": {
+        "status": "ai_draft",
+        "text": "Alho"
+      },
+      "allergen.gelatin": {
+        "status": "ai_draft",
+        "text": "Gelatina"
+      },
+      "allergen.gluten": {
+        "status": "ai_draft",
+        "text": "Glúten (trigo, cevada, centeio e aveia, exceto se for certificada sem glúten)"
+      },
+      "allergen.hazelnut": {
+        "status": "ai_draft",
+        "text": "Avelãs"
+      },
+      "allergen.kiwi": {
+        "status": "ai_draft",
+        "text": "Kiwi"
+      },
+      "allergen.legumes": {
+        "status": "ai_draft",
+        "text": "Leguminosas, como lentilhas, grão-de-bico e ervilhas"
+      },
+      "allergen.lupin": {
+        "status": "ai_draft",
+        "text": "Tremoço (farinha e sementes de tremoço)"
+      },
+      "allergen.macadamia": {
+        "status": "ai_draft",
+        "text": "Nozes de macadâmia"
+      },
+      "allergen.mango": {
+        "status": "ai_draft",
+        "text": "Mangas"
+      },
+      "allergen.milk": {
+        "status": "ai_draft",
+        "text": "Leite e todos os produtos lácteos"
+      },
+      "allergen.molluscs": {
+        "status": "ai_draft",
+        "text": "Moluscos, como mexilhões, amêijoas, ostras, lulas e polvo"
+      },
+      "allergen.msg": {
+        "status": "ai_draft",
+        "text": "Glutamato monossódico (MSG)"
+      },
+      "allergen.mustard": {
+        "status": "ai_draft",
+        "text": "Mostarda"
+      },
+      "allergen.onion": {
+        "status": "ai_draft",
+        "text": "Cebola, incluindo cebolinho (cebola verde) e chalotas"
+      },
+      "allergen.peach": {
+        "status": "ai_draft",
+        "text": "Pêssegos e outros frutos de caroço, como ameixas, alperces e cerejas"
+      },
+      "allergen.peanut": {
+        "status": "ai_draft",
+        "text": "Amendoim"
+      },
+      "allergen.pecan": {
+        "status": "ai_draft",
+        "text": "Nozes-pecã"
+      },
+      "allergen.pine_nut": {
+        "status": "ai_draft",
+        "text": "Pinhões"
+      },
+      "allergen.pistachio": {
+        "status": "ai_draft",
+        "text": "Pistácios"
+      },
+      "allergen.pork": {
+        "status": "ai_draft",
+        "text": "Carne de porco, incluindo banha e caldo de porco"
+      },
+      "allergen.red_meat": {
+        "status": "ai_draft",
+        "text": "Carne vermelha e gelatina de mamíferos (alergia ao alfa-gal)"
+      },
+      "allergen.sesame": {
+        "status": "ai_draft",
+        "text": "Sésamo"
+      },
+      "allergen.soy": {
+        "status": "ai_draft",
+        "text": "Soja"
+      },
+      "allergen.sulphites": {
+        "status": "ai_draft",
+        "text": "Sulfitos"
+      },
+      "allergen.tomato": {
+        "status": "ai_draft",
+        "text": "Tomates"
+      },
+      "allergen.tree_nuts": {
+        "status": "ai_draft",
+        "text": "Todos os frutos de casca rija, como amêndoas, nozes, castanhas de caju e avelãs"
+      },
+      "allergen.walnut": {
+        "status": "ai_draft",
+        "text": "Nozes"
+      },
+      "allergen.wheat": {
+        "status": "ai_draft",
+        "text": "Trigo"
+      },
+      "cross_contact.bakery": {
+        "status": "ai_draft",
+        "text": "As padarias muitas vezes não são seguras para mim, por causa da farinha e dos frutos de casca rija no ar e nas superfícies."
+      },
+      "cross_contact.board_knife": {
+        "status": "ai_draft",
+        "text": "Por favor, use uma tábua de cortar e uma faca limpas."
+      },
+      "cross_contact.buffet": {
+        "status": "ai_draft",
+        "text": "Não posso comer de um bufete por causa das colheres de servir partilhadas."
+      },
+      "cross_contact.fryer": {
+        "status": "ai_draft",
+        "text": "Por favor, não use óleo nem fritadeira onde já tenha sido cozinhado o meu alergénio."
+      },
+      "cross_contact.garnish": {
+        "status": "ai_draft",
+        "text": "Por favor, não acrescente nenhuma guarnição, cobertura ou molho que eu não tenha verificado."
+      },
+      "cross_contact.grill": {
+        "status": "ai_draft",
+        "text": "Por favor, não cozinhe a minha comida numa grelha ou chapa partilhada."
+      },
+      "cross_contact.hands": {
+        "status": "ai_draft",
+        "text": "Por favor, lave as mãos e troque de luvas antes de preparar a minha comida."
+      },
+      "cross_contact.intro": {
+        "status": "ai_draft",
+        "text": "Mesmo um vestígio vindo de equipamento partilhado pode causar uma reação."
+      },
+      "cross_contact.pan": {
+        "status": "ai_draft",
+        "text": "Por favor, use frigideiras, tachos, wok e utensílios limpos."
+      },
+      "cross_contact.remove_not_ok": {
+        "status": "ai_draft",
+        "text": "Retirar o alergénio de um prato já pronto não é seguro. Por favor, prepare um prato novo."
+      },
+      "cross_contact.separate": {
+        "status": "ai_draft",
+        "text": "Por favor, prepare e sirva o meu prato separadamente."
+      },
+      "emergency.antihistamine": {
+        "status": "ai_draft",
+        "text": "Tem comprimidos anti-histamínicos?"
+      },
+      "emergency.autoinjector": {
+        "status": "ai_draft",
+        "text": "Tenho um autoinjetor de adrenalina (epinefrina) na minha mala de mão."
+      },
+      "emergency.call_ambulance": {
+        "status": "ai_draft",
+        "text": "Por favor, chame uma ambulância agora."
+      },
+      "emergency.contact": {
+        "status": "ai_draft",
+        "text": "Por favor, ligue ao meu contacto de emergência."
+      },
+      "emergency.help_inject": {
+        "status": "ai_draft",
+        "text": "Por favor, ajude-me a usá-lo."
+      },
+      "emergency.hospital": {
+        "status": "ai_draft",
+        "text": "Onde fica o hospital mais próximo com serviço de urgência?"
+      },
+      "emergency.lie_down": {
+        "status": "ai_draft",
+        "text": "Por favor, ajude-me a deitar-me. Não me obrigue a ficar de pé nem a andar."
+      },
+      "emergency.pharmacy": {
+        "status": "ai_draft",
+        "text": "Onde fica a farmácia mais próxima?"
+      },
+      "emergency.reaction": {
+        "status": "ai_draft",
+        "text": "Estou a ter uma reação alérgica."
+      },
+      "emergency.say_anaphylaxis": {
+        "status": "ai_draft",
+        "text": "Diga-lhes: anafilaxia, uma reação alérgica grave."
+      },
+      "emergency.second_dose": {
+        "status": "ai_draft",
+        "text": "Se não houver melhoria ao fim de 5 minutos, pode ser usado um segundo autoinjetor."
+      },
+      "emergency.sit_if_breathing": {
+        "status": "ai_draft",
+        "text": "Se eu tiver dificuldade em respirar, ajude-me a sentar-me."
+      },
+      "emergency.stay": {
+        "status": "ai_draft",
+        "text": "Por favor, fique comigo até chegar ajuda."
+      },
+      "emergency.thigh": {
+        "status": "ai_draft",
+        "text": "É aplicado na parte exterior da coxa. Pode ser aplicado através da roupa."
+      },
+      "hidden.all_forms": {
+        "status": "ai_draft",
+        "text": "Isto inclui qualquer óleo, molho, pasta, farinha, pó, manteiga ou guarnição feitos com este alimento."
+      },
+      "hidden.butter_ghee": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se é usada manteiga, ghee, natas ou queijo na confeção."
+      },
+      "hidden.dashi": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se há caldo de peixe (por exemplo, dashi ou flocos de bonito)."
+      },
+      "hidden.egg_wash": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se o pão ou a pastelaria são pincelados com ovo, e se o polme leva ovo."
+      },
+      "hidden.fish_sauce": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se há molho de peixe ou anchova, incluindo nos temperos de salada."
+      },
+      "hidden.flour_thickener": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se é usada farinha para engrossar molhos ou para envolver os alimentos."
+      },
+      "hidden.hoisin": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se há molho hoisin, molho de feijão preto ou outros molhos de feijão."
+      },
+      "hidden.marzipan": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique sobremesas com maçapão, nogado ou farinha de amêndoa."
+      },
+      "hidden.mayonnaise": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se há maionese e aioli."
+      },
+      "hidden.miso": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se há miso, tofu ou pasta de feijão."
+      },
+      "hidden.nut_sauces": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique molhos como satay, pesto, mole e praliné."
+      },
+      "hidden.oyster_sauce": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se há molho de ostra ou molho XO."
+      },
+      "hidden.peanut_oil": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se é usado óleo de amendoim, incluindo para fritar."
+      },
+      "hidden.sesame_oil": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se há óleo de sésamo, tahini ou sementes de sésamo por cima."
+      },
+      "hidden.shrimp_paste": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se há pasta de camarão ou camarão seco."
+      },
+      "hidden.soy_sauce": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se há molho de soja, que também contém trigo."
+      },
+      "hidden.stock_cubes": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique os caldos, as bases para sopa e os temperos em pó."
+      },
+      "hidden.whey_casein": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se há leite em pó, soro de leite ou caseína."
+      },
+      "hidden.wine_sulphites": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se há vinho, vinagre ou fruta desidratada (sulfitos)."
+      },
+      "hidden.worcestershire": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se há molho inglês (Worcestershire), que contém anchova."
+      },
+      "intro.allergic_to": {
+        "status": "ai_draft",
+        "text": "Tenho alergia a:"
+      },
+      "intro.hello": {
+        "status": "ai_draft",
+        "text": "Olá. Tenho uma alergia alimentar grave."
+      },
+      "intro.intolerance": {
+        "status": "ai_draft",
+        "text": "Tenho uma intolerância alimentar. Não põe a minha vida em risco, mas faz-me sentir muito mal."
+      },
+      "intro.life_threatening": {
+        "status": "ai_draft",
+        "text": "Esta alergia pode pôr a minha vida em risco."
+      },
+      "intro.not_preference": {
+        "status": "ai_draft",
+        "text": "É uma condição médica, não uma preferência."
+      },
+      "intro.please_read": {
+        "status": "ai_draft",
+        "text": "Por favor, leia este cartão com atenção antes de eu fazer o pedido."
+      },
+      "intro.severe": {
+        "status": "ai_draft",
+        "text": "A minha alergia é grave. Mesmo uma quantidade mínima pode deixar-me gravemente doente."
+      },
+      "intro.thank_you_care": {
+        "status": "ai_draft",
+        "text": "Agradeço o cuidado com a minha comida."
+      },
+      "ordering.bring_menu": {
+        "status": "ai_draft",
+        "text": "Posso ver a informação sobre alergénios ou a ementa de alergénios?"
+      },
+      "ordering.confirm_served": {
+        "status": "ai_draft",
+        "text": "Quando o servir, por favor confirme que é o prato seguro para a minha alergia."
+      },
+      "ordering.drink_only": {
+        "status": "ai_draft",
+        "text": "Vou tomar apenas uma bebida, obrigado(a)."
+      },
+      "ordering.if_unsure": {
+        "status": "ai_draft",
+        "text": "Se não tiver a certeza, diga-me, por favor. Prefiro não pedir nada do que correr um risco."
+      },
+      "ordering.no_sauce": {
+        "status": "ai_draft",
+        "text": "Por favor, sirva sem molho."
+      },
+      "ordering.own_food": {
+        "status": "ai_draft",
+        "text": "Importa-se que eu coma comida que trouxe comigo?"
+      },
+      "ordering.plain": {
+        "status": "ai_draft",
+        "text": "Por favor, cozinhe apenas com sal, pimenta e azeite."
+      },
+      "ordering.recommend_safe": {
+        "status": "ai_draft",
+        "text": "Pode recomendar-me um prato que seja seguro para mim?"
+      },
+      "ordering.same_dish": {
+        "status": "ai_draft",
+        "text": "Por favor, certifique-se de que é exatamente este prato que me é servido."
+      },
+      "ordering.simple": {
+        "status": "ai_draft",
+        "text": "Algo simples serve, como carne ou peixe simplesmente grelhados, com arroz ou legumes."
+      },
+      "ordering.thanks": {
+        "status": "ai_draft",
+        "text": "Muito obrigado(a) pela sua ajuda."
+      },
+      "ordering.write_down": {
+        "status": "ai_draft",
+        "text": "Pode escrever-me os ingredientes, por favor?"
+      },
+      "question.bread": {
+        "status": "ai_draft",
+        "text": "O pão contém leite, ovo, frutos de casca rija ou sementes?"
+      },
+      "question.chef_confident": {
+        "status": "ai_draft",
+        "text": "O chef tem a certeza de que este prato é seguro para mim?"
+      },
+      "question.contains": {
+        "status": "ai_draft",
+        "text": "Este prato contém algum dos meus alergénios?"
+      },
+      "question.dessert": {
+        "status": "ai_draft",
+        "text": "As sobremesas contêm frutos de casca rija, leite ou ovo?"
+      },
+      "question.dressing": {
+        "status": "ai_draft",
+        "text": "Quais são os ingredientes do tempero da salada?"
+      },
+      "question.fried_shared": {
+        "status": "ai_draft",
+        "text": "Os fritos são feitos em óleo partilhado?"
+      },
+      "question.ingredients": {
+        "status": "ai_draft",
+        "text": "Pode confirmar os ingredientes com o chef?"
+      },
+      "question.kitchen_nuts": {
+        "status": "ai_draft",
+        "text": "Na cozinha usam frutos de casca rija ou amendoim?"
+      },
+      "question.label": {
+        "status": "ai_draft",
+        "text": "Posso ver o rótulo ou a embalagem dos ingredientes?"
+      },
+      "question.marinade": {
+        "status": "ai_draft",
+        "text": "A carne ou o peixe estão marinados? Quais são os ingredientes da marinada?"
+      },
+      "question.may_contain": {
+        "status": "ai_draft",
+        "text": "Algum ingrediente indica \"pode conter\" o meu alergénio?"
+      },
+      "question.modify": {
+        "status": "ai_draft",
+        "text": "Este prato pode ser feito de raiz, sem o meu alergénio?"
+      },
+      "question.premade": {
+        "status": "ai_draft",
+        "text": "Isto é feito na cozinha ou comprado já pronto?"
+      },
+      "question.safe_dish": {
+        "status": "ai_draft",
+        "text": "Que pratos podem preparar com segurança para mim?"
+      },
+      "question.same_oil": {
+        "status": "ai_draft",
+        "text": "Isto é cozinhado no mesmo óleo que outros alimentos?"
+      },
+      "question.same_pan": {
+        "status": "ai_draft",
+        "text": "Isto é cozinhado na mesma frigideira, tacho ou wok que outros alimentos?"
+      },
+      "question.sauce": {
+        "status": "ai_draft",
+        "text": "Quais são os ingredientes do molho?"
+      },
+      "question.stock": {
+        "status": "ai_draft",
+        "text": "Que caldo é usado na sopa?"
+      },
+      "shopping.dairy_free": {
+        "status": "ai_draft",
+        "text": "Vendem leite vegetal sem frutos de casca rija nem soja?"
+      },
+      "shopping.free_from": {
+        "status": "ai_draft",
+        "text": "Vendem produtos para alérgicos (sem alergénios)?"
+      },
+      "shopping.gluten_free": {
+        "status": "ai_draft",
+        "text": "Vendem pão ou massa sem glúten?"
+      },
+      "shopping.product_contains": {
+        "status": "ai_draft",
+        "text": "Este produto contém algum dos meus alergénios?"
+      },
+      "shopping.read_label": {
+        "status": "ai_draft",
+        "text": "Pode ler-me este rótulo, por favor?"
+      },
+      "shopping.safe_brand": {
+        "status": "ai_draft",
+        "text": "Há alguma marca sem o meu alergénio?"
+      },
+      "shopping.traces": {
+        "status": "ai_draft",
+        "text": "O rótulo diz que pode conter vestígios?"
+      },
+      "staff_answer.ask_chef": {
+        "status": "ai_draft",
+        "text": "Vou perguntar ao chef"
+      },
+      "staff_answer.contains_allergen": {
+        "status": "ai_draft",
+        "text": "Contém o seu alergénio"
+      },
+      "staff_answer.may_contain": {
+        "status": "ai_draft",
+        "text": "Pode conter vestígios"
+      },
+      "staff_answer.no": {
+        "status": "ai_draft",
+        "text": "Não"
+      },
+      "staff_answer.not_safe": {
+        "status": "ai_draft",
+        "text": "Não, não podemos prepará-lo com segurança"
+      },
+      "staff_answer.not_sure": {
+        "status": "ai_draft",
+        "text": "Não tenho a certeza"
+      },
+      "staff_answer.recommend": {
+        "status": "ai_draft",
+        "text": "Recomendo este prato"
+      },
+      "staff_answer.safe": {
+        "status": "ai_draft",
+        "text": "Sim, podemos prepará-lo com segurança"
+      },
+      "staff_answer.show_label": {
+        "status": "ai_draft",
+        "text": "Vou mostrar-lhe o rótulo"
+      },
+      "staff_answer.tap_instruction": {
+        "status": "ai_draft",
+        "text": "Por favor, toque na sua resposta."
+      },
+      "staff_answer.yes": {
+        "status": "ai_draft",
+        "text": "Sim"
+      },
+      "travel.airline_announce": {
+        "status": "ai_draft",
+        "text": "Podia pedir aos passageiros perto de mim que não comam frutos de casca rija nem amendoins?"
+      },
+      "travel.airline_meal": {
+        "status": "ai_draft",
+        "text": "Tenho uma alergia grave. Por favor, não me sirva nenhuma refeição que eu não tenha verificado."
+      },
+      "travel.doctor_letter": {
+        "status": "ai_draft",
+        "text": "Tenho uma declaração médica para a minha medicação."
+      },
+      "travel.hotel_breakfast": {
+        "status": "ai_draft",
+        "text": "Por favor, informe a equipa do pequeno-almoço sobre a minha alergia."
+      },
+      "travel.hotel_kitchen": {
+        "status": "ai_draft",
+        "text": "A cozinha pode preparar-me uma refeição segura?"
+      },
+      "travel.medication_carry": {
+        "status": "ai_draft",
+        "text": "Tenho de ter sempre comigo a minha medicação para a alergia."
+      }
+    },
+    "pt-BR": {
+      "allergen.celery": {
+        "status": "ai_draft",
+        "text": "Salsão (aipo), incluindo raiz de salsão e sal de aipo"
+      },
+      "allergen.crustaceans": {
+        "status": "ai_draft",
+        "text": "Crustáceos, como camarão (pequeno ou grande), caranguejo, siri e lagosta"
+      },
+      "allergen.molluscs": {
+        "status": "ai_draft",
+        "text": "Moluscos, como mexilhões, vôngoles, ostras, lulas e polvo"
+      },
+      "allergen.onion": {
+        "status": "ai_draft",
+        "text": "Cebola, incluindo cebolinha e echalotas"
+      },
+      "allergen.peach": {
+        "status": "ai_draft",
+        "text": "Pêssegos e outras frutas de caroço, como ameixas, damascos e cerejas"
+      },
+      "allergen.pine_nut": {
+        "status": "ai_draft",
+        "text": "Pinoli (sementes de pinheiro, de qualquer tipo)"
+      },
+      "allergen.pistachio": {
+        "status": "ai_draft",
+        "text": "Pistaches"
+      },
+      "allergen.sesame": {
+        "status": "ai_draft",
+        "text": "Gergelim"
+      },
+      "allergen.tree_nuts": {
+        "status": "ai_draft",
+        "text": "Todos os tipos de castanhas e nozes, como amêndoas, nozes, castanhas-de-caju e avelãs"
+      },
+      "cross_contact.bakery": {
+        "status": "ai_draft",
+        "text": "Padarias muitas vezes não são seguras para mim, por causa da farinha e das castanhas e nozes no ar e nas superfícies."
+      },
+      "cross_contact.buffet": {
+        "status": "ai_draft",
+        "text": "Não posso comer em bufê por causa das colheres de servir compartilhadas."
+      },
+      "cross_contact.fryer": {
+        "status": "ai_draft",
+        "text": "Por favor, não use óleo nem fritadeira onde já tenha sido preparado o meu alérgeno."
+      },
+      "cross_contact.grill": {
+        "status": "ai_draft",
+        "text": "Por favor, não prepare a minha comida em uma grelha ou chapa compartilhada."
+      },
+      "cross_contact.intro": {
+        "status": "ai_draft",
+        "text": "Mesmo um traço vindo de equipamentos compartilhados pode causar uma reação."
+      },
+      "cross_contact.remove_not_ok": {
+        "status": "ai_draft",
+        "text": "Retirar o alérgeno de um prato já pronto não é seguro. Por favor, prepare um prato novo."
+      },
+      "emergency.autoinjector": {
+        "status": "ai_draft",
+        "text": "Tenho uma caneta autoinjetora de adrenalina (epinefrina) na minha bolsa."
+      },
+      "emergency.contact": {
+        "status": "ai_draft",
+        "text": "Por favor, ligue para o meu contato de emergência."
+      },
+      "emergency.help_inject": {
+        "status": "ai_draft",
+        "text": "Por favor, me ajude a usá-la."
+      },
+      "emergency.hospital": {
+        "status": "ai_draft",
+        "text": "Onde fica o hospital mais próximo com pronto-socorro?"
+      },
+      "emergency.lie_down": {
+        "status": "ai_draft",
+        "text": "Por favor, me ajude a deitar. Não me faça ficar em pé nem andar."
+      },
+      "emergency.reaction": {
+        "status": "ai_draft",
+        "text": "Estou tendo uma reação alérgica."
+      },
+      "emergency.say_anaphylaxis": {
+        "status": "ai_draft",
+        "text": "Diga a eles: anafilaxia, uma reação alérgica grave."
+      },
+      "emergency.second_dose": {
+        "status": "ai_draft",
+        "text": "Se não houver melhora depois de 5 minutos, pode ser usada uma segunda caneta autoinjetora."
+      },
+      "emergency.sit_if_breathing": {
+        "status": "ai_draft",
+        "text": "Se eu estiver com dificuldade para respirar, me ajude a sentar."
+      },
+      "emergency.thigh": {
+        "status": "ai_draft",
+        "text": "É aplicada na parte externa da coxa. Pode ser aplicada por cima da roupa."
+      },
+      "hidden.butter_ghee": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se é usado manteiga, ghee, creme de leite ou queijo no preparo."
+      },
+      "hidden.egg_wash": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se o pão ou a massa são pincelados com ovo, e se a massa de empanar leva ovo."
+      },
+      "hidden.marzipan": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique sobremesas com marzipã, torrone ou farinha de amêndoa."
+      },
+      "hidden.sesame_oil": {
+        "status": "ai_draft",
+        "text": "Por favor, verifique se há óleo de gergelim, tahine ou sementes de gergelim por cima."
+      },
+      "intro.intolerance": {
+        "status": "ai_draft",
+        "text": "Tenho uma intolerância alimentar. Não coloca minha vida em risco, mas me faz passar muito mal."
+      },
+      "intro.severe": {
+        "status": "ai_draft",
+        "text": "Minha alergia é grave. Mesmo uma quantidade mínima pode me deixar gravemente doente."
+      },
+      "ordering.bring_menu": {
+        "status": "ai_draft",
+        "text": "Posso ver as informações sobre alérgenos ou o cardápio de alérgenos?"
+      },
+      "ordering.if_unsure": {
+        "status": "ai_draft",
+        "text": "Se não tiver certeza, por favor me diga. Prefiro não pedir nada a correr um risco."
+      },
+      "ordering.own_food": {
+        "status": "ai_draft",
+        "text": "Tudo bem se eu comer uma comida que eu trouxe?"
+      },
+      "ordering.recommend_safe": {
+        "status": "ai_draft",
+        "text": "Pode me recomendar um prato que seja seguro para mim?"
+      },
+      "ordering.same_dish": {
+        "status": "ai_draft",
+        "text": "Por favor, certifique-se de que seja exatamente este prato que vai ser trazido para mim."
+      },
+      "ordering.write_down": {
+        "status": "ai_draft",
+        "text": "Poderia anotar os ingredientes para mim, por favor?"
+      },
+      "question.bread": {
+        "status": "ai_draft",
+        "text": "O pão contém leite, ovo, castanhas, nozes ou sementes?"
+      },
+      "question.chef_confident": {
+        "status": "ai_draft",
+        "text": "O chef tem certeza de que este prato é seguro para mim?"
+      },
+      "question.contains": {
+        "status": "ai_draft",
+        "text": "Este prato contém algum dos meus alérgenos?"
+      },
+      "question.dessert": {
+        "status": "ai_draft",
+        "text": "As sobremesas contêm castanhas, nozes, leite ou ovo?"
+      },
+      "question.fried_shared": {
+        "status": "ai_draft",
+        "text": "As frituras são feitas em óleo compartilhado?"
+      },
+      "question.kitchen_nuts": {
+        "status": "ai_draft",
+        "text": "A cozinha usa castanhas, nozes ou amendoim?"
+      },
+      "question.may_contain": {
+        "status": "ai_draft",
+        "text": "Algum ingrediente diz \"pode conter\" o meu alérgeno?"
+      },
+      "question.modify": {
+        "status": "ai_draft",
+        "text": "Este prato pode ser feito do zero, sem o meu alérgeno?"
+      },
+      "shopping.dairy_free": {
+        "status": "ai_draft",
+        "text": "Vocês vendem leite vegetal sem castanhas, nozes nem soja?"
+      },
+      "shopping.free_from": {
+        "status": "ai_draft",
+        "text": "Vocês vendem produtos para alérgicos (sem alérgenos)?"
+      },
+      "shopping.gluten_free": {
+        "status": "ai_draft",
+        "text": "Vocês vendem pão ou macarrão sem glúten?"
+      },
+      "shopping.product_contains": {
+        "status": "ai_draft",
+        "text": "Este produto contém algum dos meus alérgenos?"
+      },
+      "shopping.read_label": {
+        "status": "ai_draft",
+        "text": "Pode ler este rótulo para mim, por favor?"
+      },
+      "shopping.safe_brand": {
+        "status": "ai_draft",
+        "text": "Tem alguma marca sem o meu alérgeno?"
+      },
+      "shopping.traces": {
+        "status": "ai_draft",
+        "text": "O rótulo diz que pode conter traços?"
+      },
+      "staff_answer.contains_allergen": {
+        "status": "ai_draft",
+        "text": "Contém o seu alérgeno"
+      },
+      "staff_answer.may_contain": {
+        "status": "ai_draft",
+        "text": "Pode conter traços"
+      },
+      "staff_answer.not_safe": {
+        "status": "ai_draft",
+        "text": "Não, não podemos preparar com segurança"
+      },
+      "staff_answer.not_sure": {
+        "status": "ai_draft",
+        "text": "Não tenho certeza"
+      },
+      "staff_answer.safe": {
+        "status": "ai_draft",
+        "text": "Sim, podemos preparar com segurança"
+      },
+      "staff_answer.show_label": {
+        "status": "ai_draft",
+        "text": "Vou mostrar o rótulo para você"
+      },
+      "travel.airline_announce": {
+        "status": "ai_draft",
+        "text": "Poderia pedir aos passageiros perto de mim que não comam castanhas, nozes nem amendoim?"
+      },
+      "travel.hotel_breakfast": {
+        "status": "ai_draft",
+        "text": "Por favor, informe a equipe do café da manhã sobre a minha alergia."
+      },
+      "travel.hotel_kitchen": {
+        "status": "ai_draft",
+        "text": "A cozinha pode preparar uma refeição segura para mim?"
+      },
+      "travel.medication_carry": {
+        "status": "ai_draft",
+        "text": "Preciso estar com os meus remédios para alergia o tempo todo."
+      }
+    },
     "yue-Hant": {
       "allergen.almond": {
         "status": "ai_draft",
@@ -1214,7 +5075,7 @@
       },
       "allergen.gelatin": {
         "status": "ai_draft",
-        "text": "明膠（魚膠粉）"
+        "text": "明膠（魚膠粉），無論用豬、牛定係魚整"
       },
       "allergen.gluten": {
         "status": "ai_draft",
@@ -1230,7 +5091,7 @@
       },
       "allergen.legumes": {
         "status": "ai_draft",
-        "text": "豆類，例如扁豆、鷹嘴豆同青豆"
+        "text": "豆類，例如小扁豆、鷹嘴豆同青豆"
       },
       "allergen.lupin": {
         "status": "ai_draft",
@@ -1258,7 +5119,7 @@
       },
       "allergen.mustard": {
         "status": "ai_draft",
-        "text": "芥末（西式黃芥末醬同芥末籽）"
+        "text": "芥末（芥菜籽同用佢整嘅嘢，例如黃芥末醬、芥末粉、芥末油）"
       },
       "allergen.onion": {
         "status": "ai_draft",
@@ -1310,7 +5171,7 @@
       },
       "allergen.tree_nuts": {
         "status": "ai_draft",
-        "text": "所有果仁，例如杏仁、合桃、腰果同榛子"
+        "text": "所有果仁，例如杏仁（扁桃仁）、合桃、腰果同榛子"
       },
       "allergen.walnut": {
         "status": "ai_draft",
@@ -1450,7 +5311,7 @@
       },
       "hidden.marzipan": {
         "status": "ai_draft",
-        "text": "請檢查甜品有冇杏仁膏、牛軋糖或者杏仁粉。"
+        "text": "請檢查甜品有冇杏仁膏、牛軋糖或者杏仁粉（扁桃仁粉）。"
       },
       "hidden.mayonnaise": {
         "status": "ai_draft",
@@ -1726,7 +5587,7 @@
       },
       "travel.airline_announce": {
         "status": "ai_draft",
-        "text": "可唔可以請附近嘅乘客唔好食果仁？"
+        "text": "可唔可以請附近嘅乘客唔好食果仁或者花生？"
       },
       "travel.airline_meal": {
         "status": "ai_draft",
@@ -1749,7 +5610,1193 @@
         "text": "我要隨時帶住我嘅敏感藥物。"
       }
     },
-    "zh-Hans": {},
-    "zh-Hant-TW": {}
+    "zh-Hans": {
+      "allergen.almond": {
+        "status": "ai_draft",
+        "text": "杏仁（巴旦木）"
+      },
+      "allergen.apple": {
+        "status": "ai_draft",
+        "text": "苹果"
+      },
+      "allergen.banana": {
+        "status": "ai_draft",
+        "text": "香蕉"
+      },
+      "allergen.brazil_nut": {
+        "status": "ai_draft",
+        "text": "巴西坚果"
+      },
+      "allergen.buckwheat": {
+        "status": "ai_draft",
+        "text": "荞麦"
+      },
+      "allergen.cashew": {
+        "status": "ai_draft",
+        "text": "腰果"
+      },
+      "allergen.celery": {
+        "status": "ai_draft",
+        "text": "芹菜（包括根芹和芹菜盐）"
+      },
+      "allergen.chicken": {
+        "status": "ai_draft",
+        "text": "鸡肉，包括鸡汤和鸡精（鸡粉）"
+      },
+      "allergen.coconut": {
+        "status": "ai_draft",
+        "text": "椰子"
+      },
+      "allergen.corn": {
+        "status": "ai_draft",
+        "text": "玉米"
+      },
+      "allergen.crustaceans": {
+        "status": "ai_draft",
+        "text": "甲壳类海鲜，例如小虾、大虾、螃蟹和龙虾"
+      },
+      "allergen.egg": {
+        "status": "ai_draft",
+        "text": "蛋类（包括鸡蛋）"
+      },
+      "allergen.fish": {
+        "status": "ai_draft",
+        "text": "鱼类"
+      },
+      "allergen.garlic": {
+        "status": "ai_draft",
+        "text": "大蒜"
+      },
+      "allergen.gelatin": {
+        "status": "ai_draft",
+        "text": "明胶（吉利丁）"
+      },
+      "allergen.gluten": {
+        "status": "ai_draft",
+        "text": "麸质（包括小麦、大麦、黑麦，以及未经无麸质认证的燕麦）"
+      },
+      "allergen.hazelnut": {
+        "status": "ai_draft",
+        "text": "榛子"
+      },
+      "allergen.kiwi": {
+        "status": "ai_draft",
+        "text": "猕猴桃（奇异果）"
+      },
+      "allergen.legumes": {
+        "status": "ai_draft",
+        "text": "豆类，例如小扁豆、鹰嘴豆和豌豆"
+      },
+      "allergen.lupin": {
+        "status": "ai_draft",
+        "text": "羽扇豆粉和羽扇豆籽"
+      },
+      "allergen.macadamia": {
+        "status": "ai_draft",
+        "text": "夏威夷果（澳洲坚果）"
+      },
+      "allergen.mango": {
+        "status": "ai_draft",
+        "text": "芒果"
+      },
+      "allergen.milk": {
+        "status": "ai_draft",
+        "text": "牛奶及所有乳制品"
+      },
+      "allergen.molluscs": {
+        "status": "ai_draft",
+        "text": "贝类及软体类海鲜，例如青口（贻贝）、蛤蜊、生蚝（牡蛎）、鱿鱼和章鱼"
+      },
+      "allergen.msg": {
+        "status": "ai_draft",
+        "text": "味精（谷氨酸钠）"
+      },
+      "allergen.mustard": {
+        "status": "ai_draft",
+        "text": "芥末（芥菜籽及其制品，如黄芥末酱、芥末粉、芥末油）"
+      },
+      "allergen.onion": {
+        "status": "ai_draft",
+        "text": "洋葱，包括葱（小葱）和红葱头"
+      },
+      "allergen.peach": {
+        "status": "ai_draft",
+        "text": "桃子及其他核果类水果，例如李子、杏和樱桃"
+      },
+      "allergen.peanut": {
+        "status": "ai_draft",
+        "text": "花生"
+      },
+      "allergen.pecan": {
+        "status": "ai_draft",
+        "text": "碧根果（美国山核桃）"
+      },
+      "allergen.pine_nut": {
+        "status": "ai_draft",
+        "text": "松子"
+      },
+      "allergen.pistachio": {
+        "status": "ai_draft",
+        "text": "开心果"
+      },
+      "allergen.pork": {
+        "status": "ai_draft",
+        "text": "猪肉，包括猪油和猪肉高汤"
+      },
+      "allergen.red_meat": {
+        "status": "ai_draft",
+        "text": "红肉（哺乳动物的肉）及哺乳动物来源的明胶（α-半乳糖过敏）"
+      },
+      "allergen.sesame": {
+        "status": "ai_draft",
+        "text": "芝麻"
+      },
+      "allergen.soy": {
+        "status": "ai_draft",
+        "text": "大豆（黄豆）"
+      },
+      "allergen.sulphites": {
+        "status": "ai_draft",
+        "text": "亚硫酸盐"
+      },
+      "allergen.tomato": {
+        "status": "ai_draft",
+        "text": "番茄（西红柿）"
+      },
+      "allergen.tree_nuts": {
+        "status": "ai_draft",
+        "text": "所有坚果，例如杏仁（巴旦木）、核桃、腰果和榛子"
+      },
+      "allergen.walnut": {
+        "status": "ai_draft",
+        "text": "核桃"
+      },
+      "allergen.wheat": {
+        "status": "ai_draft",
+        "text": "小麦"
+      },
+      "cross_contact.bakery": {
+        "status": "ai_draft",
+        "text": "面包店对我来说通常不安全，因为空气中和台面上常有面粉和坚果。"
+      },
+      "cross_contact.board_knife": {
+        "status": "ai_draft",
+        "text": "请使用干净的菜板和刀。"
+      },
+      "cross_contact.buffet": {
+        "status": "ai_draft",
+        "text": "自助餐的取菜勺是共用的，所以我不能吃自助餐。"
+      },
+      "cross_contact.fryer": {
+        "status": "ai_draft",
+        "text": "请不要使用炸过我过敏食物的油或油炸锅。"
+      },
+      "cross_contact.garnish": {
+        "status": "ai_draft",
+        "text": "请不要添加任何我没有确认过的装饰配料、浇头或酱汁。"
+      },
+      "cross_contact.grill": {
+        "status": "ai_draft",
+        "text": "请不要在共用的烤架或铁板上烹饪我的食物。"
+      },
+      "cross_contact.hands": {
+        "status": "ai_draft",
+        "text": "准备我的食物前，请先洗手并更换手套。"
+      },
+      "cross_contact.intro": {
+        "status": "ai_draft",
+        "text": "即使是共用厨具上沾到的微量残留，也可能引起过敏反应。"
+      },
+      "cross_contact.pan": {
+        "status": "ai_draft",
+        "text": "请使用干净的锅、炒锅和厨具。"
+      },
+      "cross_contact.remove_not_ok": {
+        "status": "ai_draft",
+        "text": "从已经做好的菜里挑出过敏食物是不安全的。请重新做一份。"
+      },
+      "cross_contact.separate": {
+        "status": "ai_draft",
+        "text": "请单独制作并单独上我的菜。"
+      },
+      "emergency.antihistamine": {
+        "status": "ai_draft",
+        "text": "您有抗组胺药片吗？"
+      },
+      "emergency.autoinjector": {
+        "status": "ai_draft",
+        "text": "我包里有一支肾上腺素自动注射笔。"
+      },
+      "emergency.call_ambulance": {
+        "status": "ai_draft",
+        "text": "请马上叫救护车。"
+      },
+      "emergency.contact": {
+        "status": "ai_draft",
+        "text": "请帮我打电话给我的紧急联系人。"
+      },
+      "emergency.help_inject": {
+        "status": "ai_draft",
+        "text": "请帮我使用它。"
+      },
+      "emergency.hospital": {
+        "status": "ai_draft",
+        "text": "最近的有急诊科的医院在哪里？"
+      },
+      "emergency.lie_down": {
+        "status": "ai_draft",
+        "text": "请帮我躺下。不要让我站起来或走动。"
+      },
+      "emergency.pharmacy": {
+        "status": "ai_draft",
+        "text": "最近的药店在哪里？"
+      },
+      "emergency.reaction": {
+        "status": "ai_draft",
+        "text": "我正在发生过敏反应。"
+      },
+      "emergency.say_anaphylaxis": {
+        "status": "ai_draft",
+        "text": "请告诉他们：“严重过敏反应（过敏性休克）”。"
+      },
+      "emergency.second_dose": {
+        "status": "ai_draft",
+        "text": "如果5分钟后仍没有好转，可以使用第二支自动注射笔。"
+      },
+      "emergency.sit_if_breathing": {
+        "status": "ai_draft",
+        "text": "如果我呼吸困难，请扶我坐起来。"
+      },
+      "emergency.stay": {
+        "status": "ai_draft",
+        "text": "请陪着我，直到救援人员到达。"
+      },
+      "emergency.thigh": {
+        "status": "ai_draft",
+        "text": "注射在大腿外侧，可以隔着衣服打。"
+      },
+      "hidden.all_forms": {
+        "status": "ai_draft",
+        "text": "这也包括用它制成的任何油、酱汁、酱、粉、粉末、黄油或抹酱，以及装饰配料。"
+      },
+      "hidden.butter_ghee": {
+        "status": "ai_draft",
+        "text": "请确认烹饪时是否用了黄油、酥油、奶油或奶酪。"
+      },
+      "hidden.dashi": {
+        "status": "ai_draft",
+        "text": "请确认是否用了鱼高汤（例如日式高汤或木鱼花）。"
+      },
+      "hidden.egg_wash": {
+        "status": "ai_draft",
+        "text": "请确认面包或酥皮表面是否刷了蛋液，以及面糊里是否加了鸡蛋。"
+      },
+      "hidden.fish_sauce": {
+        "status": "ai_draft",
+        "text": "请确认是否用了鱼露或凤尾鱼（鳀鱼），包括在沙拉汁里。"
+      },
+      "hidden.flour_thickener": {
+        "status": "ai_draft",
+        "text": "请确认是否用面粉给酱汁增稠，或给食物裹粉。"
+      },
+      "hidden.hoisin": {
+        "status": "ai_draft",
+        "text": "请确认是否用了海鲜酱、豆豉酱或其他豆类酱料。"
+      },
+      "hidden.marzipan": {
+        "status": "ai_draft",
+        "text": "请确认甜点中是否有杏仁膏、牛轧糖或杏仁粉（巴旦木粉）。"
+      },
+      "hidden.mayonnaise": {
+        "status": "ai_draft",
+        "text": "请确认是否含有蛋黄酱（美乃滋）和蒜泥蛋黄酱。"
+      },
+      "hidden.miso": {
+        "status": "ai_draft",
+        "text": "请确认是否用了味噌、豆腐或豆酱。"
+      },
+      "hidden.nut_sauces": {
+        "status": "ai_draft",
+        "text": "请确认沙爹酱、青酱（罗勒松子酱）、墨西哥摩尔酱和果仁糖等酱料。"
+      },
+      "hidden.oyster_sauce": {
+        "status": "ai_draft",
+        "text": "请确认是否用了蚝油或XO酱。"
+      },
+      "hidden.peanut_oil": {
+        "status": "ai_draft",
+        "text": "请确认是否用了花生油，包括油炸时用的油。"
+      },
+      "hidden.sesame_oil": {
+        "status": "ai_draft",
+        "text": "请确认是否用了芝麻油（香油）、芝麻酱，或在菜上撒了芝麻。"
+      },
+      "hidden.shrimp_paste": {
+        "status": "ai_draft",
+        "text": "请确认是否用了虾酱或干虾（虾米、虾皮）。"
+      },
+      "hidden.soy_sauce": {
+        "status": "ai_draft",
+        "text": "请确认是否用了酱油，酱油里也含有小麦。"
+      },
+      "hidden.stock_cubes": {
+        "status": "ai_draft",
+        "text": "请确认所用的高汤、汤底和各种调味粉。"
+      },
+      "hidden.whey_casein": {
+        "status": "ai_draft",
+        "text": "请确认是否含有奶粉、乳清或酪蛋白。"
+      },
+      "hidden.wine_sulphites": {
+        "status": "ai_draft",
+        "text": "请确认是否用了葡萄酒、醋或果干（含亚硫酸盐）。"
+      },
+      "hidden.worcestershire": {
+        "status": "ai_draft",
+        "text": "请确认是否用了伍斯特酱（辣酱油），它含有凤尾鱼。"
+      },
+      "intro.allergic_to": {
+        "status": "ai_draft",
+        "text": "我对以下食物过敏："
+      },
+      "intro.hello": {
+        "status": "ai_draft",
+        "text": "您好，我有严重的食物过敏。"
+      },
+      "intro.intolerance": {
+        "status": "ai_draft",
+        "text": "我有食物不耐受。虽然不会危及生命，但会让我非常难受。"
+      },
+      "intro.life_threatening": {
+        "status": "ai_draft",
+        "text": "这种过敏可能危及生命。"
+      },
+      "intro.not_preference": {
+        "status": "ai_draft",
+        "text": "这是身体疾病，不是个人口味偏好。"
+      },
+      "intro.please_read": {
+        "status": "ai_draft",
+        "text": "点餐前，请您仔细阅读这张卡片。"
+      },
+      "intro.severe": {
+        "status": "ai_draft",
+        "text": "我的过敏很严重。即使只吃极少量，也可能让我病得很严重。"
+      },
+      "intro.thank_you_care": {
+        "status": "ai_draft",
+        "text": "谢谢您在准备我的餐食时格外用心。"
+      },
+      "ordering.bring_menu": {
+        "status": "ai_draft",
+        "text": "我可以看一下过敏原信息或过敏原菜单吗？"
+      },
+      "ordering.confirm_served": {
+        "status": "ai_draft",
+        "text": "上菜时，请跟我确认这就是为我的过敏专门准备的那道菜。"
+      },
+      "ordering.drink_only": {
+        "status": "ai_draft",
+        "text": "我只要一杯饮料就好，谢谢。"
+      },
+      "ordering.if_unsure": {
+        "status": "ai_draft",
+        "text": "如果您不确定，请告诉我。我宁可不点，也不想冒险。"
+      },
+      "ordering.no_sauce": {
+        "status": "ai_draft",
+        "text": "请不要加酱汁。"
+      },
+      "ordering.own_food": {
+        "status": "ai_draft",
+        "text": "我可以吃自己带来的食物吗？"
+      },
+      "ordering.plain": {
+        "status": "ai_draft",
+        "text": "请只用盐、胡椒和橄榄油来烹饪。"
+      },
+      "ordering.recommend_safe": {
+        "status": "ai_draft",
+        "text": "您能推荐一道我可以安全食用的菜吗？"
+      },
+      "ordering.same_dish": {
+        "status": "ai_draft",
+        "text": "请务必确保端给我的就是这道菜。"
+      },
+      "ordering.simple": {
+        "status": "ai_draft",
+        "text": "简单的就可以，比如不加调料的烤肉或烤鱼，配米饭或蔬菜。"
+      },
+      "ordering.thanks": {
+        "status": "ai_draft",
+        "text": "非常感谢您的帮助。"
+      },
+      "ordering.write_down": {
+        "status": "ai_draft",
+        "text": "您能把配料写下来给我吗？"
+      },
+      "question.bread": {
+        "status": "ai_draft",
+        "text": "面包里含有牛奶、鸡蛋、坚果或籽类吗？"
+      },
+      "question.chef_confident": {
+        "status": "ai_draft",
+        "text": "厨师有把握这道菜对我是安全的吗？"
+      },
+      "question.contains": {
+        "status": "ai_draft",
+        "text": "这道菜含有我过敏的任何食物吗？"
+      },
+      "question.dessert": {
+        "status": "ai_draft",
+        "text": "甜点里含有坚果、牛奶或鸡蛋吗？"
+      },
+      "question.dressing": {
+        "status": "ai_draft",
+        "text": "沙拉汁（调味汁）里有什么？"
+      },
+      "question.fried_shared": {
+        "status": "ai_draft",
+        "text": "油炸食品是用共用的油炸的吗？"
+      },
+      "question.ingredients": {
+        "status": "ai_draft",
+        "text": "您能和厨师确认一下配料吗？"
+      },
+      "question.kitchen_nuts": {
+        "status": "ai_draft",
+        "text": "厨房里会用坚果或花生吗？"
+      },
+      "question.label": {
+        "status": "ai_draft",
+        "text": "我可以看看配料的标签或包装吗？"
+      },
+      "question.marinade": {
+        "status": "ai_draft",
+        "text": "肉或鱼腌过吗？腌料里有什么？"
+      },
+      "question.may_contain": {
+        "status": "ai_draft",
+        "text": "有没有哪种配料标注了“可能含有”我过敏的食物？"
+      },
+      "question.modify": {
+        "status": "ai_draft",
+        "text": "这道菜能不能从头新做，不放我过敏的食物？"
+      },
+      "question.premade": {
+        "status": "ai_draft",
+        "text": "这是厨房现做的，还是买来的成品？"
+      },
+      "question.safe_dish": {
+        "status": "ai_draft",
+        "text": "哪些菜你们可以安全地为我做？"
+      },
+      "question.same_oil": {
+        "status": "ai_draft",
+        "text": "这道菜是不是和其他食物用同一锅油做的？"
+      },
+      "question.same_pan": {
+        "status": "ai_draft",
+        "text": "这道菜是不是和其他食物用同一个锅或炒锅做的？"
+      },
+      "question.sauce": {
+        "status": "ai_draft",
+        "text": "酱汁里有什么？"
+      },
+      "question.stock": {
+        "status": "ai_draft",
+        "text": "这个汤用的是什么高汤？"
+      },
+      "shopping.dairy_free": {
+        "status": "ai_draft",
+        "text": "你们卖不含坚果或大豆的植物奶吗？"
+      },
+      "shopping.free_from": {
+        "status": "ai_draft",
+        "text": "你们卖不含过敏原的产品吗？"
+      },
+      "shopping.gluten_free": {
+        "status": "ai_draft",
+        "text": "你们卖无麸质的面包或意大利面吗？"
+      },
+      "shopping.product_contains": {
+        "status": "ai_draft",
+        "text": "这个产品含有我过敏的任何成分吗？"
+      },
+      "shopping.read_label": {
+        "status": "ai_draft",
+        "text": "您能帮我读一下这个标签吗？"
+      },
+      "shopping.safe_brand": {
+        "status": "ai_draft",
+        "text": "有没有不含我过敏成分的牌子？"
+      },
+      "shopping.traces": {
+        "status": "ai_draft",
+        "text": "标签上有没有写“可能含有微量”？"
+      },
+      "staff_answer.ask_chef": {
+        "status": "ai_draft",
+        "text": "我去问一下厨师"
+      },
+      "staff_answer.contains_allergen": {
+        "status": "ai_draft",
+        "text": "这里面含有您过敏的食物"
+      },
+      "staff_answer.may_contain": {
+        "status": "ai_draft",
+        "text": "可能含有微量过敏原"
+      },
+      "staff_answer.no": {
+        "status": "ai_draft",
+        "text": "否"
+      },
+      "staff_answer.not_safe": {
+        "status": "ai_draft",
+        "text": "不行，我们无法安全地做"
+      },
+      "staff_answer.not_sure": {
+        "status": "ai_draft",
+        "text": "我不确定"
+      },
+      "staff_answer.recommend": {
+        "status": "ai_draft",
+        "text": "我推荐这道菜"
+      },
+      "staff_answer.safe": {
+        "status": "ai_draft",
+        "text": "可以，我们能安全地做"
+      },
+      "staff_answer.show_label": {
+        "status": "ai_draft",
+        "text": "我拿标签给您看"
+      },
+      "staff_answer.tap_instruction": {
+        "status": "ai_draft",
+        "text": "请点选您的回答。"
+      },
+      "staff_answer.yes": {
+        "status": "ai_draft",
+        "text": "是"
+      },
+      "travel.airline_announce": {
+        "status": "ai_draft",
+        "text": "您能请附近的乘客不要吃坚果或花生吗？"
+      },
+      "travel.airline_meal": {
+        "status": "ai_draft",
+        "text": "我有严重过敏。请不要给我任何我没有确认过的餐食。"
+      },
+      "travel.doctor_letter": {
+        "status": "ai_draft",
+        "text": "我有医生开具的用药证明信。"
+      },
+      "travel.hotel_breakfast": {
+        "status": "ai_draft",
+        "text": "请把我的过敏情况告知早餐工作人员。"
+      },
+      "travel.hotel_kitchen": {
+        "status": "ai_draft",
+        "text": "厨房能为我准备一份安全的餐食吗？"
+      },
+      "travel.medication_carry": {
+        "status": "ai_draft",
+        "text": "我必须时刻随身携带我的过敏药物。"
+      }
+    },
+    "zh-Hant-TW": {
+      "allergen.almond": {
+        "status": "ai_draft",
+        "text": "杏仁果（美國杏仁）"
+      },
+      "allergen.apple": {
+        "status": "ai_draft",
+        "text": "蘋果"
+      },
+      "allergen.banana": {
+        "status": "ai_draft",
+        "text": "香蕉"
+      },
+      "allergen.brazil_nut": {
+        "status": "ai_draft",
+        "text": "巴西堅果"
+      },
+      "allergen.buckwheat": {
+        "status": "ai_draft",
+        "text": "蕎麥"
+      },
+      "allergen.cashew": {
+        "status": "ai_draft",
+        "text": "腰果"
+      },
+      "allergen.celery": {
+        "status": "ai_draft",
+        "text": "芹菜（包括根芹菜和芹菜鹽）"
+      },
+      "allergen.chicken": {
+        "status": "ai_draft",
+        "text": "雞肉，包括雞高湯和雞粉"
+      },
+      "allergen.coconut": {
+        "status": "ai_draft",
+        "text": "椰子"
+      },
+      "allergen.corn": {
+        "status": "ai_draft",
+        "text": "玉米"
+      },
+      "allergen.crustaceans": {
+        "status": "ai_draft",
+        "text": "甲殼類海鮮，例如蝦子、明蝦、螃蟹和龍蝦"
+      },
+      "allergen.egg": {
+        "status": "ai_draft",
+        "text": "蛋"
+      },
+      "allergen.fish": {
+        "status": "ai_draft",
+        "text": "魚"
+      },
+      "allergen.garlic": {
+        "status": "ai_draft",
+        "text": "大蒜"
+      },
+      "allergen.gelatin": {
+        "status": "ai_draft",
+        "text": "吉利丁（明膠）"
+      },
+      "allergen.gluten": {
+        "status": "ai_draft",
+        "text": "麩質（小麥、大麥、黑麥，以及燕麥，除非有無麩質認證）"
+      },
+      "allergen.hazelnut": {
+        "status": "ai_draft",
+        "text": "榛果"
+      },
+      "allergen.kiwi": {
+        "status": "ai_draft",
+        "text": "奇異果"
+      },
+      "allergen.legumes": {
+        "status": "ai_draft",
+        "text": "豆類，例如扁豆、鷹嘴豆和豌豆"
+      },
+      "allergen.lupin": {
+        "status": "ai_draft",
+        "text": "羽扇豆粉和羽扇豆籽"
+      },
+      "allergen.macadamia": {
+        "status": "ai_draft",
+        "text": "夏威夷豆"
+      },
+      "allergen.mango": {
+        "status": "ai_draft",
+        "text": "芒果"
+      },
+      "allergen.milk": {
+        "status": "ai_draft",
+        "text": "牛奶及所有乳製品"
+      },
+      "allergen.molluscs": {
+        "status": "ai_draft",
+        "text": "軟體動物類海鮮，例如淡菜、蛤蜊、牡蠣（蚵仔）、魷魚和章魚"
+      },
+      "allergen.msg": {
+        "status": "ai_draft",
+        "text": "味精（麩胺酸鈉）"
+      },
+      "allergen.mustard": {
+        "status": "ai_draft",
+        "text": "黃芥末（芥末籽）"
+      },
+      "allergen.onion": {
+        "status": "ai_draft",
+        "text": "洋蔥，包括青蔥和紅蔥頭"
+      },
+      "allergen.peach": {
+        "status": "ai_draft",
+        "text": "桃子及其他核果類水果，例如李子、杏桃和櫻桃"
+      },
+      "allergen.peanut": {
+        "status": "ai_draft",
+        "text": "花生"
+      },
+      "allergen.pecan": {
+        "status": "ai_draft",
+        "text": "胡桃（長山核桃）"
+      },
+      "allergen.pine_nut": {
+        "status": "ai_draft",
+        "text": "松子"
+      },
+      "allergen.pistachio": {
+        "status": "ai_draft",
+        "text": "開心果"
+      },
+      "allergen.pork": {
+        "status": "ai_draft",
+        "text": "豬肉，包括豬油和豬骨高湯"
+      },
+      "allergen.red_meat": {
+        "status": "ai_draft",
+        "text": "紅肉及哺乳動物來源的吉利丁（明膠）（α-gal過敏症）"
+      },
+      "allergen.sesame": {
+        "status": "ai_draft",
+        "text": "芝麻"
+      },
+      "allergen.soy": {
+        "status": "ai_draft",
+        "text": "黃豆（大豆）"
+      },
+      "allergen.sulphites": {
+        "status": "ai_draft",
+        "text": "亞硫酸鹽"
+      },
+      "allergen.tomato": {
+        "status": "ai_draft",
+        "text": "番茄"
+      },
+      "allergen.tree_nuts": {
+        "status": "ai_draft",
+        "text": "所有堅果，例如杏仁果、核桃、腰果和榛果"
+      },
+      "allergen.walnut": {
+        "status": "ai_draft",
+        "text": "核桃"
+      },
+      "allergen.wheat": {
+        "status": "ai_draft",
+        "text": "小麥"
+      },
+      "cross_contact.bakery": {
+        "status": "ai_draft",
+        "text": "麵包店對我來說常常不安全，因為空氣中和檯面上都可能有麵粉和堅果。"
+      },
+      "cross_contact.board_knife": {
+        "status": "ai_draft",
+        "text": "請使用乾淨的砧板和刀子。"
+      },
+      "cross_contact.buffet": {
+        "status": "ai_draft",
+        "text": "因為自助餐的取菜餐具是共用的，所以我不能吃自助餐。"
+      },
+      "cross_contact.fryer": {
+        "status": "ai_draft",
+        "text": "請不要使用炸過我的過敏原的油或油炸鍋。"
+      },
+      "cross_contact.garnish": {
+        "status": "ai_draft",
+        "text": "請不要加任何我沒有確認過的盤飾、配料或醬汁。"
+      },
+      "cross_contact.grill": {
+        "status": "ai_draft",
+        "text": "請不要用共用的烤架或鐵板來煮我的食物。"
+      },
+      "cross_contact.hands": {
+        "status": "ai_draft",
+        "text": "準備我的餐點前，請先洗手並更換手套。"
+      },
+      "cross_contact.intro": {
+        "status": "ai_draft",
+        "text": "即使是共用器具上殘留的極微量，也可能引起過敏反應。"
+      },
+      "cross_contact.pan": {
+        "status": "ai_draft",
+        "text": "請使用乾淨的平底鍋、炒菜鍋和器具。"
+      },
+      "cross_contact.remove_not_ok": {
+        "status": "ai_draft",
+        "text": "把過敏原從做好的菜裡挑掉並不安全。請重新現做一份。"
+      },
+      "cross_contact.separate": {
+        "status": "ai_draft",
+        "text": "請將我的餐點分開準備、分開上菜。"
+      },
+      "emergency.antihistamine": {
+        "status": "ai_draft",
+        "text": "請問您有抗組織胺藥錠嗎？"
+      },
+      "emergency.autoinjector": {
+        "status": "ai_draft",
+        "text": "我的包包裡有腎上腺素自動注射筆。"
+      },
+      "emergency.call_ambulance": {
+        "status": "ai_draft",
+        "text": "請馬上幫我叫救護車。"
+      },
+      "emergency.contact": {
+        "status": "ai_draft",
+        "text": "請打電話給我的緊急聯絡人。"
+      },
+      "emergency.help_inject": {
+        "status": "ai_draft",
+        "text": "請幫我使用它。"
+      },
+      "emergency.hospital": {
+        "status": "ai_draft",
+        "text": "最近有急診的醫院在哪裡？"
+      },
+      "emergency.lie_down": {
+        "status": "ai_draft",
+        "text": "請幫我躺下。不要讓我站起來或走路。"
+      },
+      "emergency.pharmacy": {
+        "status": "ai_draft",
+        "text": "最近的藥局在哪裡？"
+      },
+      "emergency.reaction": {
+        "status": "ai_draft",
+        "text": "我現在正在發生過敏反應。"
+      },
+      "emergency.say_anaphylaxis": {
+        "status": "ai_draft",
+        "text": "請告訴他們：「全身性過敏反應（過敏性休克），是一種嚴重的過敏反應。」"
+      },
+      "emergency.second_dose": {
+        "status": "ai_draft",
+        "text": "如果5分鐘後沒有改善，可以再使用第二支自動注射筆。"
+      },
+      "emergency.sit_if_breathing": {
+        "status": "ai_draft",
+        "text": "如果我呼吸困難，請扶我坐起來。"
+      },
+      "emergency.stay": {
+        "status": "ai_draft",
+        "text": "在救護人員到達之前，請留在我身邊。"
+      },
+      "emergency.thigh": {
+        "status": "ai_draft",
+        "text": "要打在大腿外側，可以隔著衣服直接打。"
+      },
+      "hidden.all_forms": {
+        "status": "ai_draft",
+        "text": "這也包括用它製成的任何油、醬汁、醬料、粉、粉末、抹醬或裝飾配料。"
+      },
+      "hidden.butter_ghee": {
+        "status": "ai_draft",
+        "text": "請確認烹調時是否使用奶油、印度酥油、鮮奶油或起司。"
+      },
+      "hidden.dashi": {
+        "status": "ai_draft",
+        "text": "請確認是否含有魚高湯（例如日式高湯或柴魚片）。"
+      },
+      "hidden.egg_wash": {
+        "status": "ai_draft",
+        "text": "請確認麵包或糕點表面是否刷了蛋液，以及麵糊裡是否有蛋。"
+      },
+      "hidden.fish_sauce": {
+        "status": "ai_draft",
+        "text": "請確認是否含有魚露或鯷魚，包括沙拉醬在內。"
+      },
+      "hidden.flour_thickener": {
+        "status": "ai_draft",
+        "text": "請確認是否用麵粉來勾芡醬汁或裹在食物外層。"
+      },
+      "hidden.hoisin": {
+        "status": "ai_draft",
+        "text": "請確認是否含有海鮮醬、豆豉或豆類醬料。"
+      },
+      "hidden.marzipan": {
+        "status": "ai_draft",
+        "text": "請確認甜點是否含有杏仁膏（美國杏仁製成）、牛軋糖或杏仁果粉（美國杏仁粉）。"
+      },
+      "hidden.mayonnaise": {
+        "status": "ai_draft",
+        "text": "請確認是否含有美乃滋和蒜味蛋黃醬（aioli）。"
+      },
+      "hidden.miso": {
+        "status": "ai_draft",
+        "text": "請確認是否含有味噌、豆腐或豆醬。"
+      },
+      "hidden.nut_sauces": {
+        "status": "ai_draft",
+        "text": "請確認醬料，例如沙嗲醬、青醬、墨西哥摩爾醬（mole）和果仁糖（praline）。"
+      },
+      "hidden.oyster_sauce": {
+        "status": "ai_draft",
+        "text": "請確認是否含有蠔油或XO醬。"
+      },
+      "hidden.peanut_oil": {
+        "status": "ai_draft",
+        "text": "請確認是否使用花生油，包括油炸用的油。"
+      },
+      "hidden.sesame_oil": {
+        "status": "ai_draft",
+        "text": "請確認是否含有麻油、芝麻醬，或在上面撒了芝麻。"
+      },
+      "hidden.shrimp_paste": {
+        "status": "ai_draft",
+        "text": "請確認是否含有蝦醬或蝦米。"
+      },
+      "hidden.soy_sauce": {
+        "status": "ai_draft",
+        "text": "請確認是否含有醬油，醬油也含有小麥。"
+      },
+      "hidden.stock_cubes": {
+        "status": "ai_draft",
+        "text": "請確認高湯、湯底和調味粉的成分。"
+      },
+      "hidden.whey_casein": {
+        "status": "ai_draft",
+        "text": "請確認是否含有奶粉、乳清或酪蛋白。"
+      },
+      "hidden.wine_sulphites": {
+        "status": "ai_draft",
+        "text": "請確認是否含有酒、醋或果乾（亞硫酸鹽）。"
+      },
+      "hidden.worcestershire": {
+        "status": "ai_draft",
+        "text": "請確認是否含有伍斯特醬（英國辣醬油），伍斯特醬含有鯷魚。"
+      },
+      "intro.allergic_to": {
+        "status": "ai_draft",
+        "text": "我對以下食物過敏："
+      },
+      "intro.hello": {
+        "status": "ai_draft",
+        "text": "您好，我有嚴重的食物過敏。"
+      },
+      "intro.intolerance": {
+        "status": "ai_draft",
+        "text": "我有食物不耐症。雖然不會危及生命，但會讓我非常不舒服。"
+      },
+      "intro.life_threatening": {
+        "status": "ai_draft",
+        "text": "這種過敏可能會危及生命。"
+      },
+      "intro.not_preference": {
+        "status": "ai_draft",
+        "text": "這是醫療上的身體狀況，不是個人喜好。"
+      },
+      "intro.please_read": {
+        "status": "ai_draft",
+        "text": "點餐前，請先仔細閱讀這張卡片。"
+      },
+      "intro.severe": {
+        "status": "ai_draft",
+        "text": "我的過敏很嚴重。即使只吃到極少量，也可能讓我嚴重發病。"
+      },
+      "intro.thank_you_care": {
+        "status": "ai_draft",
+        "text": "謝謝您特別留意我的餐點。"
+      },
+      "ordering.bring_menu": {
+        "status": "ai_draft",
+        "text": "可以讓我看一下過敏原資訊或過敏原菜單嗎？"
+      },
+      "ordering.confirm_served": {
+        "status": "ai_draft",
+        "text": "上菜時，請跟我確認這就是那份針對我的過敏準備的安全餐點。"
+      },
+      "ordering.drink_only": {
+        "status": "ai_draft",
+        "text": "我只點飲料就好，謝謝。"
+      },
+      "ordering.if_unsure": {
+        "status": "ai_draft",
+        "text": "如果您不確定，請直接告訴我。我寧可不點，也不想冒險。"
+      },
+      "ordering.no_sauce": {
+        "status": "ai_draft",
+        "text": "請不要加醬汁。"
+      },
+      "ordering.own_food": {
+        "status": "ai_draft",
+        "text": "我可以吃自己帶來的食物嗎？"
+      },
+      "ordering.plain": {
+        "status": "ai_draft",
+        "text": "請只用鹽、胡椒和橄欖油烹調。"
+      },
+      "ordering.recommend_safe": {
+        "status": "ai_draft",
+        "text": "可以推薦一道對我來說安全的菜嗎？"
+      },
+      "ordering.same_dish": {
+        "status": "ai_draft",
+        "text": "請務必確認送到我面前的就是這一道菜。"
+      },
+      "ordering.simple": {
+        "status": "ai_draft",
+        "text": "簡單的就好，例如只用簡單調味烤的肉或魚，配白飯或蔬菜。"
+      },
+      "ordering.thanks": {
+        "status": "ai_draft",
+        "text": "非常感謝您的幫忙。"
+      },
+      "ordering.write_down": {
+        "status": "ai_draft",
+        "text": "可以請您把食材寫下來給我嗎？"
+      },
+      "question.bread": {
+        "status": "ai_draft",
+        "text": "麵包有含牛奶、蛋、堅果或種子嗎？"
+      },
+      "question.chef_confident": {
+        "status": "ai_draft",
+        "text": "廚師有把握這道菜對我來說是安全的嗎？"
+      },
+      "question.contains": {
+        "status": "ai_draft",
+        "text": "這道菜有含我的任何過敏原嗎？"
+      },
+      "question.dessert": {
+        "status": "ai_draft",
+        "text": "甜點有含堅果、牛奶或蛋嗎？"
+      },
+      "question.dressing": {
+        "status": "ai_draft",
+        "text": "沙拉醬裡有什麼成分？"
+      },
+      "question.fried_shared": {
+        "status": "ai_draft",
+        "text": "油炸的食物是用共用的油炸的嗎？"
+      },
+      "question.ingredients": {
+        "status": "ai_draft",
+        "text": "可以請您幫我跟廚師確認食材嗎？"
+      },
+      "question.kitchen_nuts": {
+        "status": "ai_draft",
+        "text": "廚房有使用堅果或花生嗎？"
+      },
+      "question.label": {
+        "status": "ai_draft",
+        "text": "可以讓我看一下食材的標示或包裝嗎？"
+      },
+      "question.marinade": {
+        "status": "ai_draft",
+        "text": "肉或魚有醃過嗎？醃料裡有什麼成分？"
+      },
+      "question.may_contain": {
+        "status": "ai_draft",
+        "text": "有任何食材標示「可能含有」我的過敏原嗎？"
+      },
+      "question.modify": {
+        "status": "ai_draft",
+        "text": "這道菜可以不加我的過敏原，重新現做嗎？"
+      },
+      "question.premade": {
+        "status": "ai_draft",
+        "text": "這是廚房自己做的，還是買現成的？"
+      },
+      "question.safe_dish": {
+        "status": "ai_draft",
+        "text": "有哪些菜您可以安全地為我製作？"
+      },
+      "question.same_oil": {
+        "status": "ai_draft",
+        "text": "這道菜是跟其他食物用同一鍋油烹調的嗎？"
+      },
+      "question.same_pan": {
+        "status": "ai_draft",
+        "text": "這道菜是跟其他食物用同一個鍋子或炒菜鍋烹調的嗎？"
+      },
+      "question.sauce": {
+        "status": "ai_draft",
+        "text": "醬汁裡有什麼成分？"
+      },
+      "question.stock": {
+        "status": "ai_draft",
+        "text": "這道湯是用什麼高湯做的？"
+      },
+      "shopping.dairy_free": {
+        "status": "ai_draft",
+        "text": "你們有賣不含堅果也不含黃豆的植物奶嗎？"
+      },
+      "shopping.free_from": {
+        "status": "ai_draft",
+        "text": "你們有賣不含過敏原的產品嗎？"
+      },
+      "shopping.gluten_free": {
+        "status": "ai_draft",
+        "text": "你們有賣無麩質的麵包或義大利麵嗎？"
+      },
+      "shopping.product_contains": {
+        "status": "ai_draft",
+        "text": "這個產品有含我的任何過敏原嗎？"
+      },
+      "shopping.read_label": {
+        "status": "ai_draft",
+        "text": "可以幫我看一下這個標示嗎？"
+      },
+      "shopping.safe_brand": {
+        "status": "ai_draft",
+        "text": "有沒有不含我的過敏原的品牌？"
+      },
+      "shopping.traces": {
+        "status": "ai_draft",
+        "text": "標示上有寫「可能含有微量」過敏原嗎？"
+      },
+      "staff_answer.ask_chef": {
+        "status": "ai_draft",
+        "text": "我去問廚師"
+      },
+      "staff_answer.contains_allergen": {
+        "status": "ai_draft",
+        "text": "這含有您的過敏原"
+      },
+      "staff_answer.may_contain": {
+        "status": "ai_draft",
+        "text": "這可能含有微量過敏原"
+      },
+      "staff_answer.no": {
+        "status": "ai_draft",
+        "text": "否"
+      },
+      "staff_answer.not_safe": {
+        "status": "ai_draft",
+        "text": "不行，我們無法安全地為您製作"
+      },
+      "staff_answer.not_sure": {
+        "status": "ai_draft",
+        "text": "我不確定"
+      },
+      "staff_answer.recommend": {
+        "status": "ai_draft",
+        "text": "我推薦這道菜"
+      },
+      "staff_answer.safe": {
+        "status": "ai_draft",
+        "text": "可以，我們能安全地為您製作"
+      },
+      "staff_answer.show_label": {
+        "status": "ai_draft",
+        "text": "我拿標示給您看"
+      },
+      "staff_answer.tap_instruction": {
+        "status": "ai_draft",
+        "text": "請點選您的回答。"
+      },
+      "staff_answer.yes": {
+        "status": "ai_draft",
+        "text": "是"
+      },
+      "travel.airline_announce": {
+        "status": "ai_draft",
+        "text": "可以請附近的乘客不要吃堅果或花生嗎？"
+      },
+      "travel.airline_meal": {
+        "status": "ai_draft",
+        "text": "我有嚴重的過敏。請不要給我任何我沒有確認過的餐點。"
+      },
+      "travel.doctor_letter": {
+        "status": "ai_draft",
+        "text": "我有醫師為我的藥物開立的證明信。"
+      },
+      "travel.hotel_breakfast": {
+        "status": "ai_draft",
+        "text": "請把我的過敏狀況告訴負責早餐的工作人員。"
+      },
+      "travel.hotel_kitchen": {
+        "status": "ai_draft",
+        "text": "廚房可以為我準備一份安全的餐點嗎？"
+      },
+      "travel.medication_carry": {
+        "status": "ai_draft",
+        "text": "我必須隨時把過敏藥物帶在身上。"
+      }
+    }
   }
 }
