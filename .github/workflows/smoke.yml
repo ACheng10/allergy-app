@@ -30,12 +30,13 @@ jobs:
           echo "Device $UDID"
           xcrun simctl boot "$UDID"
           xcrun simctl bootstatus "$UDID" -b
+          sleep 30   # let SpringBoard settle after first boot
           xcrun simctl install "$UDID" AllergyApp/build/Debug-iphonesimulator/AllergyApp.app
           xcrun simctl launch --console-pty "$UDID" com.acheng10.allergycard > app.log 2>&1 &
-          sleep 25
+          sleep 15
           xcrun simctl io "$UDID" screenshot shot.png
-          echo "----- app console -----"
-          cat app.log || true
+          echo "----- app console (CoreData first-launch noise removed) -----"
+          grep -v "^CoreData: \(error\|annotation\)" app.log | head -100 || true
           echo "----- crash reports -----"
           ls ~/Library/Logs/DiagnosticReports/ 2>/dev/null | grep -i allergy || echo "none"
           echo "----- process -----"
