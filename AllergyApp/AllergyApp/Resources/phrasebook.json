@@ -1,0 +1,1092 @@
+{
+  "countries": [
+    {
+      "ambulanceNumber": "999",
+      "code": "GB",
+      "emergencyNote": "112 also works",
+      "emergencyNumber": "999",
+      "locales": [
+        "en"
+      ],
+      "name": "United Kingdom",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "112",
+      "code": "IE",
+      "emergencyNote": "999 also works",
+      "emergencyNumber": "112",
+      "locales": [
+        "en"
+      ],
+      "name": "Ireland",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "911",
+      "code": "US",
+      "emergencyNote": "",
+      "emergencyNumber": "911",
+      "locales": [
+        "en"
+      ],
+      "name": "United States",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "911",
+      "code": "CA",
+      "emergencyNote": "",
+      "emergencyNumber": "911",
+      "locales": [
+        "en",
+        "fr"
+      ],
+      "name": "Canada",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "000",
+      "code": "AU",
+      "emergencyNote": "112 also works from mobiles",
+      "emergencyNumber": "000",
+      "locales": [
+        "en"
+      ],
+      "name": "Australia",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "15",
+      "code": "FR",
+      "emergencyNote": "15 is the medical emergency service (SAMU)",
+      "emergencyNumber": "112",
+      "locales": [
+        "fr"
+      ],
+      "name": "France",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "112",
+      "code": "MC",
+      "emergencyNote": "",
+      "emergencyNumber": "112",
+      "locales": [
+        "fr"
+      ],
+      "name": "Monaco",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "112",
+      "code": "BE",
+      "emergencyNote": "",
+      "emergencyNumber": "112",
+      "locales": [
+        "nl",
+        "fr",
+        "de"
+      ],
+      "name": "Belgium",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "144",
+      "code": "CH",
+      "emergencyNote": "144 is the ambulance",
+      "emergencyNumber": "112",
+      "locales": [
+        "de",
+        "fr",
+        "it"
+      ],
+      "name": "Switzerland",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "112",
+      "code": "LU",
+      "emergencyNote": "",
+      "emergencyNumber": "112",
+      "locales": [
+        "fr",
+        "de"
+      ],
+      "name": "Luxembourg",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "112",
+      "code": "DE",
+      "emergencyNote": "",
+      "emergencyNumber": "112",
+      "locales": [
+        "de"
+      ],
+      "name": "Germany",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "144",
+      "code": "AT",
+      "emergencyNote": "144 is the ambulance",
+      "emergencyNumber": "112",
+      "locales": [
+        "de"
+      ],
+      "name": "Austria",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "112",
+      "code": "NL",
+      "emergencyNote": "",
+      "emergencyNumber": "112",
+      "locales": [
+        "nl"
+      ],
+      "name": "Netherlands",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "112",
+      "code": "ES",
+      "emergencyNote": "",
+      "emergencyNumber": "112",
+      "locales": [
+        "es-ES"
+      ],
+      "name": "Spain",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "911",
+      "code": "MX",
+      "emergencyNote": "",
+      "emergencyNumber": "911",
+      "locales": [
+        "es-MX"
+      ],
+      "name": "Mexico",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "107",
+      "code": "AR",
+      "emergencyNote": "107 is the medical emergency line in many areas",
+      "emergencyNumber": "911",
+      "locales": [
+        "es-AR"
+      ],
+      "name": "Argentina",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "118",
+      "code": "IT",
+      "emergencyNote": "118 is the ambulance",
+      "emergencyNumber": "112",
+      "locales": [
+        "it"
+      ],
+      "name": "Italy",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "999",
+      "code": "HK",
+      "emergencyNote": "",
+      "emergencyNumber": "999",
+      "locales": [
+        "yue-Hant"
+      ],
+      "name": "Hong Kong",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "999",
+      "code": "MO",
+      "emergencyNote": "",
+      "emergencyNumber": "999",
+      "locales": [
+        "yue-Hant"
+      ],
+      "name": "Macau",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "120",
+      "code": "CN",
+      "emergencyNote": "120 is the ambulance; 110 is police",
+      "emergencyNumber": "120",
+      "locales": [
+        "zh-Hans"
+      ],
+      "name": "Mainland China",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "119",
+      "code": "TW",
+      "emergencyNote": "119 is ambulance and fire",
+      "emergencyNumber": "119",
+      "locales": [
+        "zh-Hant-TW"
+      ],
+      "name": "Taiwan",
+      "numbersVerified": false
+    },
+    {
+      "ambulanceNumber": "995",
+      "code": "SG",
+      "emergencyNote": "995 is the ambulance",
+      "emergencyNumber": "995",
+      "locales": [
+        "zh-Hans",
+        "en"
+      ],
+      "name": "Singapore",
+      "numbersVerified": false
+    }
+  ],
+  "hiddenByAllergen": {
+    "allergen.almond": [
+      "hidden.marzipan"
+    ],
+    "allergen.celery": [
+      "hidden.stock_cubes"
+    ],
+    "allergen.crustaceans": [
+      "hidden.shrimp_paste"
+    ],
+    "allergen.egg": [
+      "hidden.egg_wash",
+      "hidden.mayonnaise"
+    ],
+    "allergen.fish": [
+      "hidden.fish_sauce",
+      "hidden.dashi",
+      "hidden.worcestershire"
+    ],
+    "allergen.gluten": [
+      "hidden.soy_sauce",
+      "hidden.flour_thickener",
+      "hidden.stock_cubes"
+    ],
+    "allergen.hazelnut": [
+      "hidden.nut_sauces"
+    ],
+    "allergen.milk": [
+      "hidden.butter_ghee",
+      "hidden.whey_casein"
+    ],
+    "allergen.molluscs": [
+      "hidden.oyster_sauce"
+    ],
+    "allergen.mustard": [
+      "hidden.mayonnaise"
+    ],
+    "allergen.peanut": [
+      "hidden.peanut_oil",
+      "hidden.nut_sauces"
+    ],
+    "allergen.pine_nut": [
+      "hidden.nut_sauces"
+    ],
+    "allergen.sesame": [
+      "hidden.sesame_oil"
+    ],
+    "allergen.soy": [
+      "hidden.soy_sauce",
+      "hidden.miso",
+      "hidden.hoisin"
+    ],
+    "allergen.sulphites": [
+      "hidden.wine_sulphites"
+    ],
+    "allergen.tree_nuts": [
+      "hidden.nut_sauces",
+      "hidden.marzipan"
+    ],
+    "allergen.wheat": [
+      "hidden.soy_sauce",
+      "hidden.flour_thickener"
+    ]
+  },
+  "locales": [
+    {
+      "code": "en",
+      "name": "English",
+      "nativeName": "English",
+      "parent": null
+    },
+    {
+      "code": "fr",
+      "name": "French",
+      "nativeName": "Français",
+      "parent": null
+    },
+    {
+      "code": "de",
+      "name": "German",
+      "nativeName": "Deutsch",
+      "parent": null
+    },
+    {
+      "code": "it",
+      "name": "Italian",
+      "nativeName": "Italiano",
+      "parent": null
+    },
+    {
+      "code": "nl",
+      "name": "Dutch",
+      "nativeName": "Nederlands",
+      "parent": null
+    },
+    {
+      "code": "es",
+      "name": "Spanish (neutral)",
+      "nativeName": "Español",
+      "parent": null
+    },
+    {
+      "code": "es-ES",
+      "name": "Spanish (Spain)",
+      "nativeName": "Español (España)",
+      "parent": "es"
+    },
+    {
+      "code": "es-MX",
+      "name": "Spanish (Mexico)",
+      "nativeName": "Español (México)",
+      "parent": "es"
+    },
+    {
+      "code": "es-AR",
+      "name": "Spanish (Argentina)",
+      "nativeName": "Español (Argentina)",
+      "parent": "es"
+    },
+    {
+      "code": "yue-Hant",
+      "name": "Cantonese (Traditional)",
+      "nativeName": "廣東話",
+      "parent": null
+    },
+    {
+      "code": "zh-Hans",
+      "name": "Mandarin (Simplified)",
+      "nativeName": "普通话",
+      "parent": null
+    },
+    {
+      "code": "zh-Hant-TW",
+      "name": "Mandarin (Traditional)",
+      "nativeName": "國語",
+      "parent": null
+    }
+  ],
+  "phrases": [
+    {
+      "category": "intro",
+      "english": "Hello. I have a serious food allergy.",
+      "id": "intro.hello"
+    },
+    {
+      "category": "intro",
+      "english": "Please read this card carefully before I order.",
+      "id": "intro.please_read"
+    },
+    {
+      "category": "intro",
+      "english": "I am allergic to:",
+      "id": "intro.allergic_to"
+    },
+    {
+      "category": "intro",
+      "english": "My allergy is severe. Even a very small amount can make me seriously ill.",
+      "id": "intro.severe"
+    },
+    {
+      "category": "intro",
+      "english": "This allergy can be life-threatening.",
+      "id": "intro.life_threatening"
+    },
+    {
+      "category": "intro",
+      "english": "I have a food intolerance. It is not life-threatening, but it makes me very unwell.",
+      "id": "intro.intolerance"
+    },
+    {
+      "category": "intro",
+      "english": "This is a medical condition, not a preference.",
+      "id": "intro.not_preference"
+    },
+    {
+      "category": "intro",
+      "english": "Thank you for taking care with my food.",
+      "id": "intro.thank_you_care"
+    },
+    {
+      "category": "allergen",
+      "english": "Peanuts",
+      "id": "allergen.peanut"
+    },
+    {
+      "category": "allergen",
+      "english": "Tree nuts (all nuts that grow on trees)",
+      "id": "allergen.tree_nuts"
+    },
+    {
+      "category": "allergen",
+      "english": "Almonds",
+      "id": "allergen.almond"
+    },
+    {
+      "category": "allergen",
+      "english": "Hazelnuts",
+      "id": "allergen.hazelnut"
+    },
+    {
+      "category": "allergen",
+      "english": "Walnuts",
+      "id": "allergen.walnut"
+    },
+    {
+      "category": "allergen",
+      "english": "Cashews",
+      "id": "allergen.cashew"
+    },
+    {
+      "category": "allergen",
+      "english": "Pecans",
+      "id": "allergen.pecan"
+    },
+    {
+      "category": "allergen",
+      "english": "Brazil nuts",
+      "id": "allergen.brazil_nut"
+    },
+    {
+      "category": "allergen",
+      "english": "Pistachios",
+      "id": "allergen.pistachio"
+    },
+    {
+      "category": "allergen",
+      "english": "Macadamia nuts",
+      "id": "allergen.macadamia"
+    },
+    {
+      "category": "allergen",
+      "english": "Milk and all dairy products",
+      "id": "allergen.milk"
+    },
+    {
+      "category": "allergen",
+      "english": "Eggs",
+      "id": "allergen.egg"
+    },
+    {
+      "category": "allergen",
+      "english": "Fish",
+      "id": "allergen.fish"
+    },
+    {
+      "category": "allergen",
+      "english": "Shellfish such as shrimp, prawns, crab and lobster",
+      "id": "allergen.crustaceans"
+    },
+    {
+      "category": "allergen",
+      "english": "Molluscs such as mussels, clams, oysters, squid and octopus",
+      "id": "allergen.molluscs"
+    },
+    {
+      "category": "allergen",
+      "english": "Soy (soya)",
+      "id": "allergen.soy"
+    },
+    {
+      "category": "allergen",
+      "english": "Gluten (wheat, barley, rye, and oats unless certified gluten-free)",
+      "id": "allergen.gluten"
+    },
+    {
+      "category": "allergen",
+      "english": "Wheat",
+      "id": "allergen.wheat"
+    },
+    {
+      "category": "allergen",
+      "english": "Sesame",
+      "id": "allergen.sesame"
+    },
+    {
+      "category": "allergen",
+      "english": "Mustard",
+      "id": "allergen.mustard"
+    },
+    {
+      "category": "allergen",
+      "english": "Celery (including celeriac and celery salt)",
+      "id": "allergen.celery"
+    },
+    {
+      "category": "allergen",
+      "english": "Lupin (lupine) flour and seeds",
+      "id": "allergen.lupin"
+    },
+    {
+      "category": "allergen",
+      "english": "Sulphites (sulfites)",
+      "id": "allergen.sulphites"
+    },
+    {
+      "category": "allergen",
+      "english": "Pine nuts",
+      "id": "allergen.pine_nut"
+    },
+    {
+      "category": "allergen",
+      "english": "Coconut",
+      "id": "allergen.coconut"
+    },
+    {
+      "category": "allergen",
+      "english": "Buckwheat",
+      "id": "allergen.buckwheat"
+    },
+    {
+      "category": "allergen",
+      "english": "Corn (maize)",
+      "id": "allergen.corn"
+    },
+    {
+      "category": "allergen",
+      "english": "Legumes such as lentils, chickpeas and peas",
+      "id": "allergen.legumes"
+    },
+    {
+      "category": "allergen",
+      "english": "Kiwi fruit",
+      "id": "allergen.kiwi"
+    },
+    {
+      "category": "allergen",
+      "english": "Red meat and gelatin from mammals (alpha-gal allergy)",
+      "id": "allergen.red_meat"
+    },
+    {
+      "category": "hidden",
+      "english": "This includes any oil, sauce, paste, flour, powder, butter or garnish made from it.",
+      "id": "hidden.all_forms"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check for peanut oil, including in frying.",
+      "id": "hidden.peanut_oil"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check sauces such as satay, pesto, mole and praline.",
+      "id": "hidden.nut_sauces"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check desserts with marzipan, nougat or almond flour.",
+      "id": "hidden.marzipan"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check for fish sauce or anchovy, including in dressings.",
+      "id": "hidden.fish_sauce"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check for oyster sauce or XO sauce.",
+      "id": "hidden.oyster_sauce"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check for shrimp paste or dried shrimp.",
+      "id": "hidden.shrimp_paste"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check for fish stock (for example dashi or bonito flakes).",
+      "id": "hidden.dashi"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check for soy sauce, which also contains wheat.",
+      "id": "hidden.soy_sauce"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check for miso, tofu or bean paste.",
+      "id": "hidden.miso"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check for hoisin, black bean or bean sauces.",
+      "id": "hidden.hoisin"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check for sesame oil, tahini or sesame seeds on top.",
+      "id": "hidden.sesame_oil"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check for butter, ghee, cream or cheese in cooking.",
+      "id": "hidden.butter_ghee"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check for milk powder, whey or casein.",
+      "id": "hidden.whey_casein"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check for egg wash on bread or pastry, and egg in batter.",
+      "id": "hidden.egg_wash"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check for mayonnaise and aioli.",
+      "id": "hidden.mayonnaise"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check for flour used to thicken sauces or coat food.",
+      "id": "hidden.flour_thickener"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check stock, soup bases and seasoning powders.",
+      "id": "hidden.stock_cubes"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check for Worcestershire sauce, which contains anchovy.",
+      "id": "hidden.worcestershire"
+    },
+    {
+      "category": "hidden",
+      "english": "Please check for wine, vinegar or dried fruit (sulphites).",
+      "id": "hidden.wine_sulphites"
+    },
+    {
+      "category": "cross_contact",
+      "english": "Even a trace from shared equipment can cause a reaction.",
+      "id": "cross_contact.intro"
+    },
+    {
+      "category": "cross_contact",
+      "english": "Please do not use oil or a fryer that has cooked my allergen.",
+      "id": "cross_contact.fryer"
+    },
+    {
+      "category": "cross_contact",
+      "english": "Please use a clean pan, wok and utensils.",
+      "id": "cross_contact.pan"
+    },
+    {
+      "category": "cross_contact",
+      "english": "Please use a clean chopping board and knife.",
+      "id": "cross_contact.board_knife"
+    },
+    {
+      "category": "cross_contact",
+      "english": "Please do not cook my food on a shared grill or hotplate.",
+      "id": "cross_contact.grill"
+    },
+    {
+      "category": "cross_contact",
+      "english": "Please wash hands and change gloves before preparing my food.",
+      "id": "cross_contact.hands"
+    },
+    {
+      "category": "cross_contact",
+      "english": "Please do not add any garnish, topping or sauce I have not checked.",
+      "id": "cross_contact.garnish"
+    },
+    {
+      "category": "cross_contact",
+      "english": "Please prepare and serve my dish separately.",
+      "id": "cross_contact.separate"
+    },
+    {
+      "category": "cross_contact",
+      "english": "Removing the allergen from a finished dish is not safe. Please make it fresh.",
+      "id": "cross_contact.remove_not_ok"
+    },
+    {
+      "category": "cross_contact",
+      "english": "I cannot eat from a buffet because of shared serving spoons.",
+      "id": "cross_contact.buffet"
+    },
+    {
+      "category": "cross_contact",
+      "english": "Bakeries are often unsafe for me because of flour and nuts in the air and on surfaces.",
+      "id": "cross_contact.bakery"
+    },
+    {
+      "category": "question",
+      "english": "Does this dish contain any of my allergens?",
+      "id": "question.contains"
+    },
+    {
+      "category": "question",
+      "english": "Can you check the ingredients with the chef?",
+      "id": "question.ingredients"
+    },
+    {
+      "category": "question",
+      "english": "Can I see the label or packaging of the ingredients?",
+      "id": "question.label"
+    },
+    {
+      "category": "question",
+      "english": "Is this cooked in the same oil as other food?",
+      "id": "question.same_oil"
+    },
+    {
+      "category": "question",
+      "english": "Is this cooked in the same pan or wok as other food?",
+      "id": "question.same_pan"
+    },
+    {
+      "category": "question",
+      "english": "What is in the sauce?",
+      "id": "question.sauce"
+    },
+    {
+      "category": "question",
+      "english": "Is the meat or fish marinated? What is in the marinade?",
+      "id": "question.marinade"
+    },
+    {
+      "category": "question",
+      "english": "What is in the dressing?",
+      "id": "question.dressing"
+    },
+    {
+      "category": "question",
+      "english": "Do the desserts contain nuts, milk or egg?",
+      "id": "question.dessert"
+    },
+    {
+      "category": "question",
+      "english": "Does the bread contain milk, egg, nuts or seeds?",
+      "id": "question.bread"
+    },
+    {
+      "category": "question",
+      "english": "What stock is used in the soup?",
+      "id": "question.stock"
+    },
+    {
+      "category": "question",
+      "english": "Is this made in the kitchen, or bought ready-made?",
+      "id": "question.premade"
+    },
+    {
+      "category": "question",
+      "english": "Which dishes can you make safely for me?",
+      "id": "question.safe_dish"
+    },
+    {
+      "category": "question",
+      "english": "Can this dish be made without my allergen, from fresh?",
+      "id": "question.modify"
+    },
+    {
+      "category": "question",
+      "english": "Is the chef confident this dish is safe for me?",
+      "id": "question.chef_confident"
+    },
+    {
+      "category": "question",
+      "english": "Does any ingredient say \"may contain\" my allergen?",
+      "id": "question.may_contain"
+    },
+    {
+      "category": "question",
+      "english": "Does the kitchen use nuts or peanuts?",
+      "id": "question.kitchen_nuts"
+    },
+    {
+      "category": "question",
+      "english": "Are fried foods cooked in shared oil?",
+      "id": "question.fried_shared"
+    },
+    {
+      "category": "staff_answer",
+      "english": "Yes",
+      "id": "staff_answer.yes"
+    },
+    {
+      "category": "staff_answer",
+      "english": "No",
+      "id": "staff_answer.no"
+    },
+    {
+      "category": "staff_answer",
+      "english": "I am not sure",
+      "id": "staff_answer.not_sure"
+    },
+    {
+      "category": "staff_answer",
+      "english": "I will ask the chef",
+      "id": "staff_answer.ask_chef"
+    },
+    {
+      "category": "staff_answer",
+      "english": "Yes, we can make it safely",
+      "id": "staff_answer.safe"
+    },
+    {
+      "category": "staff_answer",
+      "english": "No, we cannot make it safely",
+      "id": "staff_answer.not_safe"
+    },
+    {
+      "category": "staff_answer",
+      "english": "It contains your allergen",
+      "id": "staff_answer.contains_allergen"
+    },
+    {
+      "category": "staff_answer",
+      "english": "It may contain traces",
+      "id": "staff_answer.may_contain"
+    },
+    {
+      "category": "staff_answer",
+      "english": "I will show you the label",
+      "id": "staff_answer.show_label"
+    },
+    {
+      "category": "staff_answer",
+      "english": "I recommend this dish",
+      "id": "staff_answer.recommend"
+    },
+    {
+      "category": "staff_answer",
+      "english": "Please tap your answer.",
+      "id": "staff_answer.tap_instruction"
+    },
+    {
+      "category": "ordering",
+      "english": "Can you recommend a dish that is safe for me?",
+      "id": "ordering.recommend_safe"
+    },
+    {
+      "category": "ordering",
+      "english": "Something simple is fine, such as plain grilled meat or fish with rice or vegetables.",
+      "id": "ordering.simple"
+    },
+    {
+      "category": "ordering",
+      "english": "Please serve it without sauce.",
+      "id": "ordering.no_sauce"
+    },
+    {
+      "category": "ordering",
+      "english": "Please cook it with only salt, pepper and olive oil.",
+      "id": "ordering.plain"
+    },
+    {
+      "category": "ordering",
+      "english": "Could you write down the ingredients for me?",
+      "id": "ordering.write_down"
+    },
+    {
+      "category": "ordering",
+      "english": "If you are not sure, please tell me. I would rather not order than take a risk.",
+      "id": "ordering.if_unsure"
+    },
+    {
+      "category": "ordering",
+      "english": "Please make sure this exact dish is brought to me.",
+      "id": "ordering.same_dish"
+    },
+    {
+      "category": "ordering",
+      "english": "When you serve it, please confirm it is the allergy-safe dish.",
+      "id": "ordering.confirm_served"
+    },
+    {
+      "category": "ordering",
+      "english": "I will only have a drink, thank you.",
+      "id": "ordering.drink_only"
+    },
+    {
+      "category": "ordering",
+      "english": "Could I see the allergen information or allergen menu?",
+      "id": "ordering.bring_menu"
+    },
+    {
+      "category": "ordering",
+      "english": "Is it okay if I eat food I brought myself?",
+      "id": "ordering.own_food"
+    },
+    {
+      "category": "ordering",
+      "english": "Thank you very much for your help.",
+      "id": "ordering.thanks"
+    },
+    {
+      "category": "emergency",
+      "english": "I am having an allergic reaction.",
+      "id": "emergency.reaction"
+    },
+    {
+      "category": "emergency",
+      "english": "Please call an ambulance now.",
+      "id": "emergency.call_ambulance"
+    },
+    {
+      "category": "emergency",
+      "english": "Tell them: anaphylaxis, a severe allergic reaction.",
+      "id": "emergency.say_anaphylaxis"
+    },
+    {
+      "category": "emergency",
+      "english": "I have an adrenaline (epinephrine) auto-injector in my bag.",
+      "id": "emergency.autoinjector"
+    },
+    {
+      "category": "emergency",
+      "english": "Please help me use it.",
+      "id": "emergency.help_inject"
+    },
+    {
+      "category": "emergency",
+      "english": "It goes into the outer thigh. It can go through clothing.",
+      "id": "emergency.thigh"
+    },
+    {
+      "category": "emergency",
+      "english": "Please help me lie down. Do not make me stand or walk.",
+      "id": "emergency.lie_down"
+    },
+    {
+      "category": "emergency",
+      "english": "If I am struggling to breathe, help me sit up.",
+      "id": "emergency.sit_if_breathing"
+    },
+    {
+      "category": "emergency",
+      "english": "If there is no improvement after 5 minutes, a second auto-injector may be used.",
+      "id": "emergency.second_dose"
+    },
+    {
+      "category": "emergency",
+      "english": "Please stay with me until help arrives.",
+      "id": "emergency.stay"
+    },
+    {
+      "category": "emergency",
+      "english": "Where is the nearest hospital with an emergency department?",
+      "id": "emergency.hospital"
+    },
+    {
+      "category": "emergency",
+      "english": "Where is the nearest pharmacy?",
+      "id": "emergency.pharmacy"
+    },
+    {
+      "category": "emergency",
+      "english": "Do you have antihistamine tablets?",
+      "id": "emergency.antihistamine"
+    },
+    {
+      "category": "emergency",
+      "english": "Please call my emergency contact.",
+      "id": "emergency.contact"
+    },
+    {
+      "category": "shopping",
+      "english": "Does this product contain any of my allergens?",
+      "id": "shopping.product_contains"
+    },
+    {
+      "category": "shopping",
+      "english": "Can you read this label for me?",
+      "id": "shopping.read_label"
+    },
+    {
+      "category": "shopping",
+      "english": "Does the label say it may contain traces?",
+      "id": "shopping.traces"
+    },
+    {
+      "category": "shopping",
+      "english": "Is there a brand without my allergen?",
+      "id": "shopping.safe_brand"
+    },
+    {
+      "category": "shopping",
+      "english": "Do you sell allergy-free (free-from) products?",
+      "id": "shopping.free_from"
+    },
+    {
+      "category": "shopping",
+      "english": "Do you sell gluten-free bread or pasta?",
+      "id": "shopping.gluten_free"
+    },
+    {
+      "category": "shopping",
+      "english": "Do you sell plant-based milk without nuts or soy?",
+      "id": "shopping.dairy_free"
+    },
+    {
+      "category": "travel",
+      "english": "Please tell the breakfast staff about my allergy.",
+      "id": "travel.hotel_breakfast"
+    },
+    {
+      "category": "travel",
+      "english": "Can the kitchen prepare a safe meal for me?",
+      "id": "travel.hotel_kitchen"
+    },
+    {
+      "category": "travel",
+      "english": "I have a severe allergy. Please do not serve me any meal I have not checked.",
+      "id": "travel.airline_meal"
+    },
+    {
+      "category": "travel",
+      "english": "Could you ask nearby passengers not to eat nuts?",
+      "id": "travel.airline_announce"
+    },
+    {
+      "category": "travel",
+      "english": "I must keep my allergy medication with me at all times.",
+      "id": "travel.medication_carry"
+    },
+    {
+      "category": "travel",
+      "english": "I have a doctor's letter for my medication.",
+      "id": "travel.doctor_letter"
+    }
+  ],
+  "sourceLocale": "en",
+  "translations": {
+    "de": {},
+    "es": {},
+    "es-AR": {},
+    "es-ES": {},
+    "es-MX": {},
+    "fr": {},
+    "it": {},
+    "nl": {},
+    "yue-Hant": {},
+    "zh-Hans": {},
+    "zh-Hant-TW": {}
+  }
+}
