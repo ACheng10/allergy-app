@@ -1,16 +1,27 @@
 import SwiftUI
 
-/// First-run setup and the Profile tab: allergens, severity, destination,
-/// emergency contact. Changes save automatically.
+/// First-run setup and the Profile tab: destination, allergens (with severity),
+/// emergency contact and problem reports, each on its own screen. Changes save automatically.
 struct ProfileEditorView: View {
     // @Bindable: like passing a mutable object by reference in Python. Editing
     // a field here writes straight to the database row.
     @Bindable var profile: AllergyProfile
     let isOnboarding: Bool
     @Environment(\.phraseBook) private var book
-    @State private var search = ""
+
+    /// e.g. "4 selected". Allergen names are too long to list in one line.
+    private var allergenSummary: String {
+        profile.allergenIDs.isEmpty ? "None chosen yet" : "\(profile.allergenIDs.count) selected"
+    }
+
+    private var contactSummary: String {
+        if profile.emergencyContactPhone.isEmpty { return "Not set" }
+        let name = profile.emergencyContactName.isEmpty ? "Contact" : profile.emergencyContactName
+        return "\(name) · \(profile.emergencyContactDialNumber)"
+    }
 
     var body: some View {
+        // One row per job; each opens its own screen, like folders in Settings.
         Form {
             Section {
                 DestinationButton(profile: profile, inForm: true)
@@ -18,6 +29,94 @@ struct ProfileEditorView: View {
                 Text("Where are you going?")
             }
 
+            Section {
+                NavigationLink {
+                    AllergenSettingsView(profile: profile)
+                } label: {
+                    ProfileRow(title: "Allergens", detail: allergenSummary,
+                               systemImage: "allergens", tint: .red)
+                }
+            } footer: {
+                if isOnboarding && profile.allergenIDs.isEmpty {
+                    Text("Pick at least one allergen to make your card.")
+                }
+            }
+
+            Section {
+                NavigationLink {
+                    EmergencyContactView(profile: profile)
+                } label: {
+                    ProfileRow(title: "Emergency contact", detail: contactSummary,
+                               systemImage: "person.crop.circle.badge.plus", tint: .blue)
+                }
+            }
+
+            if !isOnboarding {
+                Section {
+                    NavigationLink {
+                        ReportProblemView(profile: profile)
+                    } label: {
+                        ProfileRow(title: "Report a problem", detail: "Wrong translation, bug or idea",
+                                   systemImage: "exclamationmark.bubble", tint: .orange)
+                    }
+                }
+
+                Section {
+                    Text("This app shows fixed phrases written in advance. It does not tell you whether food is safe, and it is not medical advice. Always carry your medication.")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                } header: {
+                    Text("About")
+                }
+            }
+        }
+        .navigationTitle(isOnboarding ? "Set up your card" : "Profile")
+        .toolbar {
+            if isOnboarding {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Done") { profile.setupComplete = true }
+                        .disabled(!profile.isUsable)
+                }
+            }
+        }
+    }
+}
+
+/// Icon, title and a one-line summary of what is inside.
+private struct ProfileRow: View {
+    let title: String
+    let detail: String
+    let systemImage: String
+    let tint: Color
+
+    var body: some View {
+        HStack(spacing: 14) {
+            Image(systemName: systemImage)
+                .font(.title3)
+                .foregroundStyle(.white)
+                .frame(width: 36, height: 36)
+                .background(tint, in: RoundedRectangle(cornerRadius: 8))
+                .accessibilityHidden(true)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title).font(.headline)
+                Text(detail)
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                    .lineLimit(1)
+            }
+        }
+        .padding(.vertical, 4)
+    }
+}
+
+/// Search, the grouped allergen list, and how serious it is.
+private struct AllergenSettingsView: View {
+    @Bindable var profile: AllergyProfile
+    @Environment(\.phraseBook) private var book
+    @State private var search = ""
+
+    var body: some View {
+        Form {
             Section {
                 HStack {
                     Image(systemName: "magnifyingglass")
@@ -69,6 +168,18 @@ struct ProfileEditorView: View {
                 Text("How serious is it?")
             }
 
+        }
+        .navigationTitle("Allergens")
+        .navigationBarTitleDisplayMode(.inline)
+    }
+}
+
+/// Who to call, with their country code.
+private struct EmergencyContactView: View {
+    @Bindable var profile: AllergyProfile
+
+    var body: some View {
+        Form {
             Section {
                 TextField("Name", text: $profile.emergencyContactName)
                     .textContentType(.name)
@@ -100,31 +211,9 @@ struct ProfileEditorView: View {
                 }
             }
 
-            if !isOnboarding {
-                Section {
-                    NavigationLink("Report a problem") {
-                        ReportProblemView(profile: profile)
-                    }
-                }
-
-                Section {
-                    Text("This app shows fixed phrases written in advance. It does not tell you whether food is safe, and it is not medical advice. Always carry your medication.")
-                        .font(.footnote)
-                        .foregroundStyle(.secondary)
-                } header: {
-                    Text("About")
-                }
-            }
         }
-        .navigationTitle(isOnboarding ? "Set up your card" : "Profile")
-        .toolbar {
-            if isOnboarding {
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("Done") { profile.setupComplete = true }
-                        .disabled(!profile.isUsable)
-                }
-            }
-        }
+        .navigationTitle("Emergency contact")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
