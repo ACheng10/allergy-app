@@ -21,7 +21,7 @@ struct EmergencyView: View {
                     if !profile.emergencyContactPhone.isEmpty {
                         callButton(
                             title: "Call \(profile.emergencyContactName.isEmpty ? "emergency contact" : profile.emergencyContactName)",
-                            number: profile.emergencyContactPhone, tint: .blue)
+                            number: profile.emergencyContactDialNumber, tint: .blue)
                     }
 
                     BetaNotice(lines: lines)

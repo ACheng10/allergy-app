@@ -72,11 +72,32 @@ struct ProfileEditorView: View {
             Section {
                 TextField("Name", text: $profile.emergencyContactName)
                     .textContentType(.name)
-                TextField("Phone, with country code", text: $profile.emergencyContactPhone)
+                NavigationLink {
+                    DialCodeList(selection: $profile.emergencyContactRegion)
+                } label: {
+                    LabeledContent("Country code") {
+                        if let code = DialCode.find(profile.emergencyContactRegion) {
+                            Text("\(code.flag) \(code.dial)")
+                        } else {
+                            Text("Choose")
+                        }
+                    }
+                }
+                TextField("Phone number", text: $profile.emergencyContactPhone)
                     .textContentType(.telephoneNumber)
                     .keyboardType(.phonePad)
             } header: {
                 Text("Emergency contact (optional)")
+            } footer: {
+                if !profile.emergencyContactPhone.isEmpty {
+                    Text("Calls \(profile.emergencyContactDialNumber)")
+                }
+            }
+            .onAppear {
+                // Guess the phone's own country the first time; easy to change.
+                if profile.emergencyContactRegion.isEmpty, let guess = DialCode.deviceDefault {
+                    profile.emergencyContactRegion = guess.region
+                }
             }
 
             if !isOnboarding {
@@ -165,5 +186,44 @@ private struct AllergenCheckRow: View {
         }
         // Plain style keeps the text black instead of tinted like a link.
         .buttonStyle(.plain)
+    }
+}
+
+/// Searchable list of countries with flag and calling code, e.g. "🇬🇧 United Kingdom +44".
+private struct DialCodeList: View {
+    @Binding var selection: String
+    @Environment(\.dismiss) private var dismiss
+    @State private var search = ""
+
+    private var results: [DialCode] {
+        let query = search.trimmingCharacters(in: .whitespaces)
+        guard !query.isEmpty else { return DialCode.all }
+        return DialCode.all.filter {
+            $0.name.localizedCaseInsensitiveContains(query) || $0.dial.contains(query)
+        }
+    }
+
+    var body: some View {
+        List(results) { code in
+            Button {
+                selection = code.region
+                dismiss()
+            } label: {
+                HStack(spacing: 12) {
+                    Text(code.flag).font(.title2)
+                    Text(code.name)
+                    Spacer()
+                    Text(code.dial).foregroundStyle(.secondary)
+                    if code.region == selection {
+                        Image(systemName: "checkmark").foregroundStyle(.tint)
+                    }
+                }
+                .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+        }
+        .searchable(text: $search, prompt: "Country or code, e.g. +44")
+        .navigationTitle("Country code")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }

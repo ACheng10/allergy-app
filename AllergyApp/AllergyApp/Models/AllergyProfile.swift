@@ -18,6 +18,8 @@ final class AllergyProfile {
     var localeCode: String = ""
     var emergencyContactName: String = ""
     var emergencyContactPhone: String = ""
+    /// Two-letter country code for the contact's phone, e.g. "GB" for +44.
+    var emergencyContactRegion: String = ""
     var setupComplete: Bool = false
     var createdAt: Date = Date()
 
@@ -26,6 +28,11 @@ final class AllergyProfile {
     var severity: Severity {
         get { Severity(rawValue: severityRaw) ?? .anaphylaxis }
         set { severityRaw = newValue.rawValue }
+    }
+
+    /// The number to dial, with the country code in front.
+    var emergencyContactDialNumber: String {
+        DialCode.international(region: emergencyContactRegion, local: emergencyContactPhone)
     }
 
     var hasDestination: Bool { !countryCode.isEmpty && !localeCode.isEmpty }
