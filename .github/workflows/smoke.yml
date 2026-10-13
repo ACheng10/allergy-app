@@ -1,0 +1,46 @@
+name: Simulator smoke test
+
+# Builds the app, launches it in an iPhone Simulator, and prints the app's
+# console output plus a small screenshot (base64) into the job log.
+on:
+  workflow_dispatch:
+  push:
+    branches: ["claude/**"]
+
+jobs:
+  launch:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build for simulator
+        run: |
+          xcodebuild build \
+            -project AllergyApp/AllergyApp.xcodeproj \
+            -target AllergyApp \
+            -configuration Debug \
+            -sdk iphonesimulator \
+            -quiet
+          ls -la AllergyApp/build/Debug-iphonesimulator/AllergyApp.app
+      - name: Launch and screenshot
+        run: |
+          UDID=$(xcrun simctl list devices available -j | python3 -c "
+          import json,sys
+          d=json.load(sys.stdin)['devices']
+          print(next(x['udid'] for r,ds in d.items() if 'iOS' in r for x in ds if x['name'].startswith('iPhone')))")
+          echo "Device $UDID"
+          xcrun simctl boot "$UDID"
+          xcrun simctl bootstatus "$UDID" -b
+          xcrun simctl install "$UDID" AllergyApp/build/Debug-iphonesimulator/AllergyApp.app
+          xcrun simctl launch --console-pty "$UDID" com.acheng10.allergycard > app.log 2>&1 &
+          sleep 25
+          xcrun simctl io "$UDID" screenshot shot.png
+          echo "----- app console -----"
+          cat app.log || true
+          echo "----- crash reports -----"
+          ls ~/Library/Logs/DiagnosticReports/ 2>/dev/null | grep -i allergy || echo "none"
+          echo "----- process -----"
+          xcrun simctl spawn "$UDID" launchctl list | grep -i allergy || echo "app not running"
+          sips -Z 480 shot.png --out small.png >/dev/null
+          echo "----- screenshot base64 -----"
+          base64 -i small.png
+          echo "----- end -----"
