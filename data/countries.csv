@@ -1,26 +1,26 @@
-code,name,emergency_number,ambulance_number,verified,emergency_note
-GB,United Kingdom,999,999,no,112 also works
-IE,Ireland,112,112,no,999 also works
-US,United States,911,911,no,
-CA,Canada,911,911,no,
-AU,Australia,000,000,no,112 also works from mobiles
-FR,France,112,15,no,15 is the medical emergency service (SAMU)
-MC,Monaco,112,112,no,
-BE,Belgium,112,112,no,
-CH,Switzerland,112,144,no,144 is the ambulance
-LU,Luxembourg,112,112,no,
-DE,Germany,112,112,no,
-AT,Austria,112,144,no,144 is the ambulance
-NL,Netherlands,112,112,no,
-ES,Spain,112,112,no,
-MX,Mexico,911,911,no,
-AR,Argentina,911,107,no,107 is the medical emergency line in many areas
-IT,Italy,112,118,no,118 is the ambulance
-HK,Hong Kong,999,999,no,
-MO,Macau,999,999,no,
-CN,Mainland China,120,120,no,120 is the ambulance; 110 is police
-TW,Taiwan,119,119,no,119 is ambulance and fire
-SG,Singapore,995,995,no,995 is the ambulance
-PL,Poland,112,999,no,999 is the ambulance
-PT,Portugal,112,112,no,
-BR,Brazil,192,192,no,192 is the ambulance (SAMU); 190 is police; 193 is fire
+code,name,emergency_number,ambulance_number,verified,emergency_note,source
+GB,United Kingdom,999,999,yes,112 also works,https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-call-999/
+IE,Ireland,112,112,yes,999 also works,https://www.112.ie/
+US,United States,911,911,no,,
+CA,Canada,911,911,no,,
+AU,Australia,000,000,yes,112 also works from mobiles,https://www.qld.gov.au/emergency/emergencies-services/assistance/triple-000
+FR,France,112,15,yes,15 is the medical emergency service (SAMU),https://www.service-public.gouv.fr/particuliers/vosdroits/F33954
+MC,Monaco,112,112,yes,"18 also reaches the fire brigade, which runs the ambulances",https://dfm.mc/take-action/services-and-procedures/?lang=en
+BE,Belgium,112,112,yes,,https://www.112.be/en
+CH,Switzerland,112,144,yes,144 is the ambulance,https://www.ch.ch/en/police
+LU,Luxembourg,112,112,no,,
+DE,Germany,112,112,yes,,https://verwaltung.bund.de/leistungsverzeichnis/DE/rechte-und-pflichten/102837939
+AT,Austria,112,144,yes,144 is the ambulance,https://www.oesterreich.gv.at/de/themen/notfaelle_unfaelle_und_kriminalitaet/notrufnummern
+NL,Netherlands,112,112,yes,,https://www.government.nl/topics/emergency-number-112
+ES,Spain,112,112,yes,,https://administracion.gob.es/pag_Home/Tu-espacio-europeo/derechos-obligaciones/ciudadanos/asistencia-sanitaria/numeros-urgencia
+MX,Mexico,911,911,yes,,https://www.gob.mx/911
+AR,Argentina,911,911,yes,107 (SAME) is the ambulance in Buenos Aires city and some Buenos Aires province towns,https://www.argentina.gob.ar/node/9642
+IT,Italy,112,118,yes,118 is the ambulance,https://www.salute.gov.it/new/it/tema/112-118-e-pronto-soccorso/numero-unico-europeo-le-emergenze-nue-112/
+HK,Hong Kong,999,999,yes,,https://www.hkengage.gov.hk/en/essentials/basics/emergency-ambulance-services
+MO,Macau,999,999,yes,,https://www.gov.mo/en/?p=36370
+CN,Mainland China,120,120,yes,120 is the ambulance; 110 is police,https://english.shanghai.gov.cn/en-EmergencyNumbers/20241210/cbc5280b9f96440a93234bfc5e0c1023.html
+TW,Taiwan,119,119,yes,119 is ambulance and fire,https://119.tainan.gov.tw/en/cp.aspx?n=25718
+SG,Singapore,995,995,yes,995 is the ambulance,https://www.scdf.gov.sg/home/about-us/information-on-ems
+PL,Poland,112,999,yes,999 is the ambulance,https://www.gov.pl/web/numer-alarmowy-112
+PT,Portugal,112,112,no,,
+BR,Brazil,192,192,yes,192 is the ambulance (SAMU); 190 is police; 193 is fire,https://www.gov.br/saude/pt-br/composicao/saes/samu-192

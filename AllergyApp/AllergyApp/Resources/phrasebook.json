@@ -9,7 +9,7 @@
         "en"
       ],
       "name": "United Kingdom",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "112",
@@ -20,7 +20,7 @@
         "en"
       ],
       "name": "Ireland",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "911",
@@ -54,7 +54,7 @@
         "en"
       ],
       "name": "Australia",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "15",
@@ -65,18 +65,18 @@
         "fr"
       ],
       "name": "France",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "112",
       "code": "MC",
-      "emergencyNote": "",
+      "emergencyNote": "18 also reaches the fire brigade, which runs the ambulances",
       "emergencyNumber": "112",
       "locales": [
         "fr"
       ],
       "name": "Monaco",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "112",
@@ -89,7 +89,7 @@
         "de"
       ],
       "name": "Belgium",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "144",
@@ -102,7 +102,7 @@
         "it"
       ],
       "name": "Switzerland",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "112",
@@ -125,7 +125,7 @@
         "de"
       ],
       "name": "Germany",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "144",
@@ -136,7 +136,7 @@
         "de"
       ],
       "name": "Austria",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "112",
@@ -147,7 +147,7 @@
         "nl"
       ],
       "name": "Netherlands",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "112",
@@ -158,7 +158,7 @@
         "es-ES"
       ],
       "name": "Spain",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "911",
@@ -169,18 +169,18 @@
         "es-MX"
       ],
       "name": "Mexico",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
-      "ambulanceNumber": "107",
+      "ambulanceNumber": "911",
       "code": "AR",
-      "emergencyNote": "107 is the medical emergency line in many areas",
+      "emergencyNote": "107 (SAME) is the ambulance in Buenos Aires city and some Buenos Aires province towns",
       "emergencyNumber": "911",
       "locales": [
         "es-AR"
       ],
       "name": "Argentina",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "118",
@@ -191,7 +191,7 @@
         "it"
       ],
       "name": "Italy",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "999",
@@ -202,7 +202,7 @@
         "yue-Hant"
       ],
       "name": "Hong Kong",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "999",
@@ -213,7 +213,7 @@
         "yue-Hant"
       ],
       "name": "Macau",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "120",
@@ -224,7 +224,7 @@
         "zh-Hans"
       ],
       "name": "Mainland China",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "119",
@@ -235,7 +235,7 @@
         "zh-Hant-TW"
       ],
       "name": "Taiwan",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "995",
@@ -247,7 +247,7 @@
         "en"
       ],
       "name": "Singapore",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "999",
@@ -258,7 +258,7 @@
         "pl"
       ],
       "name": "Poland",
-      "numbersVerified": false
+      "numbersVerified": true
     },
     {
       "ambulanceNumber": "112",
@@ -280,7 +280,7 @@
         "pt-BR"
       ],
       "name": "Brazil",
-      "numbersVerified": false
+      "numbersVerified": true
     }
   ],
   "hiddenByAllergen": {
