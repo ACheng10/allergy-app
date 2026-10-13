@@ -18,26 +18,13 @@ struct ProfileEditorView: View {
             }
 
             Section {
-                ForEach(book.phrases(in: "allergen")) { allergen in
-                    Button {
-                        toggle(allergen.id)
-                    } label: {
-                        let selected = profile.allergenIDs.contains(allergen.id)
-                        HStack {
-                            Text(allergen.english)
-                            Spacer()
-                            Image(systemName: selected ? "checkmark.circle.fill" : "circle")
-                                .foregroundStyle(selected ? Color.accentColor : Color.secondary)
-                                .font(.title3)
-                        }
-                        .contentShape(Rectangle())
-                        .accessibilityAddTraits(selected ? .isSelected : [])
-                    }
-                    // Plain style keeps the text black instead of tinted like a link.
-                    .buttonStyle(.plain)
+                ForEach(AllergenGroup.resolved(in: book), id: \.group.id) { entry in
+                    AllergenGroupRow(group: entry.group, phrases: entry.phrases, profile: profile)
                 }
             } header: {
                 Text("What are you allergic to?")
+            } footer: {
+                Text("Open a group to pick the specific foods.")
             }
 
             Section {
@@ -87,6 +74,53 @@ struct ProfileEditorView: View {
                 }
             }
         }
+    }
+
+}
+
+/// One collapsible group, e.g. "Nuts · 2 selected", with its foods inside.
+private struct AllergenGroupRow: View {
+    let group: AllergenGroup
+    let phrases: [PhraseBook.Phrase]
+    @Bindable var profile: AllergyProfile
+    @State private var expanded = false
+
+    private var selectedCount: Int {
+        phrases.filter { profile.allergenIDs.contains($0.id) }.count
+    }
+
+    var body: some View {
+        DisclosureGroup(isExpanded: $expanded) {
+            ForEach(phrases) { allergen in
+                let selected = profile.allergenIDs.contains(allergen.id)
+                Button {
+                    toggle(allergen.id)
+                } label: {
+                    HStack {
+                        Text(allergen.english)
+                        Spacer()
+                        Image(systemName: selected ? "checkmark.circle.fill" : "circle")
+                            .foregroundStyle(selected ? Color.accentColor : Color.secondary)
+                            .font(.title3)
+                    }
+                    .contentShape(Rectangle())
+                    .accessibilityAddTraits(selected ? .isSelected : [])
+                }
+                // Plain style keeps the text black instead of tinted like a link.
+                .buttonStyle(.plain)
+            }
+        } label: {
+            HStack {
+                Label(group.title, systemImage: group.symbol)
+                Spacer()
+                if selectedCount > 0 {
+                    Text("\(selectedCount) selected")
+                        .font(.subheadline)
+                        .foregroundStyle(.tint)
+                }
+            }
+        }
+        .onAppear { if selectedCount > 0 { expanded = true } }
     }
 
     private func toggle(_ id: String) {
