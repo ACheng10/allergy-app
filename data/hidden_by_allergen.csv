@@ -27,3 +27,8 @@ allergen.egg,hidden.mayonnaise
 allergen.mustard,hidden.mayonnaise
 allergen.celery,hidden.stock_cubes
 allergen.sulphites,hidden.wine_sulphites
+allergen.chicken,hidden.stock_cubes
+allergen.pork,hidden.stock_cubes
+allergen.garlic,hidden.stock_cubes
+allergen.onion,hidden.stock_cubes
+allergen.msg,hidden.stock_cubes

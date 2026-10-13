@@ -257,6 +257,9 @@
     "allergen.celery": [
       "hidden.stock_cubes"
     ],
+    "allergen.chicken": [
+      "hidden.stock_cubes"
+    ],
     "allergen.crustaceans": [
       "hidden.shrimp_paste"
     ],
@@ -268,6 +271,9 @@
       "hidden.fish_sauce",
       "hidden.dashi",
       "hidden.worcestershire"
+    ],
+    "allergen.garlic": [
+      "hidden.stock_cubes"
     ],
     "allergen.gluten": [
       "hidden.soy_sauce",
@@ -284,8 +290,14 @@
     "allergen.molluscs": [
       "hidden.oyster_sauce"
     ],
+    "allergen.msg": [
+      "hidden.stock_cubes"
+    ],
     "allergen.mustard": [
       "hidden.mayonnaise"
+    ],
+    "allergen.onion": [
+      "hidden.stock_cubes"
     ],
     "allergen.peanut": [
       "hidden.peanut_oil",
@@ -293,6 +305,9 @@
     ],
     "allergen.pine_nut": [
       "hidden.nut_sauces"
+    ],
+    "allergen.pork": [
+      "hidden.stock_cubes"
     ],
     "allergen.sesame": [
       "hidden.sesame_oil"
@@ -578,6 +593,61 @@
       "category": "allergen",
       "english": "Red meat and gelatin from mammals (alpha-gal allergy)",
       "id": "allergen.red_meat"
+    },
+    {
+      "category": "allergen",
+      "english": "Peaches and other stone fruit such as plums, apricots and cherries",
+      "id": "allergen.peach"
+    },
+    {
+      "category": "allergen",
+      "english": "Apples",
+      "id": "allergen.apple"
+    },
+    {
+      "category": "allergen",
+      "english": "Bananas",
+      "id": "allergen.banana"
+    },
+    {
+      "category": "allergen",
+      "english": "Mangoes",
+      "id": "allergen.mango"
+    },
+    {
+      "category": "allergen",
+      "english": "Tomatoes",
+      "id": "allergen.tomato"
+    },
+    {
+      "category": "allergen",
+      "english": "Garlic",
+      "id": "allergen.garlic"
+    },
+    {
+      "category": "allergen",
+      "english": "Onions, including spring onions and shallots",
+      "id": "allergen.onion"
+    },
+    {
+      "category": "allergen",
+      "english": "Chicken, including chicken stock and stock powder",
+      "id": "allergen.chicken"
+    },
+    {
+      "category": "allergen",
+      "english": "Pork, including lard and pork stock",
+      "id": "allergen.pork"
+    },
+    {
+      "category": "allergen",
+      "english": "Gelatin",
+      "id": "allergen.gelatin"
+    },
+    {
+      "category": "allergen",
+      "english": "MSG (monosodium glutamate)",
+      "id": "allergen.msg"
     },
     {
       "category": "hidden",
@@ -1090,6 +1160,14 @@
         "status": "ai_draft",
         "text": "杏仁（扁桃仁）"
       },
+      "allergen.apple": {
+        "status": "ai_draft",
+        "text": "蘋果"
+      },
+      "allergen.banana": {
+        "status": "ai_draft",
+        "text": "香蕉"
+      },
       "allergen.brazil_nut": {
         "status": "ai_draft",
         "text": "巴西果"
@@ -1105,6 +1183,10 @@
       "allergen.celery": {
         "status": "ai_draft",
         "text": "西芹（包括根芹同芹菜鹽）"
+      },
+      "allergen.chicken": {
+        "status": "ai_draft",
+        "text": "雞肉，包括雞湯同雞粉"
       },
       "allergen.coconut": {
         "status": "ai_draft",
@@ -1125,6 +1207,14 @@
       "allergen.fish": {
         "status": "ai_draft",
         "text": "魚"
+      },
+      "allergen.garlic": {
+        "status": "ai_draft",
+        "text": "蒜頭"
+      },
+      "allergen.gelatin": {
+        "status": "ai_draft",
+        "text": "明膠（魚膠粉）"
       },
       "allergen.gluten": {
         "status": "ai_draft",
@@ -1150,6 +1240,10 @@
         "status": "ai_draft",
         "text": "夏威夷果仁"
       },
+      "allergen.mango": {
+        "status": "ai_draft",
+        "text": "芒果"
+      },
       "allergen.milk": {
         "status": "ai_draft",
         "text": "牛奶同所有奶類製品"
@@ -1158,9 +1252,21 @@
         "status": "ai_draft",
         "text": "貝殼及軟體類海鮮，例如青口、蜆、蠔、魷魚同八爪魚"
       },
+      "allergen.msg": {
+        "status": "ai_draft",
+        "text": "味精"
+      },
       "allergen.mustard": {
         "status": "ai_draft",
         "text": "芥末（西式黃芥末醬同芥末籽）"
+      },
+      "allergen.onion": {
+        "status": "ai_draft",
+        "text": "洋蔥，包括蔥同乾蔥"
+      },
+      "allergen.peach": {
+        "status": "ai_draft",
+        "text": "桃，同埋其他有核水果，例如李、杏同車厘子"
       },
       "allergen.peanut": {
         "status": "ai_draft",
@@ -1178,6 +1284,10 @@
         "status": "ai_draft",
         "text": "開心果"
       },
+      "allergen.pork": {
+        "status": "ai_draft",
+        "text": "豬肉，包括豬油同豬骨湯"
+      },
       "allergen.red_meat": {
         "status": "ai_draft",
         "text": "紅肉，同埋用哺乳類動物製成嘅明膠（α-gal 敏感）"
@@ -1193,6 +1303,10 @@
       "allergen.sulphites": {
         "status": "ai_draft",
         "text": "亞硫酸鹽"
+      },
+      "allergen.tomato": {
+        "status": "ai_draft",
+        "text": "番茄"
       },
       "allergen.tree_nuts": {
         "status": "ai_draft",

@@ -28,9 +28,16 @@ struct AllergenGroup: Identifiable {
         ]),
         AllergenGroup(id: "seeds_veg", title: "Seeds and vegetables", symbol: "carrot", allergenIDs: [
             "allergen.sesame", "allergen.mustard", "allergen.celery",
+            "allergen.tomato", "allergen.garlic", "allergen.onion",
+        ]),
+        AllergenGroup(id: "fruit", title: "Fruit", symbol: "tree", allergenIDs: [
+            "allergen.peach", "allergen.apple", "allergen.banana", "allergen.mango", "allergen.kiwi",
+        ]),
+        AllergenGroup(id: "meat", title: "Meat", symbol: "fork.knife", allergenIDs: [
+            "allergen.chicken", "allergen.pork", "allergen.red_meat", "allergen.gelatin",
         ]),
         AllergenGroup(id: "other", title: "Other", symbol: "ellipsis.circle", allergenIDs: [
-            "allergen.sulphites", "allergen.kiwi", "allergen.red_meat",
+            "allergen.sulphites", "allergen.msg",
         ]),
     ]
 
@@ -57,6 +64,13 @@ struct AllergenGroup: Identifiable {
         "allergen.sulphites": ["sulfur", "sulphur", "wine"],
         "allergen.kiwi": ["kiwifruit"],
         "allergen.red_meat": ["beef", "pork", "lamb", "alpha-gal", "gelatine", "mammal"],
+        "allergen.peach": ["nectarine", "plum", "apricot", "cherry", "stone fruit"],
+        "allergen.onion": ["spring onion", "scallion", "shallot", "leek", "chive"],
+        "allergen.chicken": ["poultry"],
+        "allergen.pork": ["ham", "bacon", "lard"],
+        "allergen.gelatin": ["gelatine", "jelly"],
+        "allergen.msg": ["glutamate", "monosodium", "seasoning powder"],
+        "allergen.tomato": ["ketchup"],
     ]
 
     /// Allergens whose label, group or search terms contain the query.
