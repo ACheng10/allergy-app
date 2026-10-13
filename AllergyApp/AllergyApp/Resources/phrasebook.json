@@ -436,7 +436,7 @@
     },
     {
       "category": "allergen",
-      "english": "Tree nuts (all nuts that grow on trees)",
+      "english": "All nuts, such as almonds, walnuts, cashews and hazelnuts",
       "id": "allergen.tree_nuts"
     },
     {
@@ -1196,7 +1196,7 @@
       },
       "allergen.tree_nuts": {
         "status": "ai_draft",
-        "text": "樹果仁（所有喺樹上生長嘅果仁）"
+        "text": "所有果仁，例如杏仁、合桃、腰果同榛子"
       },
       "allergen.walnut": {
         "status": "ai_draft",
