@@ -59,7 +59,8 @@ struct WaiterModeView: View {
         VStack(alignment: .leading, spacing: 16) {
             ForEach(section.lines) { line in
                 PhraseLineView(line: line, localFont: .title2,
-                               localWeight: section.id == "allergens" ? .bold : .regular)
+                               localWeight: section.id == "allergens" ? .bold : .regular,
+                               englishFont: .title2)
             }
             if section.id != "allergic_to" { Divider() }
         }
