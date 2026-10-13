@@ -29,7 +29,7 @@ It's a personal project, released to everyone. The money goal is to cover costs 
 
 ## Translations
 
-- Drafted languages: fr, de, it, es (neutral base, with es-ES/es-MX/es-AR override files), zh-Hans, zh-Hant-TW, yue-Hant, pl, pt (Portugal), pt-BR (overrides). Dutch (nl) is untranslated.
+- Drafted languages: fr, de, it, es (neutral base; the es-ES/es-MX/es-AR override files exist but are still empty), zh-Hans, zh-Hant-TW, yue-Hant, pl, pt (Portugal), pt-BR (overrides). Dutch (nl) is untranslated.
 - Each draft row has a blind AI back-translation. `docs/TRANSLATION_REVIEW.md` lists the risky lines per language.
 - Reviewers: there's a native reviewer for every language except Dutch. Spanish reviewer is from Spain; Portuguese reviewer is from Portugal (so pt can leave beta, pt-BR stays beta).
 - Review sheets, one per language, are in the owner's Google Drive folder "Allergy Card translation review". When filled-in sheets come back, import by `phrase_id`, and first check that each sheet's draft column still matches the CSV text: the sheets were copied in by hand, so flag mismatches rather than trusting the sheet.

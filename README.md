@@ -21,7 +21,7 @@ Safety rules baked into the code:
 - **Anything not signed off by a native speaker is beta.** A line counts as reviewed only when its status is `human_reviewed`. Missing translations fall back to English and are flagged.
 - **Beta warnings are shown to the user, never inside Waiter Mode.**
 
-Right now only Cantonese has translations, and they are AI drafts waiting for a native speaker, so Cantonese is still marked beta. Every other language shows English and is marked beta. That is expected.
+Right now nine languages have AI drafts waiting for native reviewers (see `docs/TRANSLATION_REVIEW.md`), so every language is still marked beta. Dutch has no translations yet and shows English. That is expected.
 
 ## Run it
 
