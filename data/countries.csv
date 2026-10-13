@@ -1,0 +1,23 @@
+code,name,emergency_number,ambulance_number,verified,emergency_note
+GB,United Kingdom,999,999,no,112 also works
+IE,Ireland,112,112,no,999 also works
+US,United States,911,911,no,
+CA,Canada,911,911,no,
+AU,Australia,000,000,no,112 also works from mobiles
+FR,France,112,15,no,15 is the medical emergency service (SAMU)
+MC,Monaco,112,112,no,
+BE,Belgium,112,112,no,
+CH,Switzerland,112,144,no,144 is the ambulance
+LU,Luxembourg,112,112,no,
+DE,Germany,112,112,no,
+AT,Austria,112,144,no,144 is the ambulance
+NL,Netherlands,112,112,no,
+ES,Spain,112,112,no,
+MX,Mexico,911,911,no,
+AR,Argentina,911,107,no,107 is the medical emergency line in many areas
+IT,Italy,112,118,no,118 is the ambulance
+HK,Hong Kong,999,999,no,
+MO,Macau,999,999,no,
+CN,Mainland China,120,120,no,120 is the ambulance; 110 is police
+TW,Taiwan,119,119,no,119 is ambulance and fire
+SG,Singapore,995,995,no,995 is the ambulance

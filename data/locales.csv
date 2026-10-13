@@ -1,0 +1,13 @@
+code,parent_code,name,native_name,notes
+en,,English,English,source language; always reviewed
+fr,,French,Français,
+de,,German,Deutsch,Swiss written German follows Standard German
+it,,Italian,Italiano,
+nl,,Dutch,Nederlands,no native reviewer yet: stays beta
+es,,Spanish (neutral),Español,neutral base; country files only hold words that differ
+es-ES,es,Spanish (Spain),Español (España),reviewer from Spain
+es-MX,es,Spanish (Mexico),Español (México),beta until a Mexican reviewer checks it
+es-AR,es,Spanish (Argentina),Español (Argentina),beta until an Argentine reviewer checks it
+yue-Hant,,Cantonese (Traditional),廣東話,written Cantonese differs from written Mandarin
+zh-Hans,,Mandarin (Simplified),普通话,
+zh-Hant-TW,,Mandarin (Traditional),國語,same spoken language as zh-Hans; different script and some words

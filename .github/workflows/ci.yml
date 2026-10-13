@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  phrasebook:
+    name: Phrase data
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit tests
+        run: python -m unittest discover tools -v
+      - name: phrasebook.json matches data/
+        run: python tools/build_phrasebook.py --check
+
+  ios-build:
+    name: iOS build (simulator)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Xcode version
+        run: xcodebuild -version
+      - name: Build
+        run: |
+          xcodebuild build \
+            -project AllergyApp/AllergyApp.xcodeproj \
+            -target AllergyApp \
+            -sdk iphonesimulator \
+            CODE_SIGNING_ALLOWED=NO
