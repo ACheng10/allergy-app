@@ -30,7 +30,8 @@ enum DebugFlags {
         profile.allergenIDs = ["allergen.peanut", "allergen.tree_nuts", "allergen.crustaceans", "allergen.milk"]
         profile.severity = .anaphylaxis
         profile.emergencyContactName = "Sam"
-        profile.emergencyContactPhone = "+44 7700 900000"
+        profile.emergencyContactRegion = "GB"
+        profile.emergencyContactPhone = "07700 900000"
         profile.setupComplete = true
     }
 }
