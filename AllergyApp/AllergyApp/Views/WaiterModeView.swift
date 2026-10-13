@@ -5,19 +5,30 @@ import SwiftUI
 struct WaiterModeView: View {
     let card: CardBuilder
     @Environment(\.dismiss) private var dismiss
+    @State private var showKitchen = false
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 28) {
-                    ForEach(card.sections) { section in
-                        VStack(alignment: .leading, spacing: 16) {
-                            ForEach(section.lines) { line in
-                                PhraseLineView(line: line,
-                                               localFont: section.id == "allergens" ? .largeTitle : .title2)
-                            }
+                    ForEach(card.shortSections) { section in
+                        sectionView(section)
+                    }
+
+                    Button {
+                        withAnimation { showKitchen.toggle() }
+                    } label: {
+                        Label(showKitchen ? "Hide kitchen details" : "More for the kitchen",
+                              systemImage: showKitchen ? "chevron.up" : "frying.pan")
+                            .font(.title3.bold())
+                            .frame(maxWidth: .infinity, minHeight: 60)
+                    }
+                    .buttonStyle(.bordered)
+
+                    if showKitchen {
+                        ForEach(card.kitchenSections) { section in
+                            sectionView(section)
                         }
-                        Divider()
                     }
 
                     NavigationLink {
@@ -40,5 +51,15 @@ struct WaiterModeView: View {
         }
         .onAppear { FullBrightness.on() }
         .onDisappear { FullBrightness.off() }
+    }
+
+    private func sectionView(_ section: CardBuilder.Section) -> some View {
+        VStack(alignment: .leading, spacing: 16) {
+            ForEach(section.lines) { line in
+                PhraseLineView(line: line,
+                               localFont: section.id == "allergens" ? .largeTitle : .title2)
+            }
+            if section.id != "allergic_to" { Divider() }
+        }
     }
 }

@@ -44,23 +44,35 @@ struct CardBuilder {
         return result
     }
 
-    var sections: [Section] {
-        func lines(_ ids: [String]) -> [CardLine] { ids.map { book.line($0, in: localeCode) } }
+    private func lines(_ ids: [String]) -> [CardLine] { ids.map { book.line($0, in: localeCode) } }
 
-        var result = [
-            Section(id: "intro", title: "Introduction",
-                    lines: lines(["intro.hello", "intro.please_read", "intro.allergic_to"])),
+    /// What the waiter sees first: who, what, how bad, and one ask. A waiter on
+    /// a busy shift reads about four lines, so everything else waits for the kitchen.
+    var shortSections: [Section] {
+        [
+            Section(id: "allergic_to", title: "Allergic to", lines: lines(["intro.allergic_to"])),
             Section(id: "allergens", title: "My allergens", lines: lines(orderedAllergenIDs)),
-            Section(id: "severity", title: "How serious",
-                    lines: lines(severity.introPhraseIDs + ["intro.not_preference"])),
-            Section(id: "hidden", title: "Hidden ingredients", lines: lines(hiddenIDs)),
+            Section(id: "ask", title: "Please check",
+                    lines: lines(severity.introPhraseIDs + ["hidden.all_forms", "question.ingredients"])),
+        ]
+    }
+
+    /// The detail for the chef: specific hidden ingredients and how to avoid
+    /// cross-contact. Shown behind a button in Waiter Mode.
+    var kitchenSections: [Section] {
+        var result = [
+            Section(id: "hidden", title: "Hidden ingredients",
+                    lines: lines(hiddenIDs.filter { $0 != "hidden.all_forms" })),
         ]
         if severity != .intolerance {
             result.append(Section(id: "cross_contact", title: "Kitchen", lines: lines(Self.crossContactIDs)))
         }
-        result.append(Section(id: "thanks", title: "Thanks", lines: lines(["intro.thank_you_care"])))
-        return result
+        result.append(Section(id: "thanks", title: "Thanks",
+                              lines: lines(["intro.not_preference", "intro.thank_you_care"])))
+        return result.filter { !$0.lines.isEmpty }
     }
+
+    var sections: [Section] { shortSections + kitchenSections }
 
     var allLines: [CardLine] { sections.flatMap(\.lines) }
 }
