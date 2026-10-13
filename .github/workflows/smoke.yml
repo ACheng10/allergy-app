@@ -2,10 +2,9 @@ name: Simulator smoke test
 
 # Builds the app, launches it in an iPhone Simulator, and prints the app's
 # console output plus a small screenshot (base64) into the job log.
+# Manual only: macOS minutes count 10x against a private repo's free allowance.
 on:
   workflow_dispatch:
-  push:
-    branches: ["claude/**"]
 
 jobs:
   launch:
