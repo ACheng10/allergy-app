@@ -6,16 +6,20 @@ import UIKit
 struct PhraseLineView: View {
     let line: CardLine
     var localFont: Font = .title2
+    var localWeight: Font.Weight = .semibold
+    /// Kept readable: the user checks the English while the waiter reads.
+    var englishFont: Font = .subheadline
 
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(line.local)
-                .font(localFont.weight(.semibold))
+                .font(localFont.weight(localWeight))
                 .fixedSize(horizontal: false, vertical: true)
             if line.local != line.english {
                 Text(line.english)
-                    .font(.footnote)
+                    .font(englishFont)
                     .foregroundStyle(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)

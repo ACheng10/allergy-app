@@ -10,7 +10,7 @@ struct WaiterModeView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 28) {
+                VStack(alignment: .leading, spacing: 20) {
                     ForEach(card.shortSections) { section in
                         sectionView(section)
                     }
@@ -53,11 +53,14 @@ struct WaiterModeView: View {
         .onDisappear { FullBrightness.off() }
     }
 
+    /// One text size throughout so the card reads evenly; only the allergens
+    /// are bold, so they stand out without shouting.
     private func sectionView(_ section: CardBuilder.Section) -> some View {
         VStack(alignment: .leading, spacing: 16) {
             ForEach(section.lines) { line in
-                PhraseLineView(line: line,
-                               localFont: section.id == "allergens" ? .largeTitle : .title2)
+                PhraseLineView(line: line, localFont: .title2,
+                               localWeight: section.id == "allergens" ? .bold : .regular,
+                               englishFont: .title2)
             }
             if section.id != "allergic_to" { Divider() }
         }
