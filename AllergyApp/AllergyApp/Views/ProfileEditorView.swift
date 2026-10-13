@@ -84,6 +84,12 @@ struct ProfileEditorView: View {
 
             if !isOnboarding {
                 Section {
+                    NavigationLink("Report a problem") {
+                        ReportProblemView(profile: profile)
+                    }
+                }
+
+                Section {
                     Text("This app shows fixed phrases written in advance. It does not tell you whether food is safe, and it is not medical advice. Always carry your medication.")
                         .font(.footnote)
                         .foregroundStyle(.secondary)

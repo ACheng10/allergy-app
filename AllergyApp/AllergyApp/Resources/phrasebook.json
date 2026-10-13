@@ -1085,7 +1085,556 @@
     "fr": {},
     "it": {},
     "nl": {},
-    "yue-Hant": {},
+    "yue-Hant": {
+      "allergen.almond": {
+        "status": "ai_draft",
+        "text": "杏仁（扁桃仁）"
+      },
+      "allergen.brazil_nut": {
+        "status": "ai_draft",
+        "text": "巴西果"
+      },
+      "allergen.buckwheat": {
+        "status": "ai_draft",
+        "text": "蕎麥"
+      },
+      "allergen.cashew": {
+        "status": "ai_draft",
+        "text": "腰果"
+      },
+      "allergen.celery": {
+        "status": "ai_draft",
+        "text": "西芹（包括根芹同芹菜鹽）"
+      },
+      "allergen.coconut": {
+        "status": "ai_draft",
+        "text": "椰子"
+      },
+      "allergen.corn": {
+        "status": "ai_draft",
+        "text": "粟米"
+      },
+      "allergen.crustaceans": {
+        "status": "ai_draft",
+        "text": "甲殼類海鮮，例如蝦、大蝦、蟹同龍蝦"
+      },
+      "allergen.egg": {
+        "status": "ai_draft",
+        "text": "蛋"
+      },
+      "allergen.fish": {
+        "status": "ai_draft",
+        "text": "魚"
+      },
+      "allergen.gluten": {
+        "status": "ai_draft",
+        "text": "麩質（小麥、大麥、黑麥，同埋未經認證無麩質嘅燕麥）"
+      },
+      "allergen.hazelnut": {
+        "status": "ai_draft",
+        "text": "榛子"
+      },
+      "allergen.kiwi": {
+        "status": "ai_draft",
+        "text": "奇異果"
+      },
+      "allergen.legumes": {
+        "status": "ai_draft",
+        "text": "豆類，例如扁豆、鷹嘴豆同青豆"
+      },
+      "allergen.lupin": {
+        "status": "ai_draft",
+        "text": "羽扇豆粉同羽扇豆籽"
+      },
+      "allergen.macadamia": {
+        "status": "ai_draft",
+        "text": "夏威夷果仁"
+      },
+      "allergen.milk": {
+        "status": "ai_draft",
+        "text": "牛奶同所有奶類製品"
+      },
+      "allergen.molluscs": {
+        "status": "ai_draft",
+        "text": "貝殼及軟體類海鮮，例如青口、蜆、蠔、魷魚同八爪魚"
+      },
+      "allergen.mustard": {
+        "status": "ai_draft",
+        "text": "芥末（西式黃芥末醬同芥末籽）"
+      },
+      "allergen.peanut": {
+        "status": "ai_draft",
+        "text": "花生"
+      },
+      "allergen.pecan": {
+        "status": "ai_draft",
+        "text": "碧根果"
+      },
+      "allergen.pine_nut": {
+        "status": "ai_draft",
+        "text": "松子"
+      },
+      "allergen.pistachio": {
+        "status": "ai_draft",
+        "text": "開心果"
+      },
+      "allergen.red_meat": {
+        "status": "ai_draft",
+        "text": "紅肉，同埋用哺乳類動物製成嘅明膠（α-gal 敏感）"
+      },
+      "allergen.sesame": {
+        "status": "ai_draft",
+        "text": "芝麻"
+      },
+      "allergen.soy": {
+        "status": "ai_draft",
+        "text": "黃豆（大豆）"
+      },
+      "allergen.sulphites": {
+        "status": "ai_draft",
+        "text": "亞硫酸鹽"
+      },
+      "allergen.tree_nuts": {
+        "status": "ai_draft",
+        "text": "樹果仁（所有喺樹上生長嘅果仁）"
+      },
+      "allergen.walnut": {
+        "status": "ai_draft",
+        "text": "合桃（核桃）"
+      },
+      "allergen.wheat": {
+        "status": "ai_draft",
+        "text": "小麥"
+      },
+      "cross_contact.bakery": {
+        "status": "ai_draft",
+        "text": "麵包舖通常對我唔安全，因為空氣同枱面都會有麵粉同果仁。"
+      },
+      "cross_contact.board_knife": {
+        "status": "ai_draft",
+        "text": "請用乾淨嘅砧板同刀。"
+      },
+      "cross_contact.buffet": {
+        "status": "ai_draft",
+        "text": "我唔可以食自助餐，因為大家共用夾菜嘅匙羹同夾。"
+      },
+      "cross_contact.fryer": {
+        "status": "ai_draft",
+        "text": "請唔好用炸過我敏感食物嘅油或者炸爐。"
+      },
+      "cross_contact.garnish": {
+        "status": "ai_draft",
+        "text": "請唔好加任何我未確認過嘅裝飾、配料或者醬汁。"
+      },
+      "cross_contact.grill": {
+        "status": "ai_draft",
+        "text": "請唔好用共用嘅燒烤爐或者鐵板煮我嘅食物。"
+      },
+      "cross_contact.hands": {
+        "status": "ai_draft",
+        "text": "整我嘅食物之前，請洗手同換過手套。"
+      },
+      "cross_contact.intro": {
+        "status": "ai_draft",
+        "text": "就算係共用器具沾到嘅少少份量，都可能會引起敏感反應。"
+      },
+      "cross_contact.pan": {
+        "status": "ai_draft",
+        "text": "請用乾淨嘅鑊、煎鍋同餐具。"
+      },
+      "cross_contact.remove_not_ok": {
+        "status": "ai_draft",
+        "text": "喺整好嘅菜度挑走致敏食物係唔安全嘅，請重新整過。"
+      },
+      "cross_contact.separate": {
+        "status": "ai_draft",
+        "text": "請分開整同分開上我嘅菜。"
+      },
+      "emergency.antihistamine": {
+        "status": "ai_draft",
+        "text": "你有冇抗組織胺藥？"
+      },
+      "emergency.autoinjector": {
+        "status": "ai_draft",
+        "text": "我個袋入面有腎上腺素自動注射筆。"
+      },
+      "emergency.call_ambulance": {
+        "status": "ai_draft",
+        "text": "請即刻幫我叫白車。"
+      },
+      "emergency.contact": {
+        "status": "ai_draft",
+        "text": "請幫我打俾我嘅緊急聯絡人。"
+      },
+      "emergency.help_inject": {
+        "status": "ai_draft",
+        "text": "請幫我打針。"
+      },
+      "emergency.hospital": {
+        "status": "ai_draft",
+        "text": "最近有急症室嘅醫院喺邊度？"
+      },
+      "emergency.lie_down": {
+        "status": "ai_draft",
+        "text": "請幫我瞓低。唔好叫我企起身或者行。"
+      },
+      "emergency.pharmacy": {
+        "status": "ai_draft",
+        "text": "最近嘅藥房喺邊度？"
+      },
+      "emergency.reaction": {
+        "status": "ai_draft",
+        "text": "我而家有敏感反應。"
+      },
+      "emergency.say_anaphylaxis": {
+        "status": "ai_draft",
+        "text": "同佢哋講：過敏性休克，係嚴重嘅敏感反應。"
+      },
+      "emergency.second_dose": {
+        "status": "ai_draft",
+        "text": "如果五分鐘後冇好轉，可以用第二支自動注射筆。"
+      },
+      "emergency.sit_if_breathing": {
+        "status": "ai_draft",
+        "text": "如果我好難呼吸，請扶我坐起身。"
+      },
+      "emergency.stay": {
+        "status": "ai_draft",
+        "text": "請陪住我，等到救援人員嚟到。"
+      },
+      "emergency.thigh": {
+        "status": "ai_draft",
+        "text": "針要打喺大髀外側，可以隔住衫褲打。"
+      },
+      "hidden.all_forms": {
+        "status": "ai_draft",
+        "text": "包括用佢整成嘅任何油、醬汁、醬料、粉、黃油或者裝飾配料。"
+      },
+      "hidden.butter_ghee": {
+        "status": "ai_draft",
+        "text": "請檢查煮嘅時候有冇用牛油、印度酥油、忌廉或者芝士。"
+      },
+      "hidden.dashi": {
+        "status": "ai_draft",
+        "text": "請檢查有冇魚湯底（例如日式木魚湯或者木魚碎）。"
+      },
+      "hidden.egg_wash": {
+        "status": "ai_draft",
+        "text": "請檢查麵包或者酥皮有冇掃蛋液，同埋炸漿有冇蛋。"
+      },
+      "hidden.fish_sauce": {
+        "status": "ai_draft",
+        "text": "請檢查有冇魚露或者鯷魚，包括沙律醬。"
+      },
+      "hidden.flour_thickener": {
+        "status": "ai_draft",
+        "text": "請檢查有冇用麵粉打芡或者上粉。"
+      },
+      "hidden.hoisin": {
+        "status": "ai_draft",
+        "text": "請檢查有冇海鮮醬、豆豉或者其他豆醬。"
+      },
+      "hidden.marzipan": {
+        "status": "ai_draft",
+        "text": "請檢查甜品有冇杏仁膏、牛軋糖或者杏仁粉。"
+      },
+      "hidden.mayonnaise": {
+        "status": "ai_draft",
+        "text": "請檢查有冇蛋黃醬或者蒜蓉蛋黃醬。"
+      },
+      "hidden.miso": {
+        "status": "ai_draft",
+        "text": "請檢查有冇麵豉、豆腐或者豆醬。"
+      },
+      "hidden.nut_sauces": {
+        "status": "ai_draft",
+        "text": "請檢查醬汁，例如沙嗲醬、青醬、墨西哥摩爾醬同果仁糖。"
+      },
+      "hidden.oyster_sauce": {
+        "status": "ai_draft",
+        "text": "請檢查有冇蠔油或者XO醬。"
+      },
+      "hidden.peanut_oil": {
+        "status": "ai_draft",
+        "text": "請檢查有冇用花生油，包括炸嘢用嘅油。"
+      },
+      "hidden.sesame_oil": {
+        "status": "ai_draft",
+        "text": "請檢查有冇麻油、芝麻醬，或者面頭灑咗芝麻。"
+      },
+      "hidden.shrimp_paste": {
+        "status": "ai_draft",
+        "text": "請檢查有冇蝦醬、蝦膏或者蝦米。"
+      },
+      "hidden.soy_sauce": {
+        "status": "ai_draft",
+        "text": "請檢查有冇豉油，豉油入面都有小麥。"
+      },
+      "hidden.stock_cubes": {
+        "status": "ai_draft",
+        "text": "請檢查湯底、湯包同調味粉。"
+      },
+      "hidden.whey_casein": {
+        "status": "ai_draft",
+        "text": "請檢查有冇奶粉、乳清或者酪蛋白。"
+      },
+      "hidden.wine_sulphites": {
+        "status": "ai_draft",
+        "text": "請檢查有冇酒、醋或者乾果（含亞硫酸鹽）。"
+      },
+      "hidden.worcestershire": {
+        "status": "ai_draft",
+        "text": "請檢查有冇喼汁，喼汁入面有鯷魚。"
+      },
+      "intro.allergic_to": {
+        "status": "ai_draft",
+        "text": "我對以下食物敏感："
+      },
+      "intro.hello": {
+        "status": "ai_draft",
+        "text": "你好，我有嚴重食物敏感。"
+      },
+      "intro.intolerance": {
+        "status": "ai_draft",
+        "text": "我對某啲食物不耐受。唔會危及生命，但會令我好唔舒服。"
+      },
+      "intro.life_threatening": {
+        "status": "ai_draft",
+        "text": "呢種敏感可以危及生命。"
+      },
+      "intro.not_preference": {
+        "status": "ai_draft",
+        "text": "呢個係醫療問題，唔係個人喜好。"
+      },
+      "intro.please_read": {
+        "status": "ai_draft",
+        "text": "落單之前，請你細心睇清楚呢張卡。"
+      },
+      "intro.severe": {
+        "status": "ai_draft",
+        "text": "我嘅敏感好嚴重，就算食咗好少份量都可能會病得好嚴重。"
+      },
+      "intro.thank_you_care": {
+        "status": "ai_draft",
+        "text": "多謝你小心處理我嘅食物。"
+      },
+      "ordering.bring_menu": {
+        "status": "ai_draft",
+        "text": "我可唔可以睇下致敏原資料或者致敏原餐牌？"
+      },
+      "ordering.confirm_served": {
+        "status": "ai_draft",
+        "text": "上菜嘅時候，請確認呢個係無致敏食物嘅嗰道菜。"
+      },
+      "ordering.drink_only": {
+        "status": "ai_draft",
+        "text": "我淨係要杯嘢飲，唔該。"
+      },
+      "ordering.if_unsure": {
+        "status": "ai_draft",
+        "text": "如果你唔肯定，請話俾我知。我寧願唔叫，都唔想冒險。"
+      },
+      "ordering.no_sauce": {
+        "status": "ai_draft",
+        "text": "請唔好落醬汁。"
+      },
+      "ordering.own_food": {
+        "status": "ai_draft",
+        "text": "我食自己帶嚟嘅食物得唔得？"
+      },
+      "ordering.plain": {
+        "status": "ai_draft",
+        "text": "請淨係用鹽、胡椒同橄欖油煮。"
+      },
+      "ordering.recommend_safe": {
+        "status": "ai_draft",
+        "text": "可唔可以推介一道對我安全嘅菜？"
+      },
+      "ordering.same_dish": {
+        "status": "ai_draft",
+        "text": "請確保送嚟俾我嘅係呢一道菜。"
+      },
+      "ordering.simple": {
+        "status": "ai_draft",
+        "text": "簡單啲就得，例如淨烤肉或者魚，配飯或者菜。"
+      },
+      "ordering.thanks": {
+        "status": "ai_draft",
+        "text": "多謝你幫手。"
+      },
+      "ordering.write_down": {
+        "status": "ai_draft",
+        "text": "可唔可以幫我寫低啲材料？"
+      },
+      "question.bread": {
+        "status": "ai_draft",
+        "text": "啲麵包有冇奶、蛋、果仁或者籽？"
+      },
+      "question.chef_confident": {
+        "status": "ai_draft",
+        "text": "廚師有冇信心呢道菜對我係安全？"
+      },
+      "question.contains": {
+        "status": "ai_draft",
+        "text": "呢道菜有冇我敏感嘅食物？"
+      },
+      "question.dessert": {
+        "status": "ai_draft",
+        "text": "啲甜品有冇果仁、奶或者蛋？"
+      },
+      "question.dressing": {
+        "status": "ai_draft",
+        "text": "個沙律醬有啲咩材料？"
+      },
+      "question.fried_shared": {
+        "status": "ai_draft",
+        "text": "啲炸嘢係咪用共用嘅油炸？"
+      },
+      "question.ingredients": {
+        "status": "ai_draft",
+        "text": "可唔可以幫我同廚師確認下材料？"
+      },
+      "question.kitchen_nuts": {
+        "status": "ai_draft",
+        "text": "廚房有冇用果仁或者花生？"
+      },
+      "question.label": {
+        "status": "ai_draft",
+        "text": "我可唔可以睇下材料嘅標籤或者包裝？"
+      },
+      "question.marinade": {
+        "status": "ai_draft",
+        "text": "啲肉或者魚有冇醃過？用咗咩醃？"
+      },
+      "question.may_contain": {
+        "status": "ai_draft",
+        "text": "有冇材料嘅標籤寫住「可能含有」我敏感嘅食物？"
+      },
+      "question.modify": {
+        "status": "ai_draft",
+        "text": "呢道菜可唔可以唔落我敏感嘅食物，重新整過？"
+      },
+      "question.premade": {
+        "status": "ai_draft",
+        "text": "呢個係廚房自己整，定係買現成嘅？"
+      },
+      "question.safe_dish": {
+        "status": "ai_draft",
+        "text": "有邊幾道菜你哋可以安全咁幫我整？"
+      },
+      "question.same_oil": {
+        "status": "ai_draft",
+        "text": "呢個係咪同其他食物用同一鑊油炸？"
+      },
+      "question.same_pan": {
+        "status": "ai_draft",
+        "text": "呢個係咪同其他食物用同一個鑊或者煎鍋煮？"
+      },
+      "question.sauce": {
+        "status": "ai_draft",
+        "text": "個醬汁有啲咩材料？"
+      },
+      "question.stock": {
+        "status": "ai_draft",
+        "text": "個湯用咩湯底？"
+      },
+      "shopping.dairy_free": {
+        "status": "ai_draft",
+        "text": "你哋有冇賣唔含果仁同黃豆嘅植物奶？"
+      },
+      "shopping.free_from": {
+        "status": "ai_draft",
+        "text": "你哋有冇賣無致敏原食品？"
+      },
+      "shopping.gluten_free": {
+        "status": "ai_draft",
+        "text": "你哋有冇賣無麩質麵包或者意粉？"
+      },
+      "shopping.product_contains": {
+        "status": "ai_draft",
+        "text": "呢件產品有冇我敏感嘅食物？"
+      },
+      "shopping.read_label": {
+        "status": "ai_draft",
+        "text": "可唔可以幫我睇下呢個標籤？"
+      },
+      "shopping.safe_brand": {
+        "status": "ai_draft",
+        "text": "有冇冇我敏感食物嘅牌子？"
+      },
+      "shopping.traces": {
+        "status": "ai_draft",
+        "text": "標籤有冇寫可能含有微量？"
+      },
+      "staff_answer.ask_chef": {
+        "status": "ai_draft",
+        "text": "我去問下廚師"
+      },
+      "staff_answer.contains_allergen": {
+        "status": "ai_draft",
+        "text": "入面有你敏感嘅食物"
+      },
+      "staff_answer.may_contain": {
+        "status": "ai_draft",
+        "text": "可能含有微量"
+      },
+      "staff_answer.no": {
+        "status": "ai_draft",
+        "text": "唔係"
+      },
+      "staff_answer.not_safe": {
+        "status": "ai_draft",
+        "text": "唔得，我哋冇辦法安全咁整"
+      },
+      "staff_answer.not_sure": {
+        "status": "ai_draft",
+        "text": "我唔肯定"
+      },
+      "staff_answer.recommend": {
+        "status": "ai_draft",
+        "text": "我推介呢道菜"
+      },
+      "staff_answer.safe": {
+        "status": "ai_draft",
+        "text": "係，我哋可以安全咁整"
+      },
+      "staff_answer.show_label": {
+        "status": "ai_draft",
+        "text": "我攞標籤俾你睇"
+      },
+      "staff_answer.tap_instruction": {
+        "status": "ai_draft",
+        "text": "請㩒你嘅答案。"
+      },
+      "staff_answer.yes": {
+        "status": "ai_draft",
+        "text": "係"
+      },
+      "travel.airline_announce": {
+        "status": "ai_draft",
+        "text": "可唔可以請附近嘅乘客唔好食果仁？"
+      },
+      "travel.airline_meal": {
+        "status": "ai_draft",
+        "text": "我有嚴重食物敏感。請唔好俾我任何我未確認過嘅飛機餐。"
+      },
+      "travel.doctor_letter": {
+        "status": "ai_draft",
+        "text": "我有醫生信證明我嘅藥物。"
+      },
+      "travel.hotel_breakfast": {
+        "status": "ai_draft",
+        "text": "請話俾早餐嘅員工知我有食物敏感。"
+      },
+      "travel.hotel_kitchen": {
+        "status": "ai_draft",
+        "text": "廚房可唔可以幫我整一份安全嘅餐？"
+      },
+      "travel.medication_carry": {
+        "status": "ai_draft",
+        "text": "我要隨時帶住我嘅敏感藥物。"
+      }
+    },
     "zh-Hans": {},
     "zh-Hant-TW": {}
   }

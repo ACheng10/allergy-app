@@ -20,8 +20,14 @@ struct RootView: View {
                 }
             }
         } else {
-            ProgressView()
-                .onAppear { context.insert(AllergyProfile()) }
+            // First launch: create the one profile row. Save straight away so
+            // @Query sees it now instead of whenever SwiftData next autosaves
+            // (that delay looked like a blank white screen).
+            ProgressView("Setting up…")
+                .task {
+                    context.insert(AllergyProfile())
+                    try? context.save()
+                }
         }
     }
 }

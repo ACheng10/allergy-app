@@ -15,7 +15,7 @@ struct MyCardView: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
-                    destinationRow
+                    DestinationButton(profile: profile)
 
                     Button {
                         showingWaiterMode = true
@@ -43,25 +43,6 @@ struct MyCardView: View {
             .navigationTitle("My Card")
             .fullScreenCover(isPresented: $showingWaiterMode) {
                 WaiterModeView(card: card)
-            }
-        }
-    }
-
-    /// Country and a quick language switch, e.g. Switzerland: German / French / Italian.
-    private var destinationRow: some View {
-        HStack {
-            Image(systemName: "globe")
-            Text(book.country(profile.countryCode)?.name ?? "No country")
-            Spacer()
-            if let country = book.country(profile.countryCode), country.locales.count > 1 {
-                Picker("Language", selection: $profile.localeCode) {
-                    ForEach(country.locales, id: \.self) { code in
-                        Text(book.displayName(forLocale: code)).tag(code)
-                    }
-                }
-            } else {
-                Text(book.displayName(forLocale: profile.localeCode))
-                    .foregroundStyle(.secondary)
             }
         }
     }
