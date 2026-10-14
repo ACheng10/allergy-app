@@ -39,7 +39,8 @@ struct EmergencyView: View {
                     if !profile.emergencyContactPhone.isEmpty {
                         callButton(
                             title: "Call \(profile.emergencyContactName.isEmpty ? "emergency contact" : profile.emergencyContactName)",
-                            number: profile.emergencyContactDialNumber, tint: .blue)
+                            number: profile.emergencyContactDialNumber, tint: .blue,
+                            subtitle: profile.emergencyContactDialNumber)
                     }
 
                     BetaNotice(lines: lines)
@@ -106,13 +107,18 @@ struct EmergencyView: View {
     }
 
     @ViewBuilder
-    private func callButton(title: String, number: String, tint: Color) -> some View {
+    private func callButton(title: String, number: String, tint: Color, subtitle: String? = nil) -> some View {
         let digits = number.filter { $0.isNumber || $0 == "+" }
         if !digits.isEmpty, let url = URL(string: "tel:\(digits)") {
             Link(destination: url) {
-                Label(title, systemImage: "phone.fill")
-                    .font(.title2.bold())
-                    .frame(maxWidth: .infinity, minHeight: 64)
+                VStack(spacing: 2) {
+                    Label(title, systemImage: "phone.fill")
+                        .font(.title2.bold())
+                    if let subtitle {
+                        Text(subtitle).font(.subheadline)
+                    }
+                }
+                .frame(maxWidth: .infinity, minHeight: 64)
             }
             .buttonStyle(.borderedProminent)
             .tint(tint)
