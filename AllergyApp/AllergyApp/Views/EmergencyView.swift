@@ -6,15 +6,17 @@ struct EmergencyView: View {
     @Environment(\.phraseBook) private var book
     @State private var showMore = false
 
-    /// The few lines a bystander needs, in the order they need them. Lying
-    /// down stays: standing up during anaphylaxis can be fatal.
+    /// What a bystander needs, in the order of St John Ambulance's anaphylaxis first aid:
+    /// auto-injector first, then the ambulance, then position and a second dose.
     static let shortIDs = [
         "emergency.reaction",
-        "emergency.call_ambulance",
         "emergency.autoinjector",
         "emergency.help_inject",
+        "emergency.thigh",
+        "emergency.call_ambulance",
         "emergency.lie_down",
-        "emergency.stay",
+        "emergency.sit_if_breathing",
+        "emergency.second_dose",
         "emergency.contact",
     ]
 
@@ -23,7 +25,7 @@ struct EmergencyView: View {
         let all = book.phrases(in: "emergency")
             .filter { $0.id != "emergency.contact" || !profile.emergencyContactPhone.isEmpty }
             .map { book.line($0.id, in: profile.localeCode) }
-        let short = all.filter { Self.shortIDs.contains($0.id) }
+        let short = Self.shortIDs.compactMap { id in all.first { $0.id == id } }
         let more = all.filter { !Self.shortIDs.contains($0.id) }
         let lines = showMore ? all : short
 
@@ -46,6 +48,12 @@ struct EmergencyView: View {
                         .font(.headline)
                     ForEach(short) { line in
                         PhraseLineView(line: line, localFont: .title)
+                        if line.id == "emergency.contact" {
+                            // So a bystander can call from their own phone.
+                            Text(contactLabel)
+                                .font(.title.bold())
+                                .textSelection(.enabled)
+                        }
                     }
 
                     if !more.isEmpty {
@@ -72,6 +80,11 @@ struct EmergencyView: View {
         }
         .onAppear { FullBrightness.on() }
         .onDisappear { FullBrightness.off() }
+    }
+
+    private var contactLabel: String {
+        let number = profile.emergencyContactDialNumber
+        return profile.emergencyContactName.isEmpty ? number : "\(profile.emergencyContactName): \(number)"
     }
 
     @ViewBuilder
