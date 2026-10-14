@@ -148,11 +148,13 @@ struct DestinationButton: View {
             .padding(inForm ? 0 : 14)
             .background {
                 if !inForm {
-                    RoundedRectangle(cornerRadius: 14).fill(Color(.secondarySystemGroupedBackground))
+                    RoundedRectangle(cornerRadius: Theme.cornerRadius, style: .continuous)
+                        .fill(Color(.secondarySystemGroupedBackground))
+                        .shadow(color: .black.opacity(0.06), radius: 12, y: 4)
                 }
             }
         }
-        .buttonStyle(.plain)
+        .buttonStyle(PressableStyle())
         .accessibilityHint("Change the country and language")
         .sheet(isPresented: $showingPicker) {
             DestinationPicker(profile: profile)

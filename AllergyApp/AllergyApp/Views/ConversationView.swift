@@ -62,14 +62,19 @@ struct QuestionView: View {
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
                         ForEach(answers) { option in
                             Button {
-                                answer = option
+                                withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) { answer = option }
                             } label: {
+                                let tone = Self.tone[option.id] ?? .accentColor
                                 PhraseLineView(line: option, localFont: .title3)
-                                    .padding(12)
-                                    .frame(maxWidth: .infinity, minHeight: 90, alignment: .topLeading)
+                                    .padding(14)
+                                    .frame(maxWidth: .infinity, minHeight: 96, alignment: .topLeading)
+                                    .background(tone.opacity(0.12),
+                                                in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                                    .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous)
+                                        .strokeBorder(tone.opacity(0.35), lineWidth: 1.5))
+                                    .foregroundStyle(.primary)
                             }
-                            .buttonStyle(.bordered)
-                            .tint(Self.tone[option.id] ?? .accentColor)
+                            .buttonStyle(PressableStyle())
                         }
                     }
                 }
@@ -82,16 +87,28 @@ struct QuestionView: View {
 
     /// Shown to the user after staff tap: the answer in English, large.
     private func answerResult(_ answer: CardLine) -> some View {
-        VStack(alignment: .leading, spacing: 12) {
+        let tone = Self.tone[answer.id] ?? .accentColor
+        return VStack(alignment: .leading, spacing: 12) {
             Text("They answered").font(.headline).foregroundStyle(.secondary)
             Text(answer.english)
                 .font(.largeTitle.bold())
-                .foregroundStyle(Self.tone[answer.id] ?? .primary)
+                .foregroundStyle(tone)
             if answer.local != answer.english {
                 Text(answer.local).foregroundStyle(.secondary)
             }
-            Button("Ask again") { self.answer = nil }
-                .buttonStyle(.bordered)
+            Button {
+                withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) { self.answer = nil }
+            } label: {
+                Label("Ask again", systemImage: "arrow.counterclockwise")
+                    .font(.headline)
+                    .padding(.horizontal, 18)
+                    .padding(.vertical, 10)
+                    .background(tone.opacity(0.12), in: Capsule())
+            }
+            .buttonStyle(PressableStyle())
         }
+        .cardSurface(padding: 20)
+        .transition(.scale(scale: 0.95).combined(with: .opacity))
+        .sensoryFeedback(.success, trigger: answer.id)
     }
 }

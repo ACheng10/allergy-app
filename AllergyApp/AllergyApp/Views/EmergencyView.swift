@@ -35,23 +35,37 @@ struct EmergencyView: View {
                     if !profile.emergencyContactPhone.isEmpty {
                         callButton(
                             title: "Call \(profile.emergencyContactName.isEmpty ? "emergency contact" : profile.emergencyContactName)",
-                            number: profile.emergencyContactDialNumber, tint: .blue,
-                            subtitle: profile.emergencyContactDialNumber)
+                            number: profile.emergencyContactDialNumber, gradient: Theme.contact,
+                            subtitle: profile.emergencyContactDialNumber, systemImage: "person.fill")
                     }
 
                     BetaNotice(lines: lines)
 
                     Text("Show this to people nearby")
                         .font(.headline)
-                    ForEach(lines) { line in
-                        PhraseLineView(line: line, localFont: .title)
-                        if line.id == "emergency.contact" {
-                            // So a bystander can call from their own phone.
-                            Text(contactLabel)
-                                .font(.title.bold())
-                                .textSelection(.enabled)
+                    VStack(alignment: .leading, spacing: 18) {
+                        ForEach(Array(lines.enumerated()), id: \.element.id) { index, line in
+                            HStack(alignment: .firstTextBaseline, spacing: 14) {
+                                // Numbered, because the order matters in first aid.
+                                Text("\(index + 1)")
+                                    .font(.headline.monospacedDigit())
+                                    .foregroundStyle(.white)
+                                    .frame(width: 30, height: 30)
+                                    .background(Theme.danger, in: Circle())
+                                VStack(alignment: .leading, spacing: 6) {
+                                    PhraseLineView(line: line, localFont: .title)
+                                    if line.id == "emergency.contact" {
+                                        // So a bystander can call from their own phone.
+                                        Text(contactLabel)
+                                            .font(.title.bold())
+                                            .textSelection(.enabled)
+                                    }
+                                }
+                            }
+                            if index < lines.count - 1 { Divider().padding(.leading, 44) }
                         }
                     }
+                    .cardSurface(padding: 18)
                 }
                 .padding()
             }
@@ -68,9 +82,11 @@ struct EmergencyView: View {
 
     @ViewBuilder
     private func callButtons(for country: PhraseBook.Country) -> some View {
-        callButton(title: "Call \(country.emergencyNumber)", number: country.emergencyNumber, tint: .red)
+        callButton(title: "Call \(country.emergencyNumber)", number: country.emergencyNumber,
+                   gradient: Theme.danger, subtitle: "Emergency services", systemImage: "phone.fill")
         if country.ambulanceNumber != country.emergencyNumber {
-            callButton(title: "Ambulance \(country.ambulanceNumber)", number: country.ambulanceNumber, tint: .red)
+            callButton(title: "Ambulance \(country.ambulanceNumber)", number: country.ambulanceNumber,
+                       gradient: Theme.danger, systemImage: "cross.case.fill")
         }
         if !country.emergencyNote.isEmpty {
             Text("\(country.name): \(country.emergencyNote)")
@@ -85,21 +101,16 @@ struct EmergencyView: View {
     }
 
     @ViewBuilder
-    private func callButton(title: String, number: String, tint: Color, subtitle: String? = nil) -> some View {
+    private func callButton(title: String, number: String, gradient: LinearGradient,
+                            subtitle: String? = nil, systemImage: String = "phone.fill") -> some View {
         let digits = number.filter { $0.isNumber || $0 == "+" }
         if !digits.isEmpty, let url = URL(string: "tel:\(digits)") {
             Link(destination: url) {
-                VStack(spacing: 2) {
-                    Label(title, systemImage: "phone.fill")
-                        .font(.title2.bold())
-                    if let subtitle {
-                        Text(subtitle).font(.subheadline)
-                    }
-                }
-                .frame(maxWidth: .infinity, minHeight: 64)
+                GradientButtonLabel(title: title, systemImage: systemImage, subtitle: subtitle,
+                                    gradient: gradient, minHeight: 76)
             }
-            .buttonStyle(.borderedProminent)
-            .tint(tint)
+            .buttonStyle(PressableStyle())
         }
     }
+
 }

@@ -34,21 +34,27 @@ struct BetaNotice: View {
 
     var body: some View {
         if lines.anyBeta {
-            Label {
+            HStack(alignment: .top, spacing: 12) {
+                Image(systemName: "exclamationmark.triangle.fill")
+                    .font(.title3)
+                    .foregroundStyle(.orange)
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Beta translation").font(.headline)
+                    Text("Beta translation").font(.subheadline.weight(.semibold))
                     Text(lines.anyMissing
                          ? "Some lines are not translated yet and will show in English. Others may be AI drafts not yet checked by a native speaker."
                          : "Some lines are AI drafts not yet checked by a native speaker.")
                         .font(.footnote)
+                        .foregroundStyle(.secondary)
                 }
-            } icon: {
-                Image(systemName: "exclamationmark.triangle.fill")
             }
-            .foregroundStyle(.orange)
-            .padding()
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(.orange.opacity(0.12), in: RoundedRectangle(cornerRadius: 12))
+            .cardSurface(padding: 14)
+            .overlay(alignment: .leading) {
+                // Orange edge marks it as a warning without shouting.
+                UnevenRoundedRectangle(topLeadingRadius: Theme.cornerRadius, bottomLeadingRadius: Theme.cornerRadius)
+                    .fill(.orange)
+                    .frame(width: 5)
+            }
+            .clipShape(RoundedRectangle(cornerRadius: Theme.cornerRadius, style: .continuous))
         }
     }
 }
