@@ -18,6 +18,7 @@ struct AllergyApp: App {
     var body: some Scene {
         WindowGroup {
             RootView()
+                .modifier(AppearanceModifier())
         }
         .modelContainer(container)
     }

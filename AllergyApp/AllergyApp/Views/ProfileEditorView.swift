@@ -8,6 +8,7 @@ struct ProfileEditorView: View {
     @Bindable var profile: AllergyProfile
     let isOnboarding: Bool
     @Environment(\.phraseBook) private var book
+    @AppStorage(Appearance.storageKey) private var appearance = Appearance.system
 
     /// e.g. "4 selected". Allergen names are too long to list in one line.
     private var allergenSummary: String {
@@ -52,6 +53,17 @@ struct ProfileEditorView: View {
             }
 
             if !isOnboarding {
+                Section {
+                    NavigationLink {
+                        AppearanceSettingsView()
+                    } label: {
+                        ProfileRow(title: "Appearance", detail: appearance.label,
+                                   systemImage: "circle.lefthalf.filled", tint: .indigo)
+                    }
+                } header: {
+                    Text("Settings")
+                }
+
                 Section {
                     NavigationLink {
                         ReportProblemView(profile: profile)
@@ -313,6 +325,25 @@ private struct DialCodeList: View {
         }
         .searchable(text: $search, prompt: "Country or code, e.g. +44")
         .navigationTitle("Country code")
+        .navigationBarTitleDisplayMode(.inline)
+    }
+}
+
+/// Light, Dark, or match the iPhone's own setting.
+private struct AppearanceSettingsView: View {
+    @AppStorage(Appearance.storageKey) private var appearance = Appearance.system
+
+    var body: some View {
+        Form {
+            Picker("Appearance", selection: $appearance.animation(.easeInOut)) {
+                ForEach(Appearance.allCases) { option in
+                    Text(option.label).tag(option)
+                }
+            }
+            .pickerStyle(.inline)
+            .labelsHidden()
+        }
+        .navigationTitle("Appearance")
         .navigationBarTitleDisplayMode(.inline)
     }
 }
