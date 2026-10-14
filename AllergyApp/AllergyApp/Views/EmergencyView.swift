@@ -4,12 +4,28 @@ import SwiftUI
 struct EmergencyView: View {
     @Bindable var profile: AllergyProfile
     @Environment(\.phraseBook) private var book
+    @State private var showMore = false
+
+    /// The few lines a bystander needs, in the order they need them. Lying
+    /// down stays: standing up during anaphylaxis can be fatal.
+    static let shortIDs = [
+        "emergency.reaction",
+        "emergency.call_ambulance",
+        "emergency.autoinjector",
+        "emergency.help_inject",
+        "emergency.lie_down",
+        "emergency.stay",
+        "emergency.contact",
+    ]
 
     var body: some View {
         let country = book.country(profile.countryCode)
-        let lines = book.phrases(in: "emergency")
+        let all = book.phrases(in: "emergency")
             .filter { $0.id != "emergency.contact" || !profile.emergencyContactPhone.isEmpty }
             .map { book.line($0.id, in: profile.localeCode) }
+        let short = all.filter { Self.shortIDs.contains($0.id) }
+        let more = all.filter { !Self.shortIDs.contains($0.id) }
+        let lines = showMore ? all : short
 
         NavigationStack {
             ScrollView {
@@ -28,8 +44,26 @@ struct EmergencyView: View {
 
                     Text("Show this to people nearby")
                         .font(.headline)
-                    ForEach(lines) { line in
+                    ForEach(short) { line in
                         PhraseLineView(line: line, localFont: .title)
+                    }
+
+                    if !more.isEmpty {
+                        Button {
+                            withAnimation { showMore.toggle() }
+                        } label: {
+                            Label(showMore ? "Fewer phrases" : "More phrases",
+                                  systemImage: showMore ? "chevron.up" : "chevron.down")
+                                .font(.headline)
+                                .frame(maxWidth: .infinity, minHeight: 50)
+                        }
+                        .buttonStyle(.bordered)
+                    }
+
+                    if showMore {
+                        ForEach(more) { line in
+                            PhraseLineView(line: line, localFont: .title)
+                        }
                     }
                 }
                 .padding()
