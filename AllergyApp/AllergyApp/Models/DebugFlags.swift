@@ -29,6 +29,7 @@ enum DebugFlags {
         profile.localeCode = "yue-Hant"
         profile.allergenIDs = ["allergen.peanut", "allergen.tree_nuts", "allergen.crustaceans", "allergen.milk"]
         profile.severity = .anaphylaxis
+        profile.userName = "Alex"
         profile.emergencyContactName = "Sam"
         profile.emergencyContactRegion = "GB"
         profile.emergencyContactPhone = "07700 900000"

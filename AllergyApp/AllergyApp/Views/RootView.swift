@@ -49,17 +49,28 @@ struct MainTabView: View {
     var body: some View {
         TabView(selection: $tab) {
             MyCardView(profile: profile)
-                .tabItem { Label("My Card", systemImage: "person.text.rectangle") }
+                .tabItem { TabIcon(title: "My Card", systemImage: "person.text.rectangle") }
                 .tag(0)
             NavigationStack { ConversationView(localeCode: profile.localeCode) }
-                .tabItem { Label("Ask", systemImage: "bubble.left.and.bubble.right") }
+                .tabItem { TabIcon(title: "Ask", systemImage: "bubble.left.and.bubble.right") }
                 .tag(1)
             EmergencyView(profile: profile)
-                .tabItem { Label("Emergency", systemImage: "cross.case.fill") }
+                .tabItem { TabIcon(title: "Emergency", systemImage: "cross.case.fill") }
                 .tag(2)
             NavigationStack { ProfileEditorView(profile: profile, isOnboarding: false) }
-                .tabItem { Label("Profile", systemImage: "gearshape") }
+                .tabItem { TabIcon(title: "Profile", systemImage: "gearshape") }
                 .tag(3)
         }
+    }
+}
+
+/// Icon-only tab, like Instagram. The title is still read by VoiceOver.
+private struct TabIcon: View {
+    let title: String
+    let systemImage: String
+
+    var body: some View {
+        Image(systemName: systemImage)
+            .accessibilityLabel(title)
     }
 }
