@@ -13,7 +13,7 @@ struct ReportProblemView: View {
     @State private var errorText: String?
     @State private var sent = false
 
-    private static let screens = ["My Card", "Waiter Mode", "Ask", "Emergency", "Profile", "A translation", "Other"]
+    private static let screens = ["My Card", "Show to staff", "Ask staff", "Emergency", "Profile", "A translation", "Other"]
 
     private var canSend: Bool {
         ReportConfig.endpoint != nil && !sending
@@ -47,7 +47,7 @@ struct ReportProblemView: View {
             Section {
                 Toggle("Include my allergens", isOn: $includeAllergens)
             } footer: {
-                Text("Your app version, iPhone model, country and language are always sent. Allergens are only sent if you switch this on. Reports are read by the developer and an AI assistant. Don't include your name or phone number.")
+                Text("Every report includes your app version, iPhone model, country and language. Allergens are included only if this is on. The developer and an AI assistant read reports. Leave out your name and phone number.")
             }
 
             Section {
@@ -67,8 +67,10 @@ struct ReportProblemView: View {
             }
         }
         .navigationTitle("Report a problem")
-        .alert("Thanks, report sent", isPresented: $sent) {
+        .alert("Report sent", isPresented: $sent) {
             Button("OK") { dismiss() }
+        } message: {
+            Text("Thanks. Nothing else to do.")
         }
     }
 
@@ -82,7 +84,7 @@ struct ReportProblemView: View {
             try await report.send()
             sent = true
         } catch {
-            errorText = error.localizedDescription
+            errorText = "Report not sent. Check your connection and try again. (\(error.localizedDescription))"
         }
     }
 }

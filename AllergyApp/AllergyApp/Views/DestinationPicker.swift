@@ -28,7 +28,7 @@ struct DestinationPicker: View {
                 }
             }
             .searchable(text: $search, prompt: "Country or language")
-            .navigationTitle("Where are you?")
+            .navigationTitle("Choose destination")
             .navigationBarTitleDisplayMode(.inline)
             .navigationDestination(for: PhraseBook.Country.self) { country in
                 LanguageList(profile: profile, country: country) { dismiss() }
@@ -128,7 +128,7 @@ struct DestinationButton: View {
             HStack(spacing: 12) {
                 Text(book.country(profile.countryCode)?.flag ?? "🌍").font(.title)
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(book.country(profile.countryCode)?.name ?? "Choose a country")
+                    Text(book.country(profile.countryCode)?.name ?? "Choose destination")
                         .font(.headline)
                         .foregroundStyle(.primary)
                     if !profile.localeCode.isEmpty {
@@ -155,7 +155,7 @@ struct DestinationButton: View {
             }
         }
         .buttonStyle(PressableStyle())
-        .accessibilityHint("Change the country and language")
+        .accessibilityHint("Change destination")
         .sheet(isPresented: $showingPicker) {
             DestinationPicker(profile: profile)
         }

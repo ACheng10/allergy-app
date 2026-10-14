@@ -18,7 +18,7 @@ struct WaiterModeView: View {
                     Button {
                         withAnimation { showKitchen.toggle() }
                     } label: {
-                        Label(showKitchen ? "Hide kitchen details" : "More for the kitchen",
+                        Label(showKitchen ? "Hide kitchen details" : "Show kitchen details",
                               systemImage: showKitchen ? "chevron.up" : "frying.pan")
                             .font(.title3.bold())
                             .frame(maxWidth: .infinity, minHeight: 60)
@@ -34,7 +34,7 @@ struct WaiterModeView: View {
                     NavigationLink {
                         ConversationView(localeCode: card.localeCode)
                     } label: {
-                        Label("Ask a question", systemImage: "bubble.left.and.bubble.right")
+                        Label("Ask staff", systemImage: "bubble.left.and.bubble.right")
                             .font(.title3.bold())
                             .frame(maxWidth: .infinity, minHeight: 60)
                     }
