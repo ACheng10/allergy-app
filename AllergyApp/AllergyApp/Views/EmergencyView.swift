@@ -4,11 +4,10 @@ import SwiftUI
 struct EmergencyView: View {
     @Bindable var profile: AllergyProfile
     @Environment(\.phraseBook) private var book
-    @State private var showMore = false
 
     /// What a bystander needs, in the order of St John Ambulance's anaphylaxis first aid:
     /// auto-injector first, then the ambulance, then position and a second dose.
-    static let shortIDs = [
+    static let phraseIDs = [
         "emergency.reaction",
         "emergency.autoinjector",
         "emergency.help_inject",
@@ -22,12 +21,9 @@ struct EmergencyView: View {
 
     var body: some View {
         let country = book.country(profile.countryCode)
-        let all = book.phrases(in: "emergency")
-            .filter { $0.id != "emergency.contact" || !profile.emergencyContactPhone.isEmpty }
-            .map { book.line($0.id, in: profile.localeCode) }
-        let short = Self.shortIDs.compactMap { id in all.first { $0.id == id } }
-        let more = all.filter { !Self.shortIDs.contains($0.id) }
-        let lines = showMore ? all : short
+        let lines = Self.phraseIDs
+            .filter { $0 != "emergency.contact" || !profile.emergencyContactPhone.isEmpty }
+            .map { book.line($0, in: profile.localeCode) }
 
         NavigationStack {
             ScrollView {
@@ -47,31 +43,13 @@ struct EmergencyView: View {
 
                     Text("Show this to people nearby")
                         .font(.headline)
-                    ForEach(short) { line in
+                    ForEach(lines) { line in
                         PhraseLineView(line: line, localFont: .title)
                         if line.id == "emergency.contact" {
                             // So a bystander can call from their own phone.
                             Text(contactLabel)
                                 .font(.title.bold())
                                 .textSelection(.enabled)
-                        }
-                    }
-
-                    if !more.isEmpty {
-                        Button {
-                            withAnimation { showMore.toggle() }
-                        } label: {
-                            Label(showMore ? "Fewer phrases" : "More phrases",
-                                  systemImage: showMore ? "chevron.up" : "chevron.down")
-                                .font(.headline)
-                                .frame(maxWidth: .infinity, minHeight: 50)
-                        }
-                        .buttonStyle(.bordered)
-                    }
-
-                    if showMore {
-                        ForEach(more) { line in
-                            PhraseLineView(line: line, localFont: .title)
                         }
                     }
                 }
