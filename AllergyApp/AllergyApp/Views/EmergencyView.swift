@@ -45,14 +45,7 @@ struct EmergencyView: View {
                         .font(.headline)
                     VStack(alignment: .leading, spacing: 18) {
                         ForEach(Array(lines.enumerated()), id: \.element.id) { index, line in
-                            HStack(alignment: .firstTextBaseline, spacing: 14) {
-                                // Numbered, because the order matters in first aid.
-                                Text("\(index + 1)")
-                                    .font(.headline.monospacedDigit())
-                                    .foregroundStyle(.white)
-                                    .frame(width: 30, height: 30)
-                                    .background(Theme.danger, in: Circle())
-                                VStack(alignment: .leading, spacing: 6) {
+                            VStack(alignment: .leading, spacing: 6) {
                                     PhraseLineView(line: line, localFont: .title)
                                     if line.id == "emergency.contact" {
                                         // So a bystander can call from their own phone.
@@ -60,9 +53,8 @@ struct EmergencyView: View {
                                             .font(.title.bold())
                                             .textSelection(.enabled)
                                     }
-                                }
                             }
-                            if index < lines.count - 1 { Divider().padding(.leading, 44) }
+                            if index < lines.count - 1 { Divider() }
                         }
                     }
                     .cardSurface(padding: 18)

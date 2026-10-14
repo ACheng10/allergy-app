@@ -81,3 +81,38 @@ struct GradientButtonLabel: View {
         .shadow(color: .black.opacity(0.15), radius: 10, y: 5)
     }
 }
+
+/// Light, Dark, or follow the phone. Saved in UserDefaults (a small key-value
+/// store on the phone, like a Python dict that survives restarts), not in the
+/// profile, because it is a device preference rather than allergy data.
+enum Appearance: String, CaseIterable, Identifiable {
+    case system, light, dark
+
+    static let storageKey = "appearance"
+    var id: String { rawValue }
+
+    var label: String {
+        switch self {
+        case .system: "Match iPhone"
+        case .light: "Light"
+        case .dark: "Dark"
+        }
+    }
+
+    var colorScheme: ColorScheme? {
+        switch self {
+        case .system: nil
+        case .light: .light
+        case .dark: .dark
+        }
+    }
+}
+
+/// Applies the saved appearance to the whole app.
+struct AppearanceModifier: ViewModifier {
+    @AppStorage(Appearance.storageKey) private var appearance = Appearance.system
+
+    func body(content: Content) -> some View {
+        content.preferredColorScheme(appearance.colorScheme)
+    }
+}
