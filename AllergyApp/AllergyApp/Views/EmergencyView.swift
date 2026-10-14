@@ -5,17 +5,15 @@ struct EmergencyView: View {
     @Bindable var profile: AllergyProfile
     @Environment(\.phraseBook) private var book
 
-    /// What a bystander needs, in the order of St John Ambulance's anaphylaxis first aid:
-    /// auto-injector first, then the ambulance, then position and a second dose.
+    /// The few lines a bystander needs, in the order they need them. Lying
+    /// down stays: standing up during anaphylaxis can be fatal.
     static let phraseIDs = [
         "emergency.reaction",
+        "emergency.call_ambulance",
         "emergency.autoinjector",
         "emergency.help_inject",
-        "emergency.thigh",
-        "emergency.call_ambulance",
         "emergency.lie_down",
-        "emergency.sit_if_breathing",
-        "emergency.second_dose",
+        "emergency.stay",
         "emergency.contact",
     ]
 
