@@ -48,9 +48,19 @@ def build(data_dir: Path = DATA) -> dict:
 
     locales = read_csv(data_dir / "locales.csv")
     locale_codes = {l["code"] for l in locales}
+    # enabled=no keeps a language's data checked but leaves it out of the app,
+    # like a WHERE enabled = 'yes' on the export.
+    enabled = set()
+    for l in locales:
+        if l["enabled"] not in ("yes", "no"):
+            errors.append(f"locale {l['code']}: enabled must be yes or no, got {l['enabled']!r}")
+        if l["enabled"] == "yes":
+            enabled.add(l["code"])
     for l in locales:
         if l["parent_code"] and l["parent_code"] not in locale_codes:
             errors.append(f"locale {l['code']}: unknown parent {l['parent_code']}")
+        elif l["code"] in enabled and l["parent_code"] and l["parent_code"] not in enabled:
+            errors.append(f"locale {l['code']}: enabled but its parent {l['parent_code']} is not")
 
     countries = read_csv(data_dir / "countries.csv")
     country_codes = {c["code"] for c in countries}
@@ -64,10 +74,10 @@ def build(data_dir: Path = DATA) -> dict:
         if link["locale_code"] not in locale_codes:
             errors.append(f"country_locales: unknown locale {link['locale_code']}")
             continue
-        locales_by_country[link["country_code"]].append((int(link["sort_order"]), link["locale_code"]))
-    for code, items in locales_by_country.items():
-        if not items:
-            errors.append(f"country {code} has no languages")
+        if link["locale_code"] in enabled:
+            locales_by_country[link["country_code"]].append((int(link["sort_order"]), link["locale_code"]))
+    # A country whose languages are all disabled is left out of the app.
+    shown_countries = [c for c in countries if locales_by_country[c["code"]]]
 
     hidden: dict[str, list[str]] = {}
     for row in read_csv(data_dir / "hidden_by_allergen.csv"):
@@ -94,7 +104,8 @@ def build(data_dir: Path = DATA) -> dict:
             if row["phrase_id"] in rows:
                 errors.append(f"{where}: {row['phrase_id']} appears twice")
             rows[row["phrase_id"]] = {"text": row["text"], "status": row["status"]}
-        translations[locale] = rows
+        if locale in enabled:
+            translations[locale] = rows
 
     if errors:
         raise DataError("\n".join(errors))
@@ -112,6 +123,7 @@ def build(data_dir: Path = DATA) -> dict:
                 "nativeName": l["native_name"],
             }
             for l in locales
+            if l["code"] in enabled
         ],
         "countries": [
             {
@@ -123,7 +135,7 @@ def build(data_dir: Path = DATA) -> dict:
                 "numbersVerified": c["verified"] == "yes",
                 "locales": [code for _, code in sorted(locales_by_country[c["code"]])],
             }
-            for c in countries
+            for c in shown_countries
         ],
         "hiddenByAllergen": hidden,
         "translations": translations,
