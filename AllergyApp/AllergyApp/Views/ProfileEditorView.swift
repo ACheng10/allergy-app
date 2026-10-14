@@ -31,6 +31,16 @@ struct ProfileEditorView: View {
             }
 
             Section {
+                TextField("Your name (optional)", text: $profile.userName)
+                    .textContentType(.givenName)
+                    .submitLabel(.done)
+            } header: {
+                Text("You")
+            } footer: {
+                Text("Used to greet you on My Card.")
+            }
+
+            Section {
                 NavigationLink {
                     AllergenSettingsView(profile: profile)
                 } label: {

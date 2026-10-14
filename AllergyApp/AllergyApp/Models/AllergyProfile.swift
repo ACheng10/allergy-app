@@ -13,6 +13,8 @@ import SwiftData
 final class AllergyProfile {
     /// Phrase ids from the "allergen" category, e.g. "allergen.peanut".
     var allergenIDs: [String] = []
+    /// Optional, only used to greet the user on My Card.
+    var userName: String = ""
     var severityRaw: String = Severity.anaphylaxis.rawValue
     var countryCode: String = ""
     var localeCode: String = ""

@@ -13,6 +13,11 @@ struct MyCardView: View {
 
     @State private var appeared = false
 
+    private var greeting: String {
+        let name = profile.userName.trimmingCharacters(in: .whitespaces)
+        return name.isEmpty ? "My Card" : "Hi, \(name)"
+    }
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -26,7 +31,7 @@ struct MyCardView: View {
                 .padding()
             }
             .background(Color(.systemGroupedBackground))
-            .navigationTitle("My Card")
+            .navigationTitle(greeting)
             .fullScreenCover(isPresented: $showingWaiterMode) {
                 WaiterModeView(card: card)
             }
