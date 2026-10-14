@@ -1,16 +1,16 @@
-code,parent_code,name,native_name,notes
-en,,English,English,source language; always reviewed
-fr,,French,Français,
-de,,German,Deutsch,Swiss written German follows Standard German
-it,,Italian,Italiano,
-nl,,Dutch,Nederlands,no native reviewer yet: stays beta
-es,,Spanish (neutral),Español,neutral base; country files only hold words that differ
-es-ES,es,Spanish (Spain),Español (España),reviewer from Spain
-es-MX,es,Spanish (Mexico),Español (México),beta until a Mexican reviewer checks it
-es-AR,es,Spanish (Argentina),Español (Argentina),beta until an Argentine reviewer checks it
-yue-Hant,,Cantonese (Traditional),廣東話,written Cantonese differs from written Mandarin
-zh-Hans,,Mandarin (Simplified),普通话,
-zh-Hant-TW,,Mandarin (Traditional),國語,same spoken language as zh-Hans; different script and some words
-pl,,Polish,Polski,
-pt,,Portuguese (Portugal),Português,European Portuguese base; Brazil file only holds words that differ
-pt-BR,pt,Portuguese (Brazil),Português (Brasil),beta until a Brazilian reviewer checks it
+code,parent_code,name,native_name,enabled,notes
+en,,English,English,yes,source language; always reviewed
+fr,,French,Français,yes,
+de,,German,Deutsch,yes,Swiss written German follows Standard German
+it,,Italian,Italiano,yes,
+nl,,Dutch,Nederlands,no,no native reviewer yet: stays beta
+es,,Spanish (neutral),Español,yes,neutral base; country files only hold words that differ
+es-ES,es,Spanish (Spain),Español (España),yes,reviewer from Spain
+es-MX,es,Spanish (Mexico),Español (México),yes,beta until a Mexican reviewer checks it
+es-AR,es,Spanish (Argentina),Español (Argentina),yes,beta until an Argentine reviewer checks it
+yue-Hant,,Cantonese (Traditional),廣東話,yes,written Cantonese differs from written Mandarin
+zh-Hans,,Mandarin (Simplified),普通话,yes,
+zh-Hant-TW,,Mandarin (Traditional),國語,yes,same spoken language as zh-Hans; different script and some words
+pl,,Polish,Polski,no,
+pt,,Portuguese (Portugal),Português,no,European Portuguese base; Brazil file only holds words that differ
+pt-BR,pt,Portuguese (Brazil),Português (Brasil),no,beta until a Brazilian reviewer checks it

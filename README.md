@@ -32,7 +32,7 @@ New to Xcode? Follow [docs/RUNNING.md](docs/RUNNING.md). Short version: open `Al
 ```
 data/                       the "database": one CSV per table (see the plan's SQL schema)
   phrases_en.csv            the English source phrases
-  locales.csv               fr, es, es-MX (falls back to es), ...
+  locales.csv               fr, es, es-MX (falls back to es), ...; enabled=no hides a language
   countries.csv             countries and emergency numbers
   country_locales.csv       which languages each country offers, default first
   hidden_by_allergen.csv    which hidden-ingredient lines go with which allergen

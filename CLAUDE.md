@@ -29,6 +29,7 @@ It's a personal project, released to everyone. The money goal is to cover costs 
 
 ## Translations
 
+- In the app (`enabled=yes` in `data/locales.csv`): en, fr, de, it, es (+ es-ES/es-MX/es-AR), yue-Hant, zh-Hans, zh-Hant-TW. Disabled for now, data kept: nl, pl, pt, pt-BR (so the Netherlands, Poland, Portugal and Brazil are hidden).
 - Drafted languages: fr, de, it, es (neutral base; the es-ES/es-MX/es-AR override files exist but are still empty), zh-Hans, zh-Hant-TW, yue-Hant, pl, pt (Portugal), pt-BR (overrides). Dutch (nl) is untranslated.
 - Each draft row has a blind AI back-translation. `docs/TRANSLATION_REVIEW.md` lists the risky lines per language.
 - Reviewers: there's a native reviewer for every language except Dutch. Spanish reviewer is from Spain; Portuguese reviewer is from Portugal (so pt can leave beta, pt-BR stays beta).

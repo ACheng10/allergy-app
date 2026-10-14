@@ -47,6 +47,21 @@ class BuildTests(unittest.TestCase):
         with self.assertRaisesRegex(bp.DataError, "no such locale"):
             bp.build(self.data)
 
+    def test_disabled_locale_is_left_out(self):
+        book = bp.build(self.data)
+        self.assertNotIn("pl", book["translations"])
+        self.assertNotIn("pl", [l["code"] for l in book["locales"]])
+        self.assertNotIn("PL", [c["code"] for c in book["countries"]])
+        be = next(c for c in book["countries"] if c["code"] == "BE")
+        self.assertEqual(be["locales"], ["fr", "de"])
+
+    def test_enabled_child_needs_enabled_parent(self):
+        path = self.data / "locales.csv"
+        text = path.read_text(encoding="utf-8").replace("pt-BR,pt,Portuguese (Brazil),Português (Brasil),no", "pt-BR,pt,Portuguese (Brazil),Português (Brasil),yes")
+        path.write_text(text, encoding="utf-8")
+        with self.assertRaisesRegex(bp.DataError, "parent pt is not"):
+            bp.build(self.data)
+
     def test_committed_json_is_current(self):
         self.assertEqual(bp.OUTPUT.read_text(encoding="utf-8"), bp.render(bp.build()))
 
