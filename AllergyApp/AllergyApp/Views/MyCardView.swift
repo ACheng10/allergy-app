@@ -40,14 +40,10 @@ struct MyCardView: View {
     /// The card itself: a preview of what staff will see, and the button that shows it.
     private var heroCard: some View {
         VStack(alignment: .leading, spacing: 16) {
-            HStack {
-                Text("ALLERGY CARD")
-                    .font(.caption.weight(.bold))
-                    .tracking(1.5)
-                    .opacity(0.8)
-                Spacer()
-                Text(book.country(profile.countryCode)?.flag ?? "🌍").font(.title2)
-            }
+            Text("ALLERGY CARD")
+                .font(.caption.weight(.bold))
+                .tracking(1.5)
+                .opacity(0.8)
 
             FlowLayout {
                 ForEach(Array(card.orderedAllergenIDs.enumerated()), id: \.element) { index, id in
@@ -82,7 +78,7 @@ struct MyCardView: View {
                 .background(.white, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
             }
             .buttonStyle(PressableStyle())
-            .accessibilityHint("Opens your card full screen in the local language")
+            .accessibilityHint("Opens your card in the local language")
         }
         .foregroundStyle(.white)
         .padding(20)

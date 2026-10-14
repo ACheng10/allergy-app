@@ -15,7 +15,7 @@ struct ConversationView: View {
                     .listRowInsets(EdgeInsets())
                     .listRowBackground(Color.clear)
             }
-            Section("Pick a question to show") {
+            Section("Choose a question") {
                 ForEach(questions) { question in
                     NavigationLink {
                         QuestionView(question: question, localeCode: localeCode)

@@ -41,8 +41,8 @@ struct BetaNotice: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Beta translation").font(.subheadline.weight(.semibold))
                     Text(lines.anyMissing
-                         ? "Some lines are not translated yet and will show in English. Others may be AI drafts not yet checked by a native speaker."
-                         : "Some lines are AI drafts not yet checked by a native speaker.")
+                         ? "Some lines are not translated and show in English. The rest are AI drafts no native speaker has checked."
+                         : "Some lines are AI drafts no native speaker has checked.")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 }

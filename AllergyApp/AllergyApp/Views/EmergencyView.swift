@@ -86,7 +86,7 @@ struct EmergencyView: View {
         }
         if !country.numbersVerified {
             // Release blocker: see data/countries.csv. Remove once every row is verified.
-            Text("Emergency numbers not yet verified against an official source.")
+            Text("These numbers are not verified yet. Confirm them locally.")
                 .font(.footnote)
                 .foregroundStyle(.secondary)
         }

@@ -27,7 +27,7 @@ struct ProfileEditorView: View {
             Section {
                 DestinationButton(profile: profile, inForm: true)
             } header: {
-                Text("Where are you going?")
+                Text("Destination")
             }
 
             Section {
@@ -37,18 +37,17 @@ struct ProfileEditorView: View {
                     ProfileRow(title: "Allergens", detail: allergenSummary,
                                systemImage: "allergens", tint: .red)
                 }
-            } footer: {
-                if isOnboarding && profile.allergenIDs.isEmpty {
-                    Text("Pick at least one allergen to make your card.")
-                }
-            }
-
-            Section {
                 NavigationLink {
                     EmergencyContactView(profile: profile)
                 } label: {
                     ProfileRow(title: "Emergency contact", detail: contactSummary,
                                systemImage: "person.crop.circle.badge.plus", tint: .blue)
+                }
+            } header: {
+                Text("Your card")
+            } footer: {
+                if isOnboarding && profile.allergenIDs.isEmpty {
+                    Text("Choose at least one allergen to finish.")
                 }
             }
 
@@ -60,21 +59,18 @@ struct ProfileEditorView: View {
                         ProfileRow(title: "Appearance", detail: appearance.label,
                                    systemImage: "circle.lefthalf.filled", tint: .indigo)
                     }
-                } header: {
-                    Text("Settings")
-                }
-
-                Section {
                     NavigationLink {
                         ReportProblemView(profile: profile)
                     } label: {
                         ProfileRow(title: "Report a problem", detail: "Wrong translation, bug or idea",
                                    systemImage: "exclamationmark.bubble", tint: .orange)
                     }
+                } header: {
+                    Text("Settings")
                 }
 
                 Section {
-                    Text("This app shows fixed phrases written in advance. It does not tell you whether food is safe, and it is not medical advice. Always carry your medication.")
+                    Text("This app shows fixed phrases written in advance. It cannot tell you whether food is safe. It is not medical advice. Always carry your medication.")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 } header: {
@@ -155,7 +151,7 @@ private struct AllergenSettingsView: View {
                 } else {
                     let results = AllergenGroup.search(search, in: book)
                     if results.isEmpty {
-                        Text("No match. Try another word, or look in Other.")
+                        Text("No match. Try another word or open Other.")
                             .foregroundStyle(.secondary)
                     }
                     ForEach(results) { allergen in
@@ -165,7 +161,7 @@ private struct AllergenSettingsView: View {
             } header: {
                 Text("What are you allergic to?")
             } footer: {
-                Text("Search, or open a group to pick the specific foods.")
+                Text("Search or open a group to choose foods.")
             }
 
             Section {
@@ -210,7 +206,7 @@ private struct EmergencyContactView: View {
                     .textContentType(.telephoneNumber)
                     .keyboardType(.phonePad)
             } header: {
-                Text("Emergency contact (optional)")
+                Text("Optional")
             } footer: {
                 if !profile.emergencyContactPhone.isEmpty {
                     Text("Calls \(profile.emergencyContactDialNumber)")
