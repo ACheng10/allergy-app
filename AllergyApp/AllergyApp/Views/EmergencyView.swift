@@ -4,28 +4,26 @@ import SwiftUI
 struct EmergencyView: View {
     @Bindable var profile: AllergyProfile
     @Environment(\.phraseBook) private var book
-    @State private var showMore = false
 
-    /// The few lines a bystander needs, in the order they need them. Lying
-    /// down stays: standing up during anaphylaxis can be fatal.
-    static let shortIDs = [
+    /// What a bystander needs, in the order of St John Ambulance's anaphylaxis first aid:
+    /// auto-injector first, then the ambulance, then position and a second dose.
+    static let phraseIDs = [
         "emergency.reaction",
-        "emergency.call_ambulance",
         "emergency.autoinjector",
         "emergency.help_inject",
+        "emergency.thigh",
+        "emergency.call_ambulance",
         "emergency.lie_down",
-        "emergency.stay",
+        "emergency.sit_if_breathing",
+        "emergency.second_dose",
         "emergency.contact",
     ]
 
     var body: some View {
         let country = book.country(profile.countryCode)
-        let all = book.phrases(in: "emergency")
-            .filter { $0.id != "emergency.contact" || !profile.emergencyContactPhone.isEmpty }
-            .map { book.line($0.id, in: profile.localeCode) }
-        let short = all.filter { Self.shortIDs.contains($0.id) }
-        let more = all.filter { !Self.shortIDs.contains($0.id) }
-        let lines = showMore ? all : short
+        let lines = Self.phraseIDs
+            .filter { $0 != "emergency.contact" || !profile.emergencyContactPhone.isEmpty }
+            .map { book.line($0, in: profile.localeCode) }
 
         NavigationStack {
             ScrollView {
@@ -37,32 +35,21 @@ struct EmergencyView: View {
                     if !profile.emergencyContactPhone.isEmpty {
                         callButton(
                             title: "Call \(profile.emergencyContactName.isEmpty ? "emergency contact" : profile.emergencyContactName)",
-                            number: profile.emergencyContactDialNumber, tint: .blue)
+                            number: profile.emergencyContactDialNumber, tint: .blue,
+                            subtitle: profile.emergencyContactDialNumber)
                     }
 
                     BetaNotice(lines: lines)
 
                     Text("Show this to people nearby")
                         .font(.headline)
-                    ForEach(short) { line in
+                    ForEach(lines) { line in
                         PhraseLineView(line: line, localFont: .title)
-                    }
-
-                    if !more.isEmpty {
-                        Button {
-                            withAnimation { showMore.toggle() }
-                        } label: {
-                            Label(showMore ? "Fewer phrases" : "More phrases",
-                                  systemImage: showMore ? "chevron.up" : "chevron.down")
-                                .font(.headline)
-                                .frame(maxWidth: .infinity, minHeight: 50)
-                        }
-                        .buttonStyle(.bordered)
-                    }
-
-                    if showMore {
-                        ForEach(more) { line in
-                            PhraseLineView(line: line, localFont: .title)
+                        if line.id == "emergency.contact" {
+                            // So a bystander can call from their own phone.
+                            Text(contactLabel)
+                                .font(.title.bold())
+                                .textSelection(.enabled)
                         }
                     }
                 }
@@ -72,6 +59,11 @@ struct EmergencyView: View {
         }
         .onAppear { FullBrightness.on() }
         .onDisappear { FullBrightness.off() }
+    }
+
+    private var contactLabel: String {
+        let number = profile.emergencyContactDialNumber
+        return profile.emergencyContactName.isEmpty ? number : "\(profile.emergencyContactName): \(number)"
     }
 
     @ViewBuilder
@@ -93,13 +85,18 @@ struct EmergencyView: View {
     }
 
     @ViewBuilder
-    private func callButton(title: String, number: String, tint: Color) -> some View {
+    private func callButton(title: String, number: String, tint: Color, subtitle: String? = nil) -> some View {
         let digits = number.filter { $0.isNumber || $0 == "+" }
         if !digits.isEmpty, let url = URL(string: "tel:\(digits)") {
             Link(destination: url) {
-                Label(title, systemImage: "phone.fill")
-                    .font(.title2.bold())
-                    .frame(maxWidth: .infinity, minHeight: 64)
+                VStack(spacing: 2) {
+                    Label(title, systemImage: "phone.fill")
+                        .font(.title2.bold())
+                    if let subtitle {
+                        Text(subtitle).font(.subheadline)
+                    }
+                }
+                .frame(maxWidth: .infinity, minHeight: 64)
             }
             .buttonStyle(.borderedProminent)
             .tint(tint)
